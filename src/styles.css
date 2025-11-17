@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/*------ */
+/* RESET */
+/*------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+/*-------- */
+/* GENERAL */
+/*-------- */
+
+:root {
+  --base-light-color: #f8f9fa;
+  --base-dark-color: #0e161f;
+  --primary-highlight-color: #24dd80;
+  --secondary-highlight-color: #7e4ae7;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
