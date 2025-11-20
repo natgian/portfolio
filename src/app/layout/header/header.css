@@ -1,0 +1,85 @@
+header {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 4.5rem;
+
+  color: var(--base-light-color);
+}
+
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+nav {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reveal-line {
+  position: absolute;
+  width: 120px;
+  mask-image: linear-gradient(to right, black 100%, transparent 100%);
+  mask-size: 0% 100%;
+  mask-repeat: no-repeat;
+  transition: mask-size 250ms ease;
+  pointer-events: none;
+}
+
+#skills .reveal-line,
+#contact .reveal-line {
+  top: -8px;
+}
+
+#projects .reveal-line {
+  top: 8px;
+}
+
+li a:hover ~ .reveal-line {
+  mask-size: 100% 100%;
+}
+
+.reveal-circle {
+  position: absolute;
+  top: -16px;
+  width: 120px;
+  height: auto;
+  pointer-events: none;
+
+  mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-size: 200% 200%;
+  mask-position: 0% 200%;
+
+  mask-repeat: no-repeat;
+  transition: mask-position 250ms ease;
+}
+
+li a:hover ~ .reveal-circle {
+  mask-position: 0% 100%;
+}

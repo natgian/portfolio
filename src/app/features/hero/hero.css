@@ -6,5 +6,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
 
+  padding-top: 15rem;
+
   color: var(--base-light-color);
 }
