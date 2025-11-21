@@ -5,28 +5,32 @@
     <ul>
       <li id="about">
         <a href="#">About me</a>
-        <img src="/img/ui-elements/circle.png" alt="circle" class="reveal-circle" />
+        <img src="/img/ui-elements/circle.png" alt="" class="reveal-circle" />
       </li>
       <li id="skills">
         <a href="#">Skills</a>
-        <img src="/img/ui-elements/underline_1.png" alt="line" class="reveal-line" />
+        <img src="/img/ui-elements/underline_1.png" alt="" class="reveal-line" />
       </li>
       <li id="projects">
         <a href="#">Projects</a>
-        <img src="/img/ui-elements/underline_3.png" alt="line" class="reveal-line" />
+        <img src="/img/ui-elements/underline_3.png" alt="" class="reveal-line" />
       </li>
       <li id="contact">
         <a href="#">Contact</a>
-        <img src="/img/ui-elements/underline_2.png" alt="line" class="reveal-line" />
+        <img src="/img/ui-elements/underline_2.png" alt="" class="reveal-line" />
       </li>
     </ul>
   </nav>
 
-  <div class="language-toggle">
-    <span class="language" [class.active]="activeLanguage === 'DE'" (click)="setLanguage('DE')"
-      >DE</span
+  <div class="language-toggle" role="group" aria-label="language selection">
+    <button
+      class="language-btn"
+      [class.active]="activeLanguage === 'DE'"
+      (click)="setLanguage('DE')"
     >
-    <img src="/img/ui-elements/toggle.png" alt="box" class="reveal-box reveal-box-left" />
+      DE
+    </button>
+    <img src="/img/ui-elements/toggle.png" alt="" class="reveal-box reveal-box-left" />
     <svg width="32" height="16" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg">
       <!-- background line -->
       <path
@@ -44,9 +48,13 @@
         style="transition: cx 0.3s ease"
       />
     </svg>
-    <span class="language" [class.active]="activeLanguage === 'EN'" (click)="setLanguage('EN')"
-      >EN</span
+    <button
+      class="language-btn"
+      [class.active]="activeLanguage === 'EN'"
+      (click)="setLanguage('EN')"
     >
-    <img src="/img/ui-elements/toggle.png" alt="box" class="reveal-box reveal-box-right" />
+      EN
+    </button>
+    <img src="/img/ui-elements/toggle.png" alt="" class="reveal-box reveal-box-right" />
   </div>
 </header>

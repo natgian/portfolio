@@ -11,6 +11,5 @@ export class Header {
 
   setLanguage(lang: 'DE' | 'EN') {
     this.activeLanguage = lang;
-    console.log(this.activeLanguage);
   }
 }

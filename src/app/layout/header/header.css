@@ -87,8 +87,10 @@ li a:hover ~ .reveal-circle {
   font-weight: 600;
 }
 
-.language:hover {
+.language-btn {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .reveal-box {
@@ -108,8 +110,8 @@ li a:hover ~ .reveal-circle {
   mask-position: 0% 0%;
 }
 
-.language:hover + .reveal-box-left,
-.language:hover + .reveal-box-right {
+.language-btn:hover + .reveal-box-left,
+.language-btn:hover + .reveal-box-right {
   mask-size: 300% 300%;
 }
 
@@ -119,13 +121,13 @@ li a:hover ~ .reveal-circle {
   mask-position: 100% 0%;
 }
 
-.language.active {
+.language-btn.active {
   color: var(--secondary-highlight-color);
   cursor: default;
 }
 
-.language.active + .reveal-box-left,
-.language.active + .reveal-box-right {
+.language-btn.active + .reveal-box-left,
+.language-btn.active + .reveal-box-right {
   pointer-events: none;
   opacity: 0;
 }
