@@ -9,33 +9,44 @@
       </li>
       <li id="skills">
         <a href="#">Skills</a>
-        <img src="/img/ui-elements/underline_1.png" alt="Linie" class="reveal-line" />
+        <img src="/img/ui-elements/underline_1.png" alt="line" class="reveal-line" />
       </li>
       <li id="projects">
         <a href="#">Projects</a>
-        <img src="/img/ui-elements/underline_3.png" alt="Linie" class="reveal-line" />
+        <img src="/img/ui-elements/underline_3.png" alt="line" class="reveal-line" />
       </li>
       <li id="contact">
         <a href="#">Contact</a>
-        <img src="/img/ui-elements/underline_2.png" alt="Linie" class="reveal-line" />
+        <img src="/img/ui-elements/underline_2.png" alt="line" class="reveal-line" />
       </li>
     </ul>
   </nav>
 
   <div class="language-toggle">
-    <span>DE</span>
-    <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <span class="language" [class.active]="activeLanguage === 'DE'" (click)="setLanguage('DE')"
+      >DE</span
+    >
+    <img src="/img/ui-elements/toggle.png" alt="box" class="reveal-box reveal-box-left" />
+    <svg width="32" height="16" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg">
+      <!-- background line -->
       <path
         d="M4 4.5H28C29.933 4.5 31.5 6.067 31.5 8C31.5 9.933 29.933 11.5 28 11.5H4C2.067 11.5 0.5 9.933 0.5 8C0.5 6.067 2.067 4.5 4 4.5Z"
         fill="#1073EA"
         stroke="#F8F9FA"
       />
-      <path
-        d="M8 0.5C12.1421 0.5 15.5 3.85786 15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5Z"
+      <!-- dynamic circle -->
+      <circle
+        [attr.cx]="activeLanguage === 'DE' ? 8 : 24"
+        cy="8"
+        r="7.5"
         fill="#7e4ae7"
         stroke="#F8F9FA"
+        style="transition: cx 0.3s ease"
       />
     </svg>
-    <span>EN</span>
+    <span class="language" [class.active]="activeLanguage === 'EN'" (click)="setLanguage('EN')"
+      >EN</span
+    >
+    <img src="/img/ui-elements/toggle.png" alt="box" class="reveal-box reveal-box-right" />
   </div>
 </header>

@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {}
+export class Header {
+  activeLanguage: 'DE' | 'EN' = 'DE';
+
+  setLanguage(lang: 'DE' | 'EN') {
+    this.activeLanguage = lang;
+    console.log(this.activeLanguage);
+  }
+}

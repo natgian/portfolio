@@ -15,13 +15,6 @@ header {
   color: var(--base-light-color);
 }
 
-.language-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
 nav {
   width: 70%;
   font-size: 18px;
@@ -82,4 +75,57 @@ li a:hover ~ .reveal-line {
 
 li a:hover ~ .reveal-circle {
   mask-position: 0% 100%;
+}
+
+.language-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.language:hover {
+  cursor: pointer;
+}
+
+.reveal-box {
+  position: absolute;
+  top: -8px;
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  mask-size: 0% 0%;
+  mask-repeat: no-repeat;
+  transition: mask-size 250ms ease;
+}
+
+.reveal-box-left {
+  left: -8px;
+  mask-image: radial-gradient(circle at top left, black 0%, black 30%, transparent 31%);
+  mask-position: 0% 0%;
+}
+
+.language:hover + .reveal-box-left,
+.language:hover + .reveal-box-right {
+  mask-size: 300% 300%;
+}
+
+.reveal-box-right {
+  right: -8px;
+  mask-image: radial-gradient(circle at top right, black 0%, black 30%, transparent 31%);
+  mask-position: 100% 0%;
+}
+
+.language.active {
+  color: var(--secondary-highlight-color);
+  cursor: default;
+}
+
+.language.active + .reveal-box-left,
+.language.active + .reveal-box-right {
+  pointer-events: none;
+  opacity: 0;
 }
