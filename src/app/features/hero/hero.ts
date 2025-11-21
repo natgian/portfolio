@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css',
 })
 export class Hero {
-
+  hovered = false;
+  text = 'Hello world';
+  hoverText = "I'M NATHALIE GIANCASPRO";
 }

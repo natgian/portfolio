@@ -5,8 +5,81 @@ section {
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
-
   padding-top: 15rem;
-
   color: var(--base-light-color);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hello-group {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.hello-text {
+  width: fit-content;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid var(--base-light-color);
+  border-radius: 100px;
+
+  transition: opacity 200ms ease, background-color 200ms ease;
+  opacity: 1;
+}
+
+.hello-text.active {
+  background-color: var(--secondary-highlight-color);
+}
+
+.hand {
+  opacity: 0;
+  transform: translateX(200px) rotate(0deg);
+}
+
+.hand.active {
+  animation-name: rollIn, wave;
+  animation-duration: 400ms, 800ms;
+  animation-timing-function: linear, ease;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 0ms, 400ms;
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(250px) rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(250px) rotate(360deg);
+  }
+  20% {
+    transform: translateX(250px) rotate(380deg);
+  }
+  50% {
+    transform: translateX(250px) rotate(340deg);
+  }
+  80% {
+    transform: translateX(250px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(250px) rotate(360deg);
+  }
+}
+
+h1 span {
+  display: block;
 }
