@@ -1,9 +1,9 @@
 <section>
   <div class="hero">
-    <div class="hello-group" (mouseenter)="hovered = true" (mouseleave)="hovered = false">
+    <div class="hello-group" (mouseenter)="helloHovered = true" (mouseleave)="helloHovered = false">
       <svg
         class="hand"
-        [class.active]="hovered"
+        [class.active]="helloHovered"
         width="40"
         height="40"
         viewBox="0 0 40 40"
@@ -28,16 +28,33 @@
           />
         </g>
       </svg>
-      <span class="hello-text" [class.active]="hovered">{{ hovered ? hoverText : text }}</span>
+      <span class="hello-text" [class.active]="helloHovered">{{
+        helloHovered ? helloHoveredText : helloText
+      }}</span>
     </div>
 
     <h1 class="hero-title">
-      <span class="title1">Fullstack</span>
-      <span class="title2">DEVELOPER</span>
+      <span class="title-first-word">
+        @for(letter of titleFirstWordCurrent; let i = $index; track i){
+        <span
+          class="letter"
+          (mouseenter)="toggleLetterCase(titleFirstWordCurrent, i)"
+          (mouseleave)="resetLetterCase(titleFirstWordCurrent, i, titleFirstWord)"
+          >{{ letter }}</span
+        >
+        }
+      </span>
+      <span class="title-second-word">
+        @for(letter of titleSecondWordCurrent; let i = $index; track i){
+        <span
+          class="letter"
+          (mouseenter)="toggleLetterCase(titleSecondWordCurrent, i)"
+          (mouseleave)="resetLetterCase(titleSecondWordCurrent, i, titleSecondWord)"
+          >{{ letter }}</span
+        >
+        }
+      </span>
     </h1>
-
-    <!-- <div class="title1">Fullstack</div>
-    <div class="title2">DEVELOPER</div> -->
 
     <app-button
       buttonText="Contact me"

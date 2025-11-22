@@ -8,8 +8,26 @@ import { Button } from '../../shared/components/button/button';
   styleUrl: './hero.css',
 })
 export class Hero {
-  hovered = false;
-  text = 'Hello world';
-  hoverText = "I'M NATHALIE GIANCASPRO";
+  helloHovered = false;
+  helloText = 'Hello world';
+  helloHoveredText = "I'M NATHALIE GIANCASPRO";
   isDarkBackground = true;
+
+  titleFirstWord = Array.from('Fullstack');
+  titleSecondWord = Array.from('DEVELOPER');
+  titleFirstWordCurrent = [...this.titleFirstWord];
+  titleSecondWordCurrent = [...this.titleSecondWord];
+
+  toggleLetterCase(currentArray: string[], index: number) {
+    const letter = currentArray[index];
+    const changedLetter =
+      letter === letter.toLocaleUpperCase()
+        ? letter.toLocaleLowerCase()
+        : letter.toLocaleUpperCase();
+    currentArray[index] = changedLetter;
+  }
+
+  resetLetterCase(currentArray: string[], index: number, originalArray: string[]) {
+    currentArray[index] = originalArray[index];
+  }
 }

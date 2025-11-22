@@ -10,14 +10,15 @@ section {
 }
 
 .hero {
+  margin: 0 auto;
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'hello hello'
     'h1 h1'
     'button button';
-  margin: 0 auto;
-  max-width: 800px;
+  gap: 2rem;
 }
 
 .hello-group {
@@ -90,18 +91,23 @@ section {
   flex-direction: column;
 }
 
-.title1,
-.title2 {
+.title-first-word,
+.title-second-word {
   font-size: 128px;
   font-weight: 700;
 }
 
-.title1 {
+.title-first-word {
   align-self: flex-start; /* links */
 }
 
-.title2 {
+.title-second-word {
   align-self: flex-end; /* rechts */
+}
+
+.letter:hover {
+  color: var(--primary-highlight-color);
+  cursor: default;
 }
 
 app-button {
