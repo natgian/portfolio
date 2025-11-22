@@ -31,11 +31,18 @@
       <span class="hello-text" [class.active]="hovered">{{ hovered ? hoverText : text }}</span>
     </div>
 
-    <h1>
-      <span>Fullstack</span>
-      <span>DEVELOPER</span>
+    <h1 class="hero-title">
+      <span class="title1">Fullstack</span>
+      <span class="title2">DEVELOPER</span>
     </h1>
-    <button>Get in Touch</button>
+
+    <!-- <div class="title1">Fullstack</div>
+    <div class="title2">DEVELOPER</div> -->
+
+    <app-button
+      buttonText="Contact me"
+      [variant]="isDarkBackground ? 'light' : 'dark'"
+    ></app-button>
   </div>
 
   <ul>

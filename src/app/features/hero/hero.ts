@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Button } from '../../shared/components/button/button';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [Button],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
@@ -10,4 +11,5 @@ export class Hero {
   hovered = false;
   text = 'Hello world';
   hoverText = "I'M NATHALIE GIANCASPRO";
+  isDarkBackground = true;
 }

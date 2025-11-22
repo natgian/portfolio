@@ -10,8 +10,12 @@ section {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'hello hello'
+    'h1 h1'
+    'button button';
   margin: 0 auto;
   max-width: 800px;
 }
@@ -20,6 +24,7 @@ section {
   display: flex;
   flex-direction: column;
   cursor: default;
+  grid-area: hello;
 }
 
 .hello-text {
@@ -29,9 +34,8 @@ section {
   font-weight: 500;
   border: 1px solid var(--base-light-color);
   border-radius: 100px;
-
-  transition: opacity 200ms ease, background-color 200ms ease;
   opacity: 1;
+  transition: opacity 200ms ease, background-color 200ms ease;
 }
 
 .hello-text.active {
@@ -80,6 +84,27 @@ section {
   }
 }
 
-h1 span {
-  display: block;
+.hero-title {
+  grid-area: h1;
+  display: flex;
+  flex-direction: column;
+}
+
+.title1,
+.title2 {
+  font-size: 128px;
+  font-weight: 700;
+}
+
+.title1 {
+  align-self: flex-start; /* links */
+}
+
+.title2 {
+  align-self: flex-end; /* rechts */
+}
+
+app-button {
+  grid-area: button;
+  justify-self: end;
 }
