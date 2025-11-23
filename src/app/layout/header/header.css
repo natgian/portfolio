@@ -41,7 +41,7 @@ li {
   mask-image: linear-gradient(to right, black 100%, transparent 100%);
   mask-size: 0% 100%;
   mask-repeat: no-repeat;
-  transition: mask-size 250ms ease;
+  transition: mask-size 200ms ease;
   pointer-events: none;
 }
 
@@ -70,7 +70,7 @@ li a:hover ~ .reveal-line {
   mask-position: 0% 200%;
 
   mask-repeat: no-repeat;
-  transition: mask-position 250ms ease;
+  transition: mask-position 200ms ease;
 }
 
 li a:hover ~ .reveal-circle {
@@ -101,7 +101,7 @@ li a:hover ~ .reveal-circle {
   pointer-events: none;
   mask-size: 0% 0%;
   mask-repeat: no-repeat;
-  transition: mask-size 250ms ease;
+  transition: mask-size 200ms ease;
 }
 
 .reveal-box-left {

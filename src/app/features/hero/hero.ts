@@ -9,7 +9,7 @@ import { Button } from '../../shared/components/button/button';
 })
 export class Hero {
   helloHovered = false;
-  helloText = 'Hello world';
+  helloText = 'Hi there';
   helloHoveredText = "I'M NATHALIE GIANCASPRO";
   polaroidSmile = ':)';
   isDarkBackground = true;
