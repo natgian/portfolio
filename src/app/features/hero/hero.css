@@ -10,6 +10,7 @@ section {
 }
 
 .hero {
+  position: relative;
   margin: 0 auto;
   max-width: 800px;
   display: grid;
@@ -110,7 +111,61 @@ section {
   cursor: default;
 }
 
+.polaroid {
+  position: absolute;
+  right: 16px;
+  width: 205px;
+  height: auto;
+  rotate: 10deg;
+  cursor: default;
+}
+
+.portrait {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  width: 190px;
+  height: auto;
+  filter: grayscale(1) contrast(110%);
+}
+
+.polaroid-text {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  font-family: 'Kalam', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--base-dark-color);
+}
+
+.polaroid:hover .portrait {
+  filter: grayscale(0) contrast(100%);
+}
+
 app-button {
   grid-area: button;
   justify-self: end;
+}
+
+.links {
+  list-style: none;
+  padding: 72px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.links li {
+  width: fit-content;
+  padding: 4px;
+  margin-bottom: 8px;
+  border: 1px solid var(--base-light-color);
+  border-radius: 100px;
+  background-color: transparent;
+  transition: background-color 200ms ease-in;
+}
+
+.links li:hover {
+  background-color: var(--secondary-highlight-color);
 }

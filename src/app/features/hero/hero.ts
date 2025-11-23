@@ -11,6 +11,7 @@ export class Hero {
   helloHovered = false;
   helloText = 'Hello world';
   helloHoveredText = "I'M NATHALIE GIANCASPRO";
+  polaroidSmile = ':)';
   isDarkBackground = true;
 
   titleFirstWord = Array.from('Fullstack');
@@ -29,5 +30,9 @@ export class Hero {
 
   resetLetterCase(currentArray: string[], index: number, originalArray: string[]) {
     currentArray[index] = originalArray[index];
+  }
+
+  toggleSmile(smile: string) {
+    this.polaroidSmile = smile;
   }
 }

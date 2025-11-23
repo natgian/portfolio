@@ -1,5 +1,10 @@
 <section>
   <div class="hero">
+    <div class="polaroid" (mouseenter)="toggleSmile(':D')" (mouseleave)="toggleSmile(':)')">
+      <img src="/img/stickers/polaroid_frame.png" alt="polaroid frame" />
+      <img src="/img/stickers/portrait_ng.jpg" alt="photo Nathalie" class="portrait" />
+      <span class="polaroid-text">Nathalie {{ polaroidSmile }}</span>
+    </div>
     <div class="hello-group" (mouseenter)="helloHovered = true" (mouseleave)="helloHovered = false">
       <svg
         class="hand"
@@ -62,9 +67,29 @@
     ></app-button>
   </div>
 
-  <ul>
-    <li><img src="/img/icons/linkedin.svg" alt="LinkedIn" /></li>
-    <li><img src="/img/icons/github.svg" alt="GitHub" /></li>
-    <li><img src="/img/icons/mail.svg" alt="Mail" /></li>
+  <ul class="links">
+    <li>
+      <a
+        href="https://www.linkedin.com/in/nathalie-giancaspro"
+        rel="noopener noreferrer"
+        target="_blank"
+        aria-label="open LinkedIn profile"
+        ><img src="/img/icons/linkedin.svg" alt="LinkedIn"
+      /></a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/natgian"
+        rel="noopener noreferrer"
+        target="_blank"
+        aria-label="open GitHub profile"
+        ><img src="/img/icons/github.svg" alt="GitHub"
+      /></a>
+    </li>
+    <li>
+      <a href="mailto:info@natgian.com" aria-label="send an email"
+        ><img src="/img/icons/mail.svg" alt="email"
+      /></a>
+    </li>
   </ul>
 </section>
