@@ -21,6 +21,7 @@ button {
 
 button:hover {
   background-color: var(--secondary-highlight-color);
+  color: var(--base-light-color);
   transform: translate(2px, 4px);
   box-shadow: none;
 }
