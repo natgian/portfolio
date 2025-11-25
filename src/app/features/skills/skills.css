@@ -1,0 +1,24 @@
+section {
+  display: flex;
+  height: 100vh;
+  background-image: image-set(
+    url('/img/backgrounds/skills_bg.webp'),
+    url('/img/backgrounds/skills_bg.png')
+  );
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--base-light-color);
+}
+
+.content {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+
+.skill-icons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}

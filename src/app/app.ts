@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './layout/header/header';
 import { Hero } from './features/hero/hero';
 import { About } from './features/about/about';
+import { Skills } from './features/skills/skills';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, About],
+  imports: [Header, Hero, About, Skills],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
