@@ -1,7 +1,10 @@
 section {
   height: 100vh;
   width: 100%;
-  background-image: url('/img/backgrounds/hero_bg.png');
+  background-image: image-set(
+    url('/img/backgrounds/hero_bg.webp'),
+    url('/img/backgrounds/hero_bg.png')
+  );
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
