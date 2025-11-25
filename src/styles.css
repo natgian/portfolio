@@ -32,10 +32,15 @@ a {
 /*-------- */
 
 :root {
+  /* colors */
   --base-light-color: #f8f9fa;
   --base-dark-color: #0e161f;
   --primary-highlight-color: #24dd80;
   --secondary-highlight-color: #7e4ae7;
+  --tertiary-highlight-color: #f87a55;
+
+  /* layout */
+  --content-max-width: 1200px;
 }
 
 body {
