@@ -1,14 +1,17 @@
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  max-width: 1000px;
+  gap: clamp(40px, 8vw, 120px);
+  max-width: 1200px;
+  padding: 0 72px;
   margin: 160px auto;
 }
 
 .papers-container {
   display: grid;
   max-width: 560px;
+  align-self: start;
+  margin-top: 48px;
 }
 
 .paper-item {
