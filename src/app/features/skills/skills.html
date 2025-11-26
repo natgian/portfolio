@@ -1,21 +1,33 @@
 <section>
   <div class="content">
-    <div>
-      <div>
-        MY STACK
+    <div class="skill-text-container">
+      <div class="title-wrapper">
+        <span>MY STACK</span>
         <h2>Skill set</h2>
       </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident velit nobis accusantium
-        quis officiis, adipisci error sunt incidunt exercitationem aliquid vitae quibusdam nisi
-        soluta, numquam magni labore. Autem, quo blanditiis!
+
+      <div class="description-wrapper">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident velit nobis
+          accusantium quis officiis, adipisci error sunt incidunt exercitationem aliquid vitae
+          quibusdam nisi soluta, numquam magni labore. Autem, quo blanditiis!
+        </p>
       </div>
     </div>
 
-    <div class="skill-icons-container">
-      @for(skill of skills; track skill.label){
-      <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
-      }
+    <div class="skillset-container">
+      <div class="skill-icons-wrapper">
+        @for(skill of skills; track skill.label){
+        <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
+        }
+      </div>
+      <div>
+        <picture>
+          <source srcset="/img/stickers/peel_of_1.webp" type="image/webp" />
+          <source srcset="/img/stickers/peel_of_1.png" type="image/png" />
+          <img src="/img/stickers/peel_of_1.png" alt="Peel of sticker" class="peel-sticker" />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
