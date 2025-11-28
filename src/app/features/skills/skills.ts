@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SkillIcon } from '../../shared/components/skill-icon/skill-icon';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
@@ -25,4 +26,20 @@ export class Skills {
     { icon: 'img/icons/heroku.svg', label: 'Heroku' },
     { icon: 'img/icons/photoshop.svg', label: 'Photoshop' },
   ];
+
+  currentPeelFrame = 1;
+  isPeeling = false;
+
+  onPeel() {
+    if (this.currentPeelFrame >= 3 || this.isPeeling) return;
+    console.log(this.currentPeelFrame);
+
+    this.isPeeling = true;
+    this.currentPeelFrame++;
+
+    setTimeout(() => {
+      this.currentPeelFrame++;
+      this.isPeeling = false;
+    }, 100);
+  }
 }

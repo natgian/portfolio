@@ -77,8 +77,71 @@ section {
   gap: 32px;
 }
 
-.peel-sticker {
+.peel-sticker-wrapper {
+  position: relative;
+  cursor: pointer;
   width: 200px;
   height: 200px;
   rotate: 10deg;
+}
+
+.peel-sticker {
+  width: 100%;
+  height: 100%;
+  transition: transform 50ms ease;
+}
+
+.peel-sticker-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.peel-sticker-top {
+  top: 32px;
+  left: 36px;
+}
+
+.peel-sticker-top img {
+  width: 57px;
+  height: 47px;
+}
+
+.peel-sticker.peeling {
+  transform: scale(1.05);
+}
+
+.peel-sticker-top {
+  font-family: 'Kalam', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+.peel-sticker-bottom {
+  display: flex;
+
+  gap: 12px;
+  top: 32px;
+  left: 24px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sticker-icon-wrapper img {
+  width: 48px;
+  height: 48px;
+  filter: grayscale();
+}
+
+.sticker-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 400;
 }

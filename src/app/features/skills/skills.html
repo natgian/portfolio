@@ -21,12 +21,31 @@
         <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
         }
       </div>
-      <div>
-        <picture>
-          <source srcset="/img/stickers/peel_of_1.webp" type="image/webp" />
-          <source srcset="/img/stickers/peel_of_1.png" type="image/png" />
-          <img src="/img/stickers/peel_of_1.png" alt="Peel of sticker" class="peel-sticker" />
-        </picture>
+      <div (click)="onPeel()" class="peel-sticker-wrapper">
+        <img
+          src="/img/stickers/peel_of_{{ currentPeelFrame }}.png"
+          srcset="/img/stickers/peel_of_{{ currentPeelFrame }}.webp"
+          alt="Peel of sticker"
+          class="peel-sticker"
+          [class.peeling]="isPeeling"
+        />
+        @if(currentPeelFrame === 1) {
+        <div class="peel-sticker-content peel-sticker-top">
+          <img src="/img/ui-elements/arrow.svg" alt="arrow" />
+          <span>Pull to <br />peel</span>
+        </div>
+        } @if(currentPeelFrame === 3) {
+        <div class="peel-sticker-content peel-sticker-bottom">
+          <span
+            >I also want to <br />
+            dive into:</span
+          >
+          <div class="sticker-icon-wrapper">
+            <img src="img/icons/python_no_border.svg" alt="Python icon" />
+            <span>Python</span>
+          </div>
+        </div>
+        }
       </div>
     </div>
   </div>
