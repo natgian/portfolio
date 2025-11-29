@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SkillIcon } from '../../shared/components/skill-icon/skill-icon';
 import { timeout } from 'rxjs';
 
@@ -8,7 +8,13 @@ import { timeout } from 'rxjs';
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
-export class Skills {
+export class Skills implements AfterViewInit {
+  @ViewChild('skillTextContainer')
+  skillTitle!: ElementRef;
+  isCircleVisible = false;
+  currentPeelFrame = 1;
+  isPeeling = false;
+
   skills = [
     { icon: 'img/icons/html.svg', label: 'HTML' },
     { icon: 'img/icons/css.svg', label: 'CSS' },
@@ -27,8 +33,19 @@ export class Skills {
     { icon: 'img/icons/photoshop.svg', label: 'Photoshop' },
   ];
 
-  currentPeelFrame = 1;
-  isPeeling = false;
+  ngAfterViewInit(): void {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          this.isCircleVisible = true;
+          observer.disconnect();
+        }
+      },
+      { threshold: 1 }
+    );
+
+    observer.observe(this.skillTitle.nativeElement);
+  }
 
   onPeel() {
     if (this.currentPeelFrame >= 3 || this.isPeeling) return;
@@ -40,6 +57,6 @@ export class Skills {
     setTimeout(() => {
       this.currentPeelFrame++;
       this.isPeeling = false;
-    }, 100);
+    }, 50);
   }
 }

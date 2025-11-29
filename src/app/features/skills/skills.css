@@ -19,8 +19,9 @@ section {
 }
 
 .skill-text-container {
+  position: relative;
   display: grid;
-  grid-template-columns: 240px auto 1fr;
+  grid-template-columns: 300px auto 1fr;
   gap: 48px;
 }
 
@@ -44,10 +45,13 @@ section {
 }
 
 .title-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .title-wrapper span {
@@ -59,6 +63,28 @@ section {
 .title-wrapper h2 {
   font-size: 64px;
   font-weight: 700;
+  z-index: 1;
+  padding-right: 16px;
+}
+
+.reveal-circle {
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  transform: scaleX(-1);
+
+  mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-size: 200% 200%;
+  mask-position: 0% 200%;
+  mask-repeat: no-repeat;
+  transition: mask-position 200ms ease;
+}
+
+.reveal-circle-active {
+  mask-position: 0% 100%;
 }
 
 .skillset-container {
@@ -122,20 +148,19 @@ section {
 }
 .peel-sticker-bottom {
   display: flex;
-
   gap: 12px;
-  top: 32px;
+  top: 24px;
   left: 24px;
   padding: 16px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  color: var(--base-dark-color);
 }
 
 .sticker-icon-wrapper img {
-  width: 48px;
-  height: 48px;
-  filter: grayscale();
+  width: 56px;
+  height: 56px;
 }
 
 .sticker-icon-wrapper {

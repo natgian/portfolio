@@ -1,9 +1,15 @@
 <section>
   <div class="content">
-    <div class="skill-text-container">
+    <div class="skill-text-container" #skillTextContainer>
       <div class="title-wrapper">
         <span>MY STACK</span>
         <h2>Skill set</h2>
+        <img
+          src="/img/ui-elements/circle_2.png"
+          alt=""
+          class="reveal-circle"
+          [class.reveal-circle-active]="isCircleVisible"
+        />
       </div>
 
       <div class="description-wrapper">
