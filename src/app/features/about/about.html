@@ -26,16 +26,12 @@
   </div>
 
   <div class="about-container">
-    <span class="question">WHO'S NATHALIE?</span>
-
-    <h2>About me</h2>
-    <img src="/img/ui-elements/secondary_underline.png" alt="underline" class="reveal-line" />
-
-    <p class="about-text">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, quaerat? Sed aliquid
-      voluptatum enim! Optio deleniti necessitatibus blanditiis dolores maxime unde non beatae rem,
-      aliquam impedit et earum, nihil dicta.
-    </p>
+    <app-section-intro
+      [intro]="aboutIntro.intro"
+      [title]="aboutIntro.title"
+      [text]="aboutIntro.text"
+      [imgSrc]="aboutIntro.imgSrc"
+    ></app-section-intro>
 
     <app-button
       buttonText="Let's talk"

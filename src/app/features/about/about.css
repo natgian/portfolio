@@ -56,52 +56,7 @@ section {
   transform: rotate(5deg) translate(0, 160px);
 }
 
-h2 {
-  font-size: 64px;
-  font-weight: 700;
-  margin-top: 16px;
-}
-
-.question {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.about-text {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 32px 0;
-}
-
-.reveal-line {
-  width: 280px;
-  mask-image: linear-gradient(to right, black 100%, transparent 100%);
-  mask-size: 0% 100%;
-  mask-repeat: no-repeat;
-  animation: reveal 5s infinite ease-in-out;
-}
-
-.about-text:hover .reveal-line {
-  mask-size: 100% 100%;
-}
-
-@keyframes reveal {
-  0% {
-    mask-size: 0% 100%;
-  }
-  10% {
-    mask-size: 100% 100%;
-  }
-  20% {
-    mask-size: 100% 100%;
-  }
-  70% {
-    mask-size: 100% 100%;
-  }
-  80% {
-    mask-size: 0% 100%;
-  }
-  100% {
-    mask-size: 0% 100%;
-  }
+.about-container {
+  display: grid;
+  justify-items: end;
 }
