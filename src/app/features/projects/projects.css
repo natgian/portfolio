@@ -1,0 +1,8 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 8vw, 120px);
+  max-width: var(--content-max-width);
+  padding: 0 72px;
+  margin: 160px auto;
+}
