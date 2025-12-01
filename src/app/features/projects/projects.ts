@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SectionIntro } from '../../shared/components/section-intro/section-intro';
+import { ProjectCard } from './project-card/project-card';
 
 @Component({
   selector: 'app-projects',
-  imports: [SectionIntro],
+  imports: [SectionIntro, ProjectCard],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
@@ -13,9 +14,28 @@ export class Projects {
   aboutIntro = {
     intro: 'MY CRAFT',
     title: 'Projects',
-    text: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, quaerat? Sed aliquid
-    voluptatum enim! Optio deleniti necessitatibus blanditiis dolores maxime unde non beatae rem,
-    aliquam impedit et earum, nihil dicta.`,
+    text: `Explore my projects built with a focus on clean architecture, efficient code, and responsive design. Each one reflects my approach to developing reliable, scalable, and user-friendly applications.`,
     imgSrc: '/img/ui-elements/underline_4.png',
   };
+
+  projects = [
+    {
+      title: 'Join',
+      imgSrc: '/img/projects/join/join_mockup.png',
+      description:
+        'Task manager inspired by the Kanban System. Features tasks, subtasks, user assignment and due dates. Developed with Vanilla JavaScript and Firebase in a Scrum-based group project to practice agile teamwork and project management.',
+    },
+    {
+      title: 'Nara - Guardian of the Greenwood',
+      imgSrc: '/img/projects/join/join_mockup.png',
+      description:
+        'Browser-based game built with Vanilla JavaScript to practice object-oriented programming (OOP). Protect the Greenwood with your bow and courage from the creeping darkness rising.',
+    },
+    {
+      title: 'LeseOase',
+      imgSrc: '/img/projects/leseoase/leseoase_mockup.jpg',
+      description:
+        'A full-stack web app for book enthusiasts to manage and organize their reading journey. Built with React, Node.js, Express.js and MongoDB.',
+    },
+  ];
 }
