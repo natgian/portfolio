@@ -1,3 +1,7 @@
+article {
+  position: relative;
+}
+
 h3 {
   font-size: 24px;
   font-weight: 700;
@@ -9,6 +13,60 @@ p {
   font-weight: 400;
 }
 
-img {
+.img-container {
   border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-container:hover app-button {
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+app-button {
+  position: absolute;
+  bottom: 36px;
+  right: 36px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
+  z-index: 3;
+}
+
+img {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  transition: opacity 200ms ease;
+  z-index: 2;
+}
+
+.featured-sticker {
+  position: absolute;
+  top: 32%;
+  left: -10%;
+  width: 168px;
+  height: 168px;
+  z-index: 999;
 }

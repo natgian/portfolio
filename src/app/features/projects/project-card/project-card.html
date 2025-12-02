@@ -1,5 +1,15 @@
 <article>
-  <img [src]="imgSrc" alt="{{ title }} project mockup" />
+  @if(isFeatured) {
+  <img src="/img/stickers/round_sticker.png" alt="" class="featured-sticker" />
+  }
+  <div class="img-container">
+    <img [src]="imgSrc" alt="{{ title }} project mockup" />
+    <div class="overlay"></div>
+    <app-button
+      buttonText="Project details"
+      [variant]="isDarkBackground ? 'light' : 'dark'"
+    ></app-button>
+  </div>
   <h3>{{ title }}</h3>
   <p>{{ description }}</p>
 </article>

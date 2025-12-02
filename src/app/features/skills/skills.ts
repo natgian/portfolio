@@ -49,7 +49,6 @@ export class Skills implements AfterViewInit {
 
   onPeel() {
     if (this.currentPeelFrame >= 3 || this.isPeeling) return;
-    console.log(this.currentPeelFrame);
 
     this.isPeeling = true;
     this.currentPeelFrame++;
