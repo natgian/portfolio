@@ -6,6 +6,7 @@ button {
   background-color: transparent;
   transform: translate();
   transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+  cursor: pointer;
 }
 
 .btn-light {
