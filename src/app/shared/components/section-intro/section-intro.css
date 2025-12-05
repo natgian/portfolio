@@ -16,7 +16,8 @@
 }
 
 .reveal-line {
-  width: 280px;
+  width: 260px;
+  height: 24px;
   mask-image: linear-gradient(to right, black 100%, transparent 100%);
   mask-size: 0% 100%;
   mask-repeat: no-repeat;
