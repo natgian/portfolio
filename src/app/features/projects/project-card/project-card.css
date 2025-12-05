@@ -70,3 +70,24 @@ img {
   height: 140px;
   z-index: 999;
 }
+
+.floating-animation {
+  animation: floating 4s cubic-bezier(0.33, 0, 0.2, 1) infinite;
+  animation-play-state: running;
+}
+
+.img-container:hover .floating-animation {
+  animation-play-state: paused;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-12px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(-12px);
+  }
+}

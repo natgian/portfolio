@@ -3,7 +3,7 @@
   <img src="/img/stickers/featured_sticker.png" alt="" class="featured-sticker" />
   }
   <div class="img-container">
-    <img [src]="imgSrc" alt="{{ title }} project mockup" />
+    <img [src]="imgSrc" alt="{{ title }} project mockup" [class.floating-animation]="isFeatured" />
     <div class="overlay"></div>
     <app-button
       buttonText="Project details"
