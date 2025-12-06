@@ -44,8 +44,6 @@ app-reference-card {
   cursor: pointer;
 }
 
-/* TESTING */
-
 .reveal-line {
   mask-image: linear-gradient(black 100%, transparent 100%);
   mask-size: 0%;
