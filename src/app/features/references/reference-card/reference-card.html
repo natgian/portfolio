@@ -1,0 +1,24 @@
+<div
+  class="card-content"
+  (mouseenter)="mouseEnter.emit()"
+  (mouseleave)="mouseLeave.emit()"
+  [style.backgroundImage]="'url(' + backgroundImg + ')'"
+>
+  <p>
+    {{ text }}
+  </p>
+
+  <div class="profile-wrapper">
+    <div class="profile-info">
+      <span class="name">{{ name }}</span>
+      <span class="role">{{ role }}</span>
+    </div>
+
+    <a href="{{ link }}" target="_blank" class="profile-link">
+      <img src="/img/icons/linkedin.svg" alt="linkedIn" />
+      <span>Profile</span>
+    </a>
+  </div>
+
+  <div class="overlay"></div>
+</div>

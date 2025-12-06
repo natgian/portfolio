@@ -1,0 +1,86 @@
+.card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 512px;
+  height: 320px;
+  padding: 48px;
+  color: var(--base-dark-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  transition: all 200ms ease;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 500;
+  transition: all 200ms ease;
+}
+
+.profile-link img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  transition: filter 200ms ease;
+}
+
+.profile-link:hover {
+  color: var(--base-light-color);
+}
+
+.profile-link:hover img {
+  filter: invert(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/stickers/reference_hover.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 512px;
+  height: 320px;
+  opacity: 0;
+  transition: opacity 200ms;
+  pointer-events: none;
+}
+
+.card-content:hover .overlay {
+  opacity: 1;
+}
+
+.card-content:hover .profile-info {
+  color: var(--base-light-color);
+}

@@ -1,0 +1,33 @@
+<section>
+  <div class="section-title-wrapper">
+    <div class="section-intro-wrapper">
+      <img src="/img/ui-elements/secondary_arrow.png" class="reveal-line" />
+      <span class="section-intro">IN THEIR WORDS:</span>
+    </div>
+    <h2 class="section-title">Colleagues' Thoughts</h2>
+  </div>
+
+  <div class="references-container">
+    @for(reference of references; track reference.name; let i = $index) {
+    <app-reference-card
+      [name]="reference.name"
+      [role]="reference.role"
+      [text]="reference.text"
+      [link]="reference.link"
+      [backgroundImg]="reference.backgroundImg"
+      [style.transform]="
+        'translateX(' +
+        (i - (references.length - 1) / 2) * 300 +
+        'px) translateY(' +
+        reference.offsetY +
+        'px) rotate(' +
+        reference.cardRotation +
+        ')'
+      "
+      (mouseEnter)="hoveredIndex = i"
+      (mouseLeave)="hoveredIndex = null"
+      [style.zIndex]="hoveredIndex === i ? 999 : references.length - i"
+    ></app-reference-card>
+    }
+  </div>
+</section>
