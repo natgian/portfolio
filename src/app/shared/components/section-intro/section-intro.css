@@ -1,20 +1,3 @@
-.section-intro {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.section-title {
-  font-size: 64px;
-  font-weight: 700;
-  margin-top: 16px;
-}
-
-.section-text {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 32px 0;
-}
-
 .reveal-line {
   width: 260px;
   height: 24px;

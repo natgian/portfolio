@@ -1,0 +1,59 @@
+.form-container {
+  max-width: 480px;
+}
+
+form {
+  width: 100%;
+  display: grid;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 16px 8px 16px;
+  padding-inline: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  padding-inline: 16px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--secondary-highlight-color);
+  background-color: transparent;
+  color: var(--base-light-color);
+}
+
+input {
+  padding: 16px;
+}
+
+label:hover {
+  color: var(--primary-highlight-color);
+}
+
+textarea {
+  margin-bottom: 40px;
+}
+
+app-button {
+  justify-self: end;
+}
+
+input[type='checkbox'] {
+  /* appearance: none; */
+  width: 24px;
+  height: 24px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  padding-bottom: 32px;
+}

@@ -1,0 +1,25 @@
+section {
+  padding: 160px 0;
+  margin: 0 auto;
+  background-image: image-set(
+    url('/img/backgrounds/contact_bg.png'),
+    url('/img/backgrounds/contact_bg.png')
+  );
+  background-position: bottom bottm;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--base-light-color);
+}
+
+.content {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.intro {
+  max-width: 560px;
+  align-self: start;
+}
