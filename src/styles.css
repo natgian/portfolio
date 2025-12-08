@@ -49,3 +49,20 @@ body {
   font-size: 16px;
   background-color: var(--base-light-color);
 }
+
+.section-intro {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.section-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 32px 0;
+}
