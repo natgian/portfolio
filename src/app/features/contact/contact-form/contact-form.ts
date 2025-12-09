@@ -1,26 +1,28 @@
 import { Component } from '@angular/core';
 
 import { Button } from '../../../shared/components/button/button';
-import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [Button, FormsModule],
+  imports: [Button, ReactiveFormsModule],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.css',
 })
 export class ContactForm {
   isDarkBackground = true;
 
-  contactData = {
-    name: '',
-    email: '',
-    message: '',
-  };
+  contactForm = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+    message: new FormControl(''),
+  });
 
-  onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.contactData);
-    }
+  handleSubmit() {
+    console.log({
+      name: this.contactForm.value.name,
+      email: this.contactForm.value.email,
+      message: this.contactForm.value.message,
+    });
   }
 }

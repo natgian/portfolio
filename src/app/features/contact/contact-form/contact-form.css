@@ -10,35 +10,54 @@ form {
 label {
   font-size: 24px;
   font-weight: 500;
-  padding: 16px 16px 8px 16px;
+  padding: 16px 16px 0 16px;
   padding-inline: 16px;
+}
+
+textarea {
+  resize: none;
 }
 
 input::placeholder,
 textarea::placeholder {
   font-size: 18px;
   font-weight: 400;
-  padding-inline: 16px;
 }
 
 input,
 textarea {
-  border: none;
-  border-bottom: 1px solid var(--secondary-highlight-color);
+  border: transparent;
   background-color: transparent;
   color: var(--base-light-color);
 }
 
-input {
-  padding: 16px;
-}
-
-label:hover {
-  color: var(--primary-highlight-color);
-}
-
+input,
 textarea {
-  margin-bottom: 40px;
+  padding: 16px;
+  outline: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border-top: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid var(--secondary-highlight-color);
+}
+
+.field:hover {
+  border-top: 1px solid var(--primary-highlight-color);
+  border-bottom: 1px solid var(--primary-highlight-color);
+}
+
+.field:focus-within {
+  border-top: 1px solid var(--base-light-color);
+  border-bottom: 1px solid var(--base-light-color);
+}
+
+.field:focus-within label,
+.field:hover label {
+  color: var(--primary-highlight-color);
 }
 
 app-button {
@@ -55,5 +74,6 @@ input[type='checkbox'] {
 
 .checkbox-container {
   display: flex;
+  padding-top: 40px;
   padding-bottom: 32px;
 }
