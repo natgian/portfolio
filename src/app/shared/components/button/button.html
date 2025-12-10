@@ -1,3 +1,6 @@
-<button [ngClass]="{ 'btn-light': variant === 'light', 'btn-dark': variant === 'dark' }">
+<button
+  [ngClass]="{ 'btn-light': variant === 'light', 'btn-dark': variant === 'dark' }"
+  [disabled]="disabled"
+>
   {{ buttonText }}
 </button>

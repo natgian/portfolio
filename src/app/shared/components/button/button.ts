@@ -10,4 +10,5 @@ import { NgClass } from '@angular/common';
 export class Button {
   @Input() buttonText = '';
   @Input() variant: 'light' | 'dark' = 'light';
+  @Input() disabled = false;
 }
