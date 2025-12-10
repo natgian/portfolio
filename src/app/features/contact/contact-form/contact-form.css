@@ -33,7 +33,7 @@ textarea {
 
 input,
 textarea {
-  padding: 16px;
+  padding: 16px 16px 0 16px;
   outline: none;
 }
 
@@ -76,4 +76,17 @@ input[type='checkbox'] {
   display: flex;
   padding-top: 40px;
   padding-bottom: 32px;
+}
+
+.input-feedback {
+  display: block;
+  height: 32px;
+  padding: 8px;
+}
+
+.invalid-message {
+  color: var(--error-color);
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 8px;
 }

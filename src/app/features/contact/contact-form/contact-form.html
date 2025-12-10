@@ -3,17 +3,21 @@
     <div class="field">
       <label for="name">What is your name?</label>
       <input type="text" id="name" placeholder="Your name goes here..." formControlName="name" />
+      <div class="input-feedback">
+        @if(name?.invalid && name?.touched) {
+        <span class="invalid-message">Please enter your name</span>
+        }
+      </div>
     </div>
 
     <div class="field">
       <label for="email">What is your email?</label>
-      <input
-        type="email"
-        id="email"
-        placeholder="youremail@email.com"
-        formControlName="email"
-        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-      />
+      <input type="email" id="email" placeholder="youremail@email.com" formControlName="email" />
+      <div class="input-feedback">
+        @if(email?.invalid && email?.touched) {
+        <span class="invalid-message">Please enter a valid email</span>
+        }
+      </div>
     </div>
 
     <div class="field">
@@ -24,6 +28,11 @@
         formControlName="message"
         placeholder="Your message goes here..."
       ></textarea>
+      <div class="input-feedback">
+        @if(message?.invalid && message?.touched) {
+        <span class="invalid-message">Please enter a message</span>
+        }
+      </div>
     </div>
 
     <div class="checkbox-container">
@@ -39,6 +48,7 @@
       type="submit"
       buttonText="Send"
       [variant]="isDarkBackground ? 'light' : 'dark'"
+      [disabled]="contactForm.invalid"
     ></app-button>
   </form>
 </div>
