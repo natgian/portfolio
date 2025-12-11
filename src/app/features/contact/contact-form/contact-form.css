@@ -11,7 +11,6 @@ label {
   font-size: 24px;
   font-weight: 500;
   padding: 16px 16px 0 16px;
-  padding-inline: 16px;
 }
 
 textarea {
@@ -62,20 +61,48 @@ textarea {
 
 app-button {
   justify-self: end;
-}
-
-input[type='checkbox'] {
-  /* appearance: none; */
-  width: 24px;
-  height: 24px;
-  border: transparent;
-  cursor: pointer;
+  margin-top: 16px;
 }
 
 .checkbox-container {
+  position: relative;
   display: flex;
-  padding-top: 40px;
-  padding-bottom: 32px;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--secondary-highlight-color);
+  border-radius: 3px;
+}
+
+.checkbox-label img {
+  pointer-events: none;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 18px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.checkbox-label input:checked + img {
+  opacity: 1;
+}
+
+.checkbox-label:hover {
+  background-color: rgb(151, 71, 255, 0.2);
 }
 
 .input-feedback {
@@ -89,4 +116,12 @@ input[type='checkbox'] {
   font-size: 14px;
   font-weight: 400;
   padding-left: 8px;
+}
+
+.link {
+  color: var(--secondary-highlight-color);
+}
+
+.link:hover {
+  color: var(--primary-highlight-color);
 }

@@ -28,6 +28,7 @@ export class ContactForm {
       Validators.minLength(10),
       Validators.maxLength(2000),
     ]),
+    checkbox: new FormControl(false, [Validators.requiredTrue]),
   });
 
   get name() {
@@ -40,6 +41,10 @@ export class ContactForm {
 
   get message() {
     return this.contactForm.get('message');
+  }
+
+  get checkbox() {
+    return this.contactForm.get('checkbox');
   }
 
   handleSubmit() {
