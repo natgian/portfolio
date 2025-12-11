@@ -38,7 +38,7 @@ a {
   --primary-highlight-color: #24dd80;
   --secondary-highlight-color: #7e4ae7;
   --tertiary-highlight-color: #f87a55;
-  --error-color: #ff3a00;
+  --error-color: #f87a55;
   --disabled-color: rgb(248, 249, 250, 0.4);
 
   /* layout */
