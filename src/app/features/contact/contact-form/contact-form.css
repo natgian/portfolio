@@ -27,13 +27,9 @@ input,
 textarea {
   border: transparent;
   background-color: transparent;
-  color: var(--base-light-color);
-}
-
-input,
-textarea {
-  padding: 16px 16px 0 16px;
   outline: none;
+  padding: 16px 16px 0 16px;
+  color: var(--base-light-color);
 }
 
 .field {
@@ -118,10 +114,10 @@ input[type='checkbox'] {
   padding-left: 8px;
 }
 
-.link {
+a {
   color: var(--secondary-highlight-color);
 }
 
-.link:hover {
+a:hover {
   color: var(--primary-highlight-color);
 }

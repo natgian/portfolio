@@ -1,0 +1,77 @@
+.reveal {
+  mask-repeat: no-repeat;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.reveal-from-left {
+  animation-name: reveal-from-left;
+  mask-image: linear-gradient(to right, black 100%, transparent 100%);
+}
+
+.reveal-from-right {
+  animation-name: reveal-from-right;
+  mask-image: linear-gradient(black 100%, transparent 100%);
+  mask-size: 0%;
+  mask-position: right;
+}
+
+.reveal-circle {
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  transform: scaleX(-1);
+
+  mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-size: 200% 200%;
+  mask-position: 0% 200%;
+  mask-repeat: no-repeat;
+  transition: mask-position 200ms ease;
+}
+
+.reveal-circle-active {
+  mask-position: 0% 100%;
+}
+
+@keyframes reveal-from-left {
+  0% {
+    mask-size: 0% 100%;
+  }
+  10% {
+    mask-size: 100% 100%;
+  }
+  20% {
+    mask-size: 100% 100%;
+  }
+  70% {
+    mask-size: 100% 100%;
+  }
+  80% {
+    mask-size: 0% 100%;
+  }
+  100% {
+    mask-size: 0% 100%;
+  }
+}
+
+@keyframes reveal-from-right {
+  0% {
+    mask-size: 0%;
+  }
+  5% {
+    mask-size: 100%;
+  }
+  70% {
+    mask-size: 100%;
+  }
+  75% {
+    mask-size: 0%;
+  }
+  100% {
+    mask-size: 0%;
+  }
+}

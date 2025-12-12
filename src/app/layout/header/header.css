@@ -5,13 +5,10 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 2rem 4.5rem;
-
   color: var(--base-light-color);
 }
 
@@ -58,22 +55,20 @@ li a:hover ~ .reveal-line {
   mask-size: 100% 100%;
 }
 
-.reveal-circle {
+.reveal-small-circle {
   position: absolute;
   top: -16px;
   width: 120px;
   height: auto;
   pointer-events: none;
-
   mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
   mask-size: 200% 200%;
   mask-position: 0% 200%;
-
   mask-repeat: no-repeat;
   transition: mask-position 200ms ease;
 }
 
-li a:hover ~ .reveal-circle {
+li a:hover ~ .reveal-small-circle {
   mask-position: 0% 100%;
 }
 

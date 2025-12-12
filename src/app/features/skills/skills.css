@@ -67,26 +67,6 @@ section {
   padding-right: 16px;
 }
 
-.reveal-circle {
-  position: absolute;
-  top: 28px;
-  left: 16px;
-  width: 300px;
-  height: auto;
-  pointer-events: none;
-  transform: scaleX(-1);
-
-  mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
-  mask-size: 200% 200%;
-  mask-position: 0% 200%;
-  mask-repeat: no-repeat;
-  transition: mask-position 200ms ease;
-}
-
-.reveal-circle-active {
-  mask-position: 0% 100%;
-}
-
 .skillset-container {
   display: flex;
   align-items: center;

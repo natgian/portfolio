@@ -22,4 +22,12 @@ section {
 .intro {
   max-width: 560px;
   align-self: start;
+  display: grid;
+}
+
+.reveal-wavy-arrow {
+  margin-top: 16px;
+  justify-self: end;
+  width: 260px;
+  height: 36px;
 }

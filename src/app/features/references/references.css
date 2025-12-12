@@ -32,29 +32,3 @@ app-reference-card {
   grid-column: 1;
   cursor: pointer;
 }
-
-.reveal-line {
-  mask-image: linear-gradient(black 100%, transparent 100%);
-  mask-size: 0%;
-  mask-position: right;
-  mask-repeat: no-repeat;
-  animation: reveal 5s infinite ease-in-out;
-}
-
-@keyframes reveal {
-  0% {
-    mask-size: 0%;
-  }
-  5% {
-    mask-size: 100%;
-  }
-  70% {
-    mask-size: 100%;
-  }
-  75% {
-    mask-size: 0%;
-  }
-  100% {
-    mask-size: 0%;
-  }
-}
