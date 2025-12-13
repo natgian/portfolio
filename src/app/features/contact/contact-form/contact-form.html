@@ -1,6 +1,13 @@
 <div class="form-container">
   <form [formGroup]="contactForm" (ngSubmit)="handleSubmit()">
-    <div class="field">
+    <div
+      class="field"
+      [class.no-bottom-border]="hoverStates[0] || focusStates[0]"
+      (mouseenter)="onMouseEnter(0)"
+      (mouseleave)="onMouseLeave(0)"
+      (focusin)="onFocus(0)"
+      (focusout)="onBlur(0)"
+    >
       <label for="name">What is your name?</label>
       <input type="text" id="name" placeholder="Your name goes here..." formControlName="name" />
       <div class="input-feedback">
@@ -10,7 +17,14 @@
       </div>
     </div>
 
-    <div class="field">
+    <div
+      class="field"
+      [class.no-bottom-border]="hoverStates[1] || focusStates[1]"
+      (mouseenter)="onMouseEnter(1)"
+      (mouseleave)="onMouseLeave(1)"
+      (focusin)="onFocus(1)"
+      (focusout)="onBlur(1)"
+    >
       <label for="email">What is your email?</label>
       <input type="email" id="email" placeholder="youremail@email.com" formControlName="email" />
       <div class="input-feedback">
@@ -20,7 +34,14 @@
       </div>
     </div>
 
-    <div class="field">
+    <div
+      class="field"
+      [class.no-bottom-border]="hoverStates[2] || focusStates[2]"
+      (mouseenter)="onMouseEnter(2)"
+      (mouseleave)="onMouseLeave(2)"
+      (focusin)="onFocus(2)"
+      (focusout)="onBlur(2)"
+    >
       <label for="message">How Can I help you?</label>
       <textarea
         name="message"
@@ -56,7 +77,14 @@
       type="submit"
       buttonText="Send"
       [variant]="isDarkBackground ? 'light' : 'dark'"
-      [disabled]="contactForm.invalid"
+      [disabled]="contactForm.invalid || isSubmitting"
     ></app-button>
+
+    <div class="success-message-wrapper">
+      <span class="success-message" [class.active]="showSuccessMessage">
+        Thank you! The message has been sent successfully and I will get back to you as soon as
+        possible.
+      </span>
+    </div>
   </form>
 </div>

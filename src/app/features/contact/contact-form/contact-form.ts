@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-
-import { Button } from '../../../shared/components/button/button';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Button } from '../../../shared/components/button/button';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,6 +11,22 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 })
 export class ContactForm {
   isDarkBackground = true;
+  hoverStates = [false, false, false];
+  focusStates = [false, false, false];
+  showSuccessMessage = false;
+  isSubmitting = false;
+  http = inject(HttpClient);
+
+  post = {
+    endPoint: 'https://natgian.dev/backend/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
 
   contactForm = new FormGroup({
     name: new FormControl('', [
@@ -48,10 +64,45 @@ export class ContactForm {
   }
 
   handleSubmit() {
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-    } else {
-      this.contactForm.markAllAsTouched();
-    }
+    this.contactForm.markAllAsTouched();
+    if (!this.contactForm.valid) return;
+
+    this.isSubmitting = true;
+
+    this.http.post(this.post.endPoint, this.post.body(this.contactForm.value)).subscribe({
+      next: (response) => {
+        this.contactForm.reset();
+        this.showSuccessMessage = true;
+        this.isSubmitting = false;
+
+        setTimeout(() => {
+          this.showSuccessMessage = false;
+        }, 5000);
+      },
+      error: (error) => {
+        console.error(error);
+        this.isSubmitting = false;
+      },
+    });
+  }
+
+  onMouseEnter(index: number) {
+    this.hoverStates[index] = true;
+    if (index > 0) this.hoverStates[index - 1] = true; // obere Feld beeinflussen
+  }
+
+  onMouseLeave(index: number) {
+    this.hoverStates[index] = false;
+    if (index > 0) this.hoverStates[index - 1] = false;
+  }
+
+  onFocus(index: number) {
+    this.focusStates[index] = true;
+    if (index > 0) this.focusStates[index - 1] = true;
+  }
+
+  onBlur(index: number) {
+    this.focusStates[index] = false;
+    if (index > 0) this.focusStates[index - 1] = false;
   }
 }
