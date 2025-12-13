@@ -13,8 +13,9 @@ export class ContactForm {
   isDarkBackground = true;
   hoverStates = [false, false, false];
   focusStates = [false, false, false];
-  showSuccessMessage = false;
   isSubmitting = false;
+  showSuccessMessage = false;
+
   http = inject(HttpClient);
 
   post = {
