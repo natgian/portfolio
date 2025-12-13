@@ -1,5 +1,16 @@
 .form-container {
+  position: relative;
   max-width: 480px;
+  padding-top: 120px;
+}
+
+.logo-sticker {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  right: 0;
+  top: 0;
+  transform: rotate(10deg);
 }
 
 form {
