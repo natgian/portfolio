@@ -43,50 +43,30 @@ section {
   transition: opacity 200ms ease, background-color 200ms ease;
 }
 
-.hello-text.active {
+.hello-text.enter {
   background-color: var(--secondary-highlight-color);
 }
 
 .hand {
+  --start-x: 200px;
+  --end-x: 250px;
   opacity: 0;
-  transform: translateX(200px) rotate(0deg);
+  transform: translateX(var(--start-x)) rotate(0deg);
+  will-change: transform, opacity;
 }
 
-.hand.active {
-  animation-name: rollIn, wave;
-  animation-duration: 400ms, 800ms;
-  animation-timing-function: linear, ease;
-  animation-fill-mode: forwards, forwards;
-  animation-delay: 0ms, 400ms;
+.hand.enter {
+  animation-name: rollIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
-@keyframes rollIn {
-  0% {
-    opacity: 0;
-    transform: translateX(200px) rotate(180deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(250px) rotate(360deg);
-  }
-}
-
-@keyframes wave {
-  0% {
-    transform: translateX(250px) rotate(360deg);
-  }
-  20% {
-    transform: translateX(250px) rotate(380deg);
-  }
-  50% {
-    transform: translateX(250px) rotate(340deg);
-  }
-  80% {
-    transform: translateX(250px) rotate(360deg);
-  }
-  100% {
-    transform: translateX(250px) rotate(360deg);
-  }
+.hand.exit {
+  animation-name: rollOut;
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 .hero-title {

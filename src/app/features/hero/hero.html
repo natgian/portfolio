@@ -5,10 +5,11 @@
       <img src="/img/stickers/portrait_ng.jpg" alt="photo Nathalie" class="portrait" />
       <span class="polaroid-text">Nathalie {{ polaroidSmile }}</span>
     </div>
-    <div class="hello-group" (mouseenter)="helloHovered = true" (mouseleave)="helloHovered = false">
+    <div class="hello-group" (mouseenter)="startHover()" (mouseleave)="startLeave()">
       <svg
         class="hand"
-        [class.active]="helloHovered"
+        [class.enter]="helloHovered"
+        [class.exit]="helloLeaving"
         width="40"
         height="40"
         viewBox="0 0 40 40"
@@ -33,7 +34,7 @@
           />
         </g>
       </svg>
-      <span class="hello-text" [class.active]="helloHovered">{{
+      <span class="hello-text" [class.enter]="helloHovered">{{
         helloHovered ? helloHoveredText : helloText
       }}</span>
     </div>

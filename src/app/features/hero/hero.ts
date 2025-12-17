@@ -9,6 +9,7 @@ import { Button } from '../../shared/components/button/button';
 })
 export class Hero {
   helloHovered = false;
+  helloLeaving = false;
   helloText = 'Hi there';
   helloHoveredText = "I'M NATHALIE GIANCASPRO";
   polaroidSmile = ':)';
@@ -34,5 +35,19 @@ export class Hero {
 
   toggleSmile(smile: string) {
     this.polaroidSmile = smile;
+  }
+
+  startHover() {
+    this.helloLeaving = false;
+    this.helloHovered = true;
+  }
+
+  startLeave() {
+    this.helloHovered = false;
+    this.helloLeaving = true;
+
+    setTimeout(() => {
+      this.helloLeaving = false;
+    }, 900);
   }
 }
