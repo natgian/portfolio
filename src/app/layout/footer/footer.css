@@ -31,12 +31,3 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.social-links li {
-  list-style: none;
-}
-
-.social-links li a {
-  font-size: 18px;
-  font-weight: 500;
-}

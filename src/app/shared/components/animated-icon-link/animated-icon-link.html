@@ -1,0 +1,6 @@
+<li (mouseenter)="onEnter()" (mouseleave)="onLeave()">
+  <div class="icon-wrapper" [class.enter]="isHovered" [class.exit]="isLeaving">
+    <ng-content select="svg"></ng-content>
+  </div>
+  <a [href]="href" [target]="target" [attr.rel]="rel">{{ label }}</a>
+</li>

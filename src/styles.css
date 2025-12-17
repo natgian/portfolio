@@ -68,3 +68,28 @@ body {
   font-weight: 400;
   margin: 32px 0;
 }
+
+.icon-wrapper {
+  --start-x: -24px;
+  --end-x: 0;
+}
+
+.icon-wrapper svg {
+  opacity: 0;
+  transform: translateX(var(--start-x)) rotate(0deg);
+  will-change: transform, opacity;
+}
+
+.icon-wrapper.enter svg {
+  animation-name: rollIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.icon-wrapper.exit svg {
+  animation-name: rollOut;
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
