@@ -10,5 +10,4 @@ import { RouterLink } from '@angular/router';
 })
 export class Footer {
   currentYear = new Date().getFullYear();
-  isDarkBackground = true;
 }
