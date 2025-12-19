@@ -70,7 +70,7 @@ body {
 .section-text {
   font-size: 18px;
   font-weight: 400;
-  margin: 32px 0;
+  margin-block: 16px;
 }
 
 .icon-wrapper {

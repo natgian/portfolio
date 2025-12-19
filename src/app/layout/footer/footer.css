@@ -13,6 +13,10 @@ footer {
   gap: 16px;
 }
 
+.footer-brand a {
+  width: fit-content;
+}
+
 .brand-legal-container {
   display: flex;
   flex-direction: column;
