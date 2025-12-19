@@ -38,3 +38,12 @@ h2 {
 p {
   max-width: 1000px;
 }
+
+a {
+  color: var(--secondary-highlight-color);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--primary-highlight-color);
+}
