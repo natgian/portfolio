@@ -93,3 +93,7 @@ body {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+
+.logo {
+  width: 64px;
+}

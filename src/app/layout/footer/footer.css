@@ -7,10 +7,6 @@ footer {
   padding-bottom: 56px;
 }
 
-.logo {
-  width: 64px;
-}
-
 .footer-brand {
   display: flex;
   flex-direction: column;
