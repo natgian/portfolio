@@ -3,5 +3,7 @@
   <h2 class="section-title">{{ title }}</h2>
   <img src="{{ imgSrc }}" alt="" class="reveal reveal-from-left reveal-line" />
 
-  <p class="section-text">{{ text }}</p>
+  @for(paragraph of text; track $index) {
+  <p class="section-text">{{ paragraph }}</p>
+  }
 </section>

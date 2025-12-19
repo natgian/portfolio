@@ -15,7 +15,9 @@ export class Projects {
   aboutIntro = {
     intro: 'MY CRAFT',
     title: 'Projects',
-    text: `Explore my projects built with a focus on clean architecture, efficient code, and responsive design. Each one reflects my approach to developing reliable, scalable, and user-friendly applications.`,
+    text: [
+      `Explore my projects to see how I turn ideas into responsive, user-friendly web applications, built with clean architecture and efficient code, designed to solve real-world problems.`,
+    ],
     imgSrc: '/img/ui-elements/underline_4.png',
   };
 

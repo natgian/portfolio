@@ -10,6 +10,6 @@ export class SectionIntro {
   @Input() intro!: string;
   @Input() title!: string;
   @Input() imgSrc!: string;
-  @Input() text!: string;
+  @Input() text!: string[];
   @Input() isDarkBackground = false;
 }
