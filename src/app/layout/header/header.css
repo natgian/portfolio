@@ -42,12 +42,12 @@ li {
   pointer-events: none;
 }
 
-#skills .reveal-line,
-#contact .reveal-line {
+#skills-link .reveal-line,
+#contact-link .reveal-line {
   top: -8px;
 }
 
-#projects .reveal-line {
+#projects-link .reveal-line {
   top: 8px;
 }
 

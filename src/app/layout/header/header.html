@@ -1,24 +1,26 @@
 <header>
   <div>
-    <img src="/img/logos/ng_logo.png" alt="Nathalie Giancaspro logo" class="logo" />
+    <a routerLink="/"
+      ><img src="/img/logos/ng_logo.png" alt="Nathalie Giancaspro logo" class="logo"
+    /></a>
   </div>
 
   <nav>
     <ul>
-      <li id="about">
-        <a href="#">About me</a>
+      <li id="about-link">
+        <a [routerLink]="'/'" fragment="about">About me</a>
         <img src="/img/ui-elements/circle.png" alt="" class="reveal-small-circle" />
       </li>
-      <li id="skills">
-        <a href="#">Skills</a>
+      <li id="skills-link">
+        <a [routerLink]="'/'" fragment="skills">Skills</a>
         <img src="/img/ui-elements/underline_1.png" alt="" class="reveal-line" />
       </li>
-      <li id="projects">
-        <a href="#">Projects</a>
+      <li id="projects-link">
+        <a [routerLink]="'/'" fragment="projects">Projects</a>
         <img src="/img/ui-elements/underline_3.png" alt="" class="reveal-line" />
       </li>
-      <li id="contact">
-        <a href="#">Contact</a>
+      <li id="contact-link">
+        <a [routerLink]="'/'" fragment="contact">Contact</a>
         <img src="/img/ui-elements/underline_2.png" alt="" class="reveal-line" />
       </li>
     </ul>
