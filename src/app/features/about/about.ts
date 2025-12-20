@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Button } from '../../shared/components/button/button';
 import { SectionIntro } from '../../shared/components/section-intro/section-intro';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [Button, SectionIntro],
+  imports: [Button, SectionIntro, RouterLink],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
