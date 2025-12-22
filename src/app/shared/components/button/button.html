@@ -1,6 +1,26 @@
+@if(type === "submit") {
 <button
+  class="btn"
   [ngClass]="{ 'btn-light': variant === 'light', 'btn-dark': variant === 'dark' }"
   [disabled]="disabled"
 >
   {{ buttonText }}
 </button>
+} @else if(routerLink){
+<a
+  class="btn"
+  [routerLink]="routerLink"
+  [fragment]="fragment"
+  [ngClass]="{ 'btn-light': variant === 'light', 'btn-dark': variant === 'dark' }"
+  >{{ buttonText }}</a
+>
+} @else {
+<a
+  class="btn"
+  [href]="href"
+  target="_blank"
+  rel="noopener noreferrer"
+  [ngClass]="{ 'btn-light': variant === 'light', 'btn-dark': variant === 'dark' }"
+  >{{ buttonText }}</a
+>
+}
