@@ -2,10 +2,10 @@ section {
   padding-top: 160px;
   margin: 0 auto;
   background-image: image-set(
-    url('/img/backgrounds/contact_bg.png'),
+    url('/img/backgrounds/contact_bg.webp'),
     url('/img/backgrounds/contact_bg.png')
   );
-  background-position: bottom bottm;
+  background-position: bottom bottom;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
