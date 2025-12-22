@@ -1,0 +1,67 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: image-set(
+    url('/img/backgrounds/project_bg.webp'),
+    url('/img/backgrounds/project_bg.png')
+  );
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8rem;
+  background-color: var(--base-dark-color);
+  color: var(--base-dark-color);
+}
+
+.content {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-title {
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stack-container {
+  display: flex;
+  gap: 8px;
+}
+
+.visual-section {
+  display: grid;
+  gap: 48px;
+  align-self: center;
+}
+
+.visual-section img {
+  max-width: 580px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: right;
+  gap: 32px;
+}
