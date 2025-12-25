@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionIntro } from '../../shared/components/section-intro/section-intro';
-import { ProjectCard } from './project-card/project-card';
+import { ProjectCard } from './components/project-card/project-card';
 import { FetchBackend } from '@angular/common/http';
 
 @Component({

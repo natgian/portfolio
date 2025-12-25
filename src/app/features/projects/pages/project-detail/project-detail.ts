@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Header } from '../../layout/header/header';
-import { StackIcon } from '../../shared/components/stack-icon/stack-icon';
-import { Button } from '../../shared/components/button/button';
+import { Header } from '../../../../layout/header/header';
+import { StackIcon } from '../../../../shared/components/stack-icon/stack-icon';
+import { Button } from '../../../../shared/components/button/button';
 
 @Component({
   selector: 'app-project-detail',

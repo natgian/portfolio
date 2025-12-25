@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Button } from '../../../shared/components/button/button';
+import { Button } from '../../../../shared/components/button/button';
 
 @Component({
   selector: 'app-project-card',
