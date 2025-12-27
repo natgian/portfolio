@@ -12,7 +12,7 @@ export class Button {
   @Input() buttonText = '';
   @Input() variant: 'light' | 'dark' = 'light';
   @Input() disabled = false;
-  @Input() routerLink?: string;
+  @Input() routerLink?: string | string[];
   @Input() fragment?: string;
   @Input() href?: string;
   @Input() type?: 'submit';
