@@ -15,7 +15,7 @@ export const routes: Routes = [
     component: LegalNotice,
   },
   {
-    path: 'projects/project-detail',
+    path: 'projects/:id',
     title: 'Project',
     component: ProjectDetail,
   },
