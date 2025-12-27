@@ -3,13 +3,14 @@
   <img src="/img/stickers/featured_sticker.png" alt="" class="featured-sticker" />
   }
   <div class="img-container">
-    <img [src]="imgSrc" alt="{{ title }} project mockup" [class.floating-animation]="isFeatured" />
+    <img [src]="cardImg" alt="{{ name }} project mockup" [class.floating-animation]="isFeatured" />
     <div class="overlay"></div>
     <app-button
       buttonText="Project details"
       [variant]="isDarkBackground ? 'light' : 'dark'"
+      [routerLink]="['/projects', id]"
     ></app-button>
   </div>
-  <h3>{{ title }}</h3>
-  <p>{{ description }}</p>
+  <h3>{{ name }}</h3>
+  <p>{{ cardDescription }}</p>
 </article>

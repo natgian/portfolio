@@ -8,9 +8,10 @@ import { Button } from '../../../../shared/components/button/button';
   styleUrl: './project-card.css',
 })
 export class ProjectCard {
-  @Input() title!: string;
-  @Input() imgSrc!: string;
-  @Input() description!: string;
+  @Input() id!: string;
+  @Input() name!: string;
+  @Input() cardImg!: string;
+  @Input() cardDescription!: string;
   @Input() isFeatured!: boolean;
   isDarkBackground = true;
 }

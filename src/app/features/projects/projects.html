@@ -6,11 +6,12 @@
     [imgSrc]="aboutIntro.imgSrc"
   ></app-section-intro>
 
-  @for(project of projects; track project.title){
+  @for(project of projects; track project.id){
   <app-project-card
-    [title]="project.title"
-    [imgSrc]="project.imgSrc"
-    [description]="project.description"
+    [id]="project.id"
+    [name]="project.name"
+    [cardImg]="project.cardImg"
+    [cardDescription]="project.cardDescription"
     [isFeatured]="project.isFeatured"
   ></app-project-card>
   }
