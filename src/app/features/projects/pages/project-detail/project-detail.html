@@ -1,10 +1,11 @@
 <app-header></app-header>
 <main>
   <a href="">Go Back</a>
+  @if(project) {
   <div class="content">
     <section class="project-content">
       <div class="project-title">
-        <h1 class="section-title">Join</h1>
+        <h1 class="section-title">{{ project.name }}</h1>
         <img
           src="/img/ui-elements/underline_5.png"
           alt=""
@@ -15,13 +16,13 @@
       <section class="info-section">
         <h2>Description</h2>
         <p>
-          {{ projects[0].description }}
+          {{ project.detailDescription }}
         </p>
       </section>
 
       <section class="info-section">
         <h2>Implementation Details</h2>
-        @for(paragraph of projects[0].details; track $index) {
+        @for(paragraph of project.implementationText; track $index) {
         <p>{{ paragraph }}</p>
         }
       </section>
@@ -29,7 +30,7 @@
       <section class="info-section">
         <h2>Stack</h2>
         <div class="stack-container">
-          @for(item of projects[0].stack; track item.label) {
+          @for(item of project.stack; track item.label) {
           <app-stack-icon [icon]="item.icon" [label]="item.label"></app-stack-icon>
           }
         </div>
@@ -37,20 +38,21 @@
     </section>
 
     <section class="visual-section">
-      <img [src]="projects[0].img" [alt]="projects[0].name" />
+      <img [src]="project.detailImg" [alt]="project.name" />
       <div class="links-container">
         <app-button
           buttonText="GitHub"
           [variant]="isDarkBackground ? 'light' : 'dark'"
-          [href]="projects[0].githubLink"
+          [href]="project.githubLink"
         ></app-button>
         <app-button
           buttonText="Live Test"
           [variant]="isDarkBackground ? 'light' : 'dark'"
-          [href]="projects[0].liveLink"
+          [href]="project.liveLink"
         ></app-button>
       </div>
     </section>
   </div>
+  }
   <a href="">Next Project</a>
 </main>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface Project {
+export interface Project {
   id: string;
   name: string;
   cardImg: string;
@@ -74,7 +74,7 @@ export class ProjectService {
         { label: 'CSS', icon: '/img/icons/css.svg ' },
         { label: 'JavaScript', icon: '/img/icons/javascript.svg ' },
         { label: 'React', icon: '/img/icons/react.svg ' },
-        { label: 'Node.js', icon: '/img/icons/node.svg ' },
+        { label: 'Node.js', icon: '/img/icons/nodejs.svg ' },
         { label: 'MongoDB', icon: '/img/icons/mongodb.svg ' },
       ],
       detailImg: '/img/projects/join/join_mockup_2.png',
