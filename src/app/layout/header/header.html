@@ -7,11 +7,11 @@
 
   <nav>
     <ul>
-      <li id="about-link">
+      <li id="about-link" [class.header-split]="isProjectPage">
         <a [routerLink]="'/'" fragment="about">About me</a>
         <img src="/img/ui-elements/circle.png" alt="" class="reveal-small-circle" />
       </li>
-      <li id="skills-link">
+      <li id="skills-link" [class.header-split]="isProjectPage">
         <a [routerLink]="'/'" fragment="skills">Skills</a>
         <img src="/img/ui-elements/underline_1.png" alt="" class="reveal-line" />
       </li>
