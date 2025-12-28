@@ -5,6 +5,7 @@ import { Button } from '../../../../shared/components/button/button';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService, Project } from '../../services/project.service';
 import { Subscription } from 'rxjs';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-detail',
@@ -16,6 +17,7 @@ export class ProjectDetail {
   private projectService = inject(ProjectService);
   private route = inject(ActivatedRoute);
   private sub?: Subscription;
+  private titleService = inject(Title);
   project: Project | undefined;
   isDarkBackground = true;
 
@@ -23,6 +25,9 @@ export class ProjectDetail {
     this.sub = this.route.params.subscribe((params) => {
       const projectId = params['id'];
       this.project = this.projectService.getProjectById(projectId);
+      if (this.project) {
+        this.titleService.setTitle(`Project: ${this.project.name}`);
+      }
     });
   }
 
