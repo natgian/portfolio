@@ -1,11 +1,10 @@
 <app-header></app-header>
 <main>
-  <a href="">Go Back</a>
   @if(project) {
   <div class="content">
     <section class="project-content">
       <div class="project-title">
-        <h1 class="section-title">{{ project.name }}</h1>
+        <h1>{{ project.name }}</h1>
         <img
           src="/img/ui-elements/underline_5.png"
           alt=""
@@ -53,6 +52,16 @@
       </div>
     </section>
   </div>
+
+  <nav aria-label="Project navigation">
+    <a href="" class="nav-link previous-link">
+      <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
+      Go Back
+    </a>
+    <a href="" class="nav-link next-link">
+      Next Project
+      <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true"
+    /></a>
+  </nav>
   }
-  <a href="">Next Project</a>
 </main>
