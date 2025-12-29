@@ -98,4 +98,15 @@ export class ProjectService {
   getProjectById(id: string): Project | undefined {
     return this.projects.find((project) => project.id === id);
   }
+
+  getProjectIndex(id: string): number {
+    const projects = this.getProjects();
+    return projects.findIndex((project) => project.id === id);
+  }
+
+  getNextProject(id: string): Project | undefined {
+    const currentIndex = this.getProjectIndex(id);
+    if (currentIndex === -1) return undefined;
+    return this.projects[(currentIndex + 1) % this.projects.length];
+  }
 }

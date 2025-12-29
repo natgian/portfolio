@@ -16,7 +16,6 @@ export const routes: Routes = [
   },
   {
     path: 'projects/:id',
-    title: 'Project',
     component: ProjectDetail,
   },
 ];

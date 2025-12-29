@@ -89,11 +89,11 @@ nav {
   color: var(--primary-highlight-color);
 }
 
-.previous-link {
+.back-link {
   color: var(--base-dark-color);
 }
 
-.previous-link img {
+.back-link img {
   transform: scaleX(-1);
 }
 
