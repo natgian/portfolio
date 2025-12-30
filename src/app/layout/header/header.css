@@ -8,7 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4.5rem;
+  padding: 32px 72px;
   color: var(--base-light-color);
 }
 
@@ -129,4 +129,10 @@ li a:hover ~ .reveal-small-circle {
 .language-btn.active + .reveal-box-right {
   pointer-events: none;
   opacity: 0;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 32px;
+  }
 }
