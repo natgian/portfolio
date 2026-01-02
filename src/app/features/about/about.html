@@ -1,15 +1,23 @@
 <section id="about">
   <div class="papers-container">
     <div class="paper-item" id="paper-yellow">
-      <img src="/img/stickers/paper_yellow.png" alt="yellow paper" class="paper" />
-      <div class="paper-text">
+      <picture class="paper">
+        <source media="(min-width: 480px)" srcset="/img/stickers/paper_yellow.png" />
+        <img src="/img/stickers/paper_yellow_mobile.png" alt="yellow paper" />
+      </picture>
+
+      <div class="paper-text text-one">
         <img src="/img/ui-elements/location.svg" alt="location icon" />
         Based in Zurich
       </div>
     </div>
 
     <div class="paper-item" id="paper-blue">
-      <img src="/img/stickers/paper_blue.png" alt="blue paper" class="paper" />
+      <picture class="paper">
+        <source media="(min-width: 480px)" srcset="/img/stickers/paper_blue.png" />
+        <img src="/img/stickers/paper_blue_mobile.png" alt="blue paper" />
+      </picture>
+
       <div class="paper-text">
         <img src="/img/ui-elements/commute.svg" alt="commute icon" />
         Open to commute
@@ -17,7 +25,11 @@
     </div>
 
     <div class="paper-item" id="paper-orange">
-      <img src="/img/stickers/paper_orange.png" alt="orange paper" class="paper" />
+      <picture class="paper">
+        <source media="(min-width: 480px)" srcset="/img/stickers/paper_orange.png" />
+        <img src="/img/stickers/paper_orange_mobile.png" alt="orange paper" />
+      </picture>
+
       <div class="paper-text">
         <img src="/img/ui-elements/remote.svg" alt="remote icon" />
         Open to work remote
