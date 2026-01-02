@@ -101,3 +101,13 @@ body {
 .logo {
   width: 64px;
 }
+
+@media (max-width: 740px) {
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+}
