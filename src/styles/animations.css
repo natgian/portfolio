@@ -19,8 +19,8 @@
 
 .reveal-circle {
   position: absolute;
-  top: 28px;
-  left: 16px;
+  top: 36px;
+  left: 0;
   width: 300px;
   height: auto;
   pointer-events: none;

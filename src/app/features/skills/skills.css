@@ -1,12 +1,13 @@
 section {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: image-set(
     url('/img/backgrounds/skills_bg.webp'),
     url('/img/backgrounds/skills_bg.png')
   );
-  background-position: bottom center;
+  background-position: bottom bottom;
+  padding-bottom: 72px;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
@@ -21,37 +22,36 @@ section {
 .skill-text-container {
   position: relative;
   display: grid;
-  grid-template-columns: 300px auto 1fr;
-  gap: 48px;
+  align-items: end;
+  gap: 32px;
+  justify-items: end;
+  align-items: start;
 }
 
 .description-wrapper {
   position: relative;
-  max-width: 800px;
-  background-image: image-set(
-    url('/img/backgrounds/skills_desc_bg.webp'),
-    url('/img/backgrounds/skills_desc_bg.png')
-  );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--base-dark-color);
 }
 
 .description-wrapper p {
-  color: var(--base-dark-color);
-  font-size: 18px;
-  font-weight: 400;
-  padding: 60px;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  text-wrap: pretty;
 }
 
 .title-wrapper {
+  width: fit-content;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 16px;
-  margin-top: 16px;
 }
 
 .title-wrapper span {
@@ -61,16 +61,14 @@ section {
 }
 
 .title-wrapper h2 {
-  font-size: 64px;
-  font-weight: 700;
   z-index: 1;
-  padding-right: 16px;
 }
 
 .skillset-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -80,8 +78,10 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  margin-top: 32px;
 }
 
 .peel-sticker-wrapper {
@@ -150,4 +150,47 @@ section {
   gap: 4px;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  section {
+    background-position: bottom center;
+  }
+
+  .skill-text-container {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 724px) {
+  .description-wrapper {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 670px) {
+  .description-wrapper p {
+    padding: 16px;
+  }
+
+  .skill-text-container {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .content {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 410px) {
+  .content {
+    padding: 0 20px;
+  }
+  .description-wrapper {
+    font-size: 14px;
+  }
 }

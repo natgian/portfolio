@@ -3,7 +3,7 @@
     <div class="skill-text-container" #skillTextContainer>
       <div class="title-wrapper">
         <span>MY STACK</span>
-        <h2>Skill set</h2>
+        <h2 class="section-title">Skill set</h2>
         <img
           src="/img/ui-elements/circle_2.png"
           alt=""
@@ -13,6 +13,10 @@
       </div>
 
       <div class="description-wrapper">
+        <picture>
+          <source media="(min-width: 670px)" srcset="/img/backgrounds/skills_desc_bg.png" />
+          <img src="/img/backgrounds/skills_desc_bg_mobile.png" alt="" />
+        </picture>
         <p>
           I’ve worked on front-end and fullstack projects, applying modern technologies to create
           functional, maintainable solutions. I enjoy learning new tools and approaches,
@@ -27,6 +31,7 @@
         <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
         }
       </div>
+
       <div (click)="onPeel()" class="peel-sticker-wrapper">
         <img
           src="/img/stickers/peel_of_{{ currentPeelFrame }}.png"
