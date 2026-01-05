@@ -3,9 +3,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 80px;
-  max-width: var(--content-max-width);
-  padding: 0 72px;
-  margin: 160px auto;
 }
 
 .papers-container,
@@ -74,7 +71,6 @@ section {
   section {
     flex-direction: column-reverse;
     gap: 0;
-    margin: 80px auto;
   }
 
   .papers-container {
@@ -82,12 +78,6 @@ section {
     align-items: start;
     margin-top: 0;
     padding-top: 72px;
-  }
-}
-
-@media (max-width: 560px) {
-  section {
-    padding: 0 32px;
   }
 }
 

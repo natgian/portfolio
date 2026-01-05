@@ -1,13 +1,8 @@
-section {
-  max-width: var(--content-max-width);
-  margin: 160px auto;
-  /* padding: 0 72px; */
-}
-
-.section-title-wrapper {
+.main-title-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: right;
 }
 
 .section-intro-wrapper {

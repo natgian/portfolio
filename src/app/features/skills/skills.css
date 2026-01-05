@@ -1,6 +1,5 @@
 section {
   display: flex;
-  min-height: 100vh;
   width: 100%;
   background-image: image-set(
     url('/img/backgrounds/skills_bg.webp'),
@@ -11,12 +10,6 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
-}
-
-.content {
-  margin: 80px auto;
-  padding: 0 72px;
-  max-width: var(--content-max-width);
 }
 
 .skill-text-container {
@@ -180,16 +173,7 @@ section {
   }
 }
 
-@media (max-width: 560px) {
-  .content {
-    padding: 0 32px;
-  }
-}
-
 @media (max-width: 410px) {
-  .content {
-    padding: 0 20px;
-  }
   .description-wrapper {
     font-size: 14px;
   }
