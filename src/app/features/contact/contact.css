@@ -1,5 +1,4 @@
 section {
-  padding-top: 160px;
   margin: 0 auto;
   background-image: image-set(
     url('/img/backgrounds/contact_bg.webp'),
@@ -9,18 +8,19 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
+  padding-top: 160px;
 }
 
 .content {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 64px;
 }
 
 .intro {
-  max-width: 560px;
+  max-width: 460px;
   align-self: start;
   display: grid;
 }
@@ -30,4 +30,34 @@ section {
   justify-self: end;
   width: 260px;
   height: 36px;
+}
+
+.logo-sticker {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  right: 16px;
+  top: 0;
+  transform: rotate(10deg);
+}
+
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .intro {
+    align-self: center;
+  }
+
+  .reveal-wavy-arrow {
+    display: none;
+  }
+
+  .logo-sticker {
+    width: 120px;
+    height: 120px;
+  }
 }

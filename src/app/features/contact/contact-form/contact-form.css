@@ -4,15 +4,6 @@
   padding-top: 120px;
 }
 
-.logo-sticker {
-  position: absolute;
-  width: 168px;
-  height: 168px;
-  right: 0;
-  top: 0;
-  transform: rotate(10deg);
-}
-
 form {
   width: 100%;
   display: grid;
@@ -157,4 +148,10 @@ a {
 
 a:hover {
   color: var(--primary-highlight-color);
+}
+
+@media (max-width: 1000px) {
+  .form-container {
+    padding-top: 40px;
+  }
 }
