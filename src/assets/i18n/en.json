@@ -1,0 +1,98 @@
+{
+  "navigation": {
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "legal": "Legal Notice"
+  },
+  "home": {
+    "hero": {
+      "cta": "Contact me"
+    },
+    "about": {
+      "intro": "WHO'S NATHALIE",
+      "title": "About me",
+      "description": [
+        "Hey there, I’m Nathalie — a Fullstack Developer and nature lover, passionate about coding because it combines logical thinking with creativity.",
+        "My main source of inspiration is the continuous learning process that comes with real-world challenges. Each bug, feature, or refactor is an opportunity to better understand how things work and how they can be improved. I actively look for efficient and maintainable solutions, learning from feedback, documentation, and experimentation.",
+        "I value clean code, clear communication, and collaboration, and I approach challenges with curiosity and persistence."
+      ],
+      "cta": "Let's talk",
+      "location": "Based in Zurich",
+      "commute": "Open to commute",
+      "remote": "Open to work remote"
+    },
+    "skills": {
+      "intro": "MY STACK",
+      "title": "Skill set",
+      "description": "I’ve worked on front-end and fullstack projects, applying modern technologies to create functional, maintainable solutions. I enjoy learning new tools and approaches, continuously expanding my skills to tackle new challenges.",
+      "sticker": "Pull to peel"
+    },
+    "projects": {
+      "intro": "MY CRAFT",
+      "title": "Projects",
+      "description": "Explore my projects to see how I turn ideas into responsive, user-friendly web applications, built with clean architecture and efficient code, designed to solve real-world problems."
+    },
+    "references": {
+      "intro": "IN THEIR WORDS:",
+      "title": "Colleagues' Thoughts",
+      "nico": {
+        "text": "During the team project, Nathalie impressed with her reliability, helpfulness and active contribution to team development. Even beyond direct collaboration, interacting with her proves to be consistently positive and inspiring.",
+        "role": "Join Project Teammate"
+      },
+      "wladi": {
+        "text": "I had the pleasure of working with an extremely calm and pleasant person who always approached complex issues with foresight and clarity. Nathalie's professional expertise and understanding of the big picture noticeably enriched our project.",
+        "role": "Join Project Teammate"
+      },
+      "chris": {
+        "text": "Coming soon...",
+        "role": "Supervisor"
+      }
+    },
+    "contact": {
+      "intro": "CONTACT ME",
+      "title": "Ready to work together?",
+      "description": [
+        "As a Fullstack Developer, I can support ongoing and new projects by working collaboratively on features, improving existing functionality, and adapting quickly to established workflows and technologies.",
+        "With a solid foundation in modern web development, a problem-solving mindset, and a strong willingness to learn from feedback, I contribute through clear communication, teamwork, and ownership of my tasks.",
+        "If you’re looking for a motivated developer who is ready to contribute, grow, and add value to your project, I’d be happy to connect."
+      ],
+      "fields": {
+        "name": {
+          "label": "What is your name?",
+          "placeholder": "Your name goes here...",
+          "error": "Please enter your name"
+        },
+        "email": {
+          "label": "What is your email?",
+          "placeholder": "youremail@email.com",
+          "error": "Please enter a valid email"
+        },
+        "message": {
+          "label": "How can I help you?",
+          "placeholder": "Your message goes here...",
+          "error": "Please enter a message"
+        }
+      },
+      "policy": {
+        "prefix": "I've read the",
+        "link": "privacy policy",
+        "suffix": "and agree to the processing of my data as outlined."
+      },
+      "submit": "Send"
+    },
+    "legal": {
+      "title": "Legal notice",
+      "sections": {
+        "imprint": {
+          "title": "Imprint",
+          "email": "Email"
+        },
+        "privacy": {
+          "title": "privacy"
+        }
+      }
+    }
+  }
+}
