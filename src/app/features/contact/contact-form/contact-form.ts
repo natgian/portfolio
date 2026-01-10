@@ -3,11 +3,10 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { HttpClient } from '@angular/common/http';
 import { Button } from '../../../shared/components/button/button';
 import { TranslatePipe } from '@ngx-translate/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [Button, ReactiveFormsModule, TranslatePipe, RouterLink],
+  imports: [Button, ReactiveFormsModule, TranslatePipe],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.css',
 })
