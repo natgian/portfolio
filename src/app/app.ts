@@ -18,7 +18,6 @@ export class App {
 
     const savedLang = localStorage.getItem('lang');
     const browserLang = this.translate.getBrowserLang();
-    console.log(browserLang);
     const lang: string =
       savedLang || (browserLang && this.supportedLangs.includes(browserLang) ? browserLang : 'en');
 
