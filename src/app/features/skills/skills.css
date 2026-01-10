@@ -99,8 +99,16 @@ section {
 }
 
 .peel-sticker-top {
+  display: flex;
+  justify-self: center;
   top: 32px;
-  left: 36px;
+  padding-inline: 16px;
+  font-family: 'Kalam', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  gap: 8px;
 }
 
 .peel-sticker-top img {
@@ -112,18 +120,11 @@ section {
   transform: scale(1.05);
 }
 
-.peel-sticker-top {
-  font-family: 'Kalam', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.2;
-}
 .peel-sticker-bottom {
   display: flex;
-  gap: 12px;
+  justify-self: center;
   top: 24px;
-  left: 24px;
+  gap: 12px;
   padding: 16px;
   font-size: 18px;
   font-weight: 700;
