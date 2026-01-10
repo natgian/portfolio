@@ -1,9 +1,9 @@
 <section>
-  <span class="section-intro">{{ intro }}</span>
-  <h2 class="main-title">{{ title }}</h2>
+  <span class="section-intro">{{ intro | translate }}</span>
+  <h2 class="main-title">{{ title | translate }}</h2>
   <img src="{{ imgSrc }}" alt="" class="reveal reveal-from-left reveal-line" />
 
   @for(paragraph of text; track $index) {
-  <p class="section-text">{{ paragraph }}</p>
+  <p class="section-text">{{ paragraph | translate }}</p>
   }
 </section>

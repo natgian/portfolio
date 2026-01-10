@@ -2,10 +2,12 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Button } from '../../../shared/components/button/button';
+import { TranslatePipe } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [Button, ReactiveFormsModule],
+  imports: [Button, ReactiveFormsModule, TranslatePipe, RouterLink],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.css',
 })
@@ -89,7 +91,7 @@ export class ContactForm {
 
   onMouseEnter(index: number) {
     this.hoverStates[index] = true;
-    if (index > 0) this.hoverStates[index - 1] = true; // obere Feld beeinflussen
+    if (index > 0) this.hoverStates[index - 1] = true;
   }
 
   onMouseLeave(index: number) {

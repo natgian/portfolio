@@ -1,10 +1,11 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SkillIcon } from '../../shared/components/skill-icon/skill-icon';
 import { timeout } from 'rxjs';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
-  imports: [SkillIcon],
+  imports: [SkillIcon, TranslatePipe],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })

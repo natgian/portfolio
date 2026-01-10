@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,19 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('portfolio');
+  private translate = inject(TranslateService);
+  supportedLangs = ['en', 'de'];
+
+  constructor() {
+    this.translate.addLangs(this.supportedLangs);
+    this.translate.setFallbackLang('en');
+
+    const savedLang = localStorage.getItem('lang');
+    const browserLang = this.translate.getBrowserLang();
+    console.log(browserLang);
+    const lang: string =
+      savedLang || (browserLang && this.supportedLangs.includes(browserLang) ? browserLang : 'en');
+
+    this.translate.use(lang);
+  }
 }

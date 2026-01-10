@@ -5,12 +5,21 @@
   <div class="img-container">
     <img [src]="cardImg" alt="{{ name }} project mockup" [class.floating-animation]="isFeatured" />
     <div class="overlay"></div>
+    @if(isDesktopLayout) {
     <app-button
       buttonText="Project details"
       [variant]="isDarkBackground ? 'light' : 'dark'"
       [routerLink]="['/projects', id]"
     ></app-button>
+    }
   </div>
   <h3>{{ name }}</h3>
   <p>{{ cardDescription }}</p>
+  @if(!isDesktopLayout) {
+  <app-button
+    buttonText="Project details"
+    [variant]="isDarkBackground ? 'light' : 'dark'"
+    [routerLink]="['/projects', id]"
+  ></app-button>
+  }
 </article>

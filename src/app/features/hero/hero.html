@@ -35,7 +35,7 @@
         </g>
       </svg>
       <span class="hello-text" [class.enter]="helloHovered">{{
-        helloHovered ? helloHoveredText : helloText
+        (helloHovered ? helloHoveredText : helloText) | translate
       }}</span>
     </div>
 
@@ -63,7 +63,7 @@
     </h1>
 
     <app-button
-      buttonText="Contact me"
+      [buttonText]="'home.hero.cta' | translate"
       [variant]="isDarkBackground ? 'light' : 'dark'"
       [routerLink]="'/'"
       fragment="contact"
@@ -91,7 +91,7 @@
     </li>
     <li>
       <a href="mailto:contact@natgian.dev" aria-label="send an email"
-        ><img src="/img/icons/mail.svg" alt="email"
+        ><img src="/img/icons/mail.svg" alt="Email"
       /></a>
     </li>
   </ul>

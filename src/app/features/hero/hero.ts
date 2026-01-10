@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { Button } from '../../shared/components/button/button';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
-  imports: [Button, RouterLink],
+  imports: [Button, RouterLink, TranslatePipe],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
 export class Hero {
   helloHovered = false;
   helloLeaving = false;
-  helloText = 'Hi there';
-  helloHoveredText = "I'M NATHALIE GIANCASPRO";
+  helloText = 'home.hero.greeting';
+  helloHoveredText = 'home.hero.intro';
   polaroidSmile = ':)';
   isDarkBackground = true;
 

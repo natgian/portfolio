@@ -1,7 +1,7 @@
 {
   "navigation": {
     "about": "Über mich",
-    "skills": "Fähigkeiten",
+    "skills": "Skills",
     "projects": "Projekte",
     "contact": "Kontakt",
     "legal": "Impressum",
@@ -10,6 +10,7 @@
   },
   "home": {
     "hero": {
+      "greeting": "Hallo...",
       "intro": "ICH BIN NATHALIE GIANCASPRO",
       "cta": "Kontaktiere mich"
     },
@@ -28,9 +29,10 @@
     },
     "skills": {
       "intro": "MEIN STACK",
-      "title": "Fähigkeiten",
+      "title": "Skill-Set",
       "description": "Ich habe an Frontend- und Fullstack-Projekten gearbeitet und dabei moderne Technologien eingesetzt, um funktionale und wartbare Lösungen zu entwickeln. Es macht mir Spass, neue Technologien und Ansätze zu lernen und erweitere kontinuerlich meine Fähigkeiten, um neue Herausforderungen zu meistern.",
-      "sticker": "Zum Abziehen ziehen"
+      "topSticker": "Hier abziehen",
+      "bottomSticker": "Ich will mich auch einarbeiten in:"
     },
     "projects": {
       "intro": "MEIN HANDWERK",
@@ -57,8 +59,9 @@
       "intro": "KONTAKTIERE MICH",
       "title": "Bereit zur Zusammenarbeit?",
       "description": [
-        "Als Fullstack-Entwicklerin kann ich Projekte unterstützen, indem ich bei Features mitarbeite, bestehende Funktionalitäten verbessere und mich an vorhandene Workflows und Technologien anpasse.",
-        "Wenn du nach einer motivierten Entwicklerin suchst, die bereit ist, einen Beitrag zu leisten und Mehrwert für dein Projekt zu schaffen, freue ich mich auf deine Nachricht."
+        "Als Fullstack-Entwicklerin kann ich Projekte unterstützen, indem ich an Features mitarbeite, Funktionalitäten optimiere und mich flexibel an bestehende Workflows und Technologien anpasse.",
+        "Mit einer soliden Grundlage in moderner Webentwicklung und einer lösungsorientierten Denkweise bringe ich klare Kommunikation und Eigenverantwortung in meine Aufgaben ein.",
+        "Wenn du eine motivierte Entwicklerin suchst, die einen Mehrwert für dein Projekt schafft, freue ich mich auf deine Nachricht."
       ],
       "fields": {
         "name": {
@@ -80,53 +83,11 @@
       "policy": {
         "prefix": "Ich habe die",
         "link": "Datenschutzerklärung",
-        "suffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+        "suffix": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "error": "Bitte akzeptiere die Datenschutzerklärung"
       },
       "submit": "Senden",
       "success": "Vielen Dank! Die Nachricht wurde erfolgreich gesendet und ich werde mich so schnell wie möglich melden."
-    },
-    "legal": {
-      "title": "Impressum & Datenschutz",
-      "date": "Datum",
-      "sections": {
-        "imprint": {
-          "title": "Impressum",
-          "country": "Schweiz",
-          "email": "E-Mail"
-        },
-        "privacy": {
-          "title": "Datenschutz",
-          "content": "Diese Website wird betrieben von Nathalie Giancaspro. Zweck dieser Website ist die Präsentation meiner Projekte sowie die Bereitstellung von Kontaktmöglichkeiten. Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Website ist so gestaltet, dass nur ein Minimum an Daten verarbeitet wird."
-        },
-        "dataCollection": {
-          "title": "Datenerfassung",
-          "content": "Beim Besuch dieser Website werden keine personenbezogenen Daten automatisch erhoben. Wenn du mich über das Kontaktformular kontaktierst, werden die von dir angegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Diese Daten werden nicht an Dritte weitergegeben und nach Abschluss der Kommunikation gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen."
-        },
-        "tracking": {
-          "title": "Cookies und Tracking",
-          "content": "Diese Website verwendet keine Cookies, keine Tracking-Tools, keine Analyse-Dienste und keine Werbetechnologien."
-        },
-        "localStorage": {
-          "title": "Local Storage",
-          "content": "Zur Verbesserung der Benutzerfreundlichkeit verwendet diese Website den lokalen Speicher des Browsers, um die vom Nutzer gewählte Sprache zu speichern und die Website in der bevorzugten Sprache anzuzeigen. Die Daten bleiben gespeichert, bis sie vom Nutzer über die Browsereinstellungen gelöscht werden. Die gespeicherten Informationen werden nicht an Dritte weitergegeben."
-        },
-        "externalServices": {
-          "title": "Externe Dienste",
-          "content": "Diese Website enthält Links zu externen Websites oder Social-Media-Profilen. Beim Aufruf dieser externen Seiten können personenbezogene Daten durch deren jeweilige Betreiber verarbeitet werden. Ich habe keinen Einfluss auf die Datenverarbeitung durch diese Drittanbieter. Weitere Informationen findest du in den Datenschutzerklärungen der jeweiligen Websites."
-        },
-        "rights": {
-          "title": "Deine Rechte",
-          "content": "Du hast das Recht, Auskunft über die zu deiner Person gespeicherten Daten zu verlangen sowie deren Berichtigung oder Löschung zu beantragen. Bei Fragen zum Datenschutz kannst du mich jederzeit kontaktieren unter:"
-        },
-        "encryption": {
-          "title": "SSL- bzw. TLS-Verschlüsselung",
-          "content": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung, z.B. bei Anfragen über das Kontaktformular. Eine verschlüsselte Verbindung erkennst du daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt sowie an dem Schloss-Symbol in der Browserzeile."
-        },
-        "final": {
-          "title": "Schlussbestimmung",
-          "content": "Diese Datenschutzerklärung kann jederzeit angepasst oder aktualisiert werden, um rechtliche oder technische Änderungen zu berücksichtigen."
-        }
-      }
     }
   },
   "projects": {
@@ -157,6 +118,49 @@
         "Ich habe die Kernfunktionen mit React, Node.js, Express und MongoDB implementiert, die Google Books API integriert und sichere Account-Funktionen wie Passwort-Reset und Formularvalidierung entwickelt. Die Anwendung ist zudem auf allen Geräten vollständig responsiv.",
         "Das Projekt hat meine Fähigkeiten in Full-Stack-Entwicklung, API-Integration und der Erstellung nutzerorientierter Anwendungen von der Konzeption bis zur Bereitstellung weiter gestärkt."
       ]
+    }
+  },
+  "legal": {
+    "title": "Impressum & Datenschutz",
+    "date": "Datum",
+    "sections": {
+      "imprint": {
+        "title": "Impressum",
+        "country": "Schweiz",
+        "email": "E-Mail"
+      },
+      "privacy": {
+        "title": "Datenschutz",
+        "content": "Diese Website wird betrieben von Nathalie Giancaspro. Zweck dieser Website ist die Präsentation meiner Projekte sowie die Bereitstellung von Kontaktmöglichkeiten. Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Website ist so gestaltet, dass nur ein Minimum an Daten verarbeitet wird."
+      },
+      "dataCollection": {
+        "title": "Datenerfassung",
+        "content": "Beim Besuch dieser Website werden keine personenbezogenen Daten automatisch erhoben. Wenn du mich über das Kontaktformular kontaktierst, werden die von dir angegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Diese Daten werden nicht an Dritte weitergegeben und nach Abschluss der Kommunikation gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen."
+      },
+      "tracking": {
+        "title": "Cookies und Tracking",
+        "content": "Diese Website verwendet keine Cookies, keine Tracking-Tools, keine Analyse-Dienste und keine Werbetechnologien."
+      },
+      "localStorage": {
+        "title": "Local Storage",
+        "content": "Zur Verbesserung der Benutzerfreundlichkeit verwendet diese Website den lokalen Speicher des Browsers, um die vom Nutzer gewählte Sprache zu speichern und die Website in der bevorzugten Sprache anzuzeigen. Die Daten bleiben gespeichert, bis sie vom Nutzer über die Browsereinstellungen gelöscht werden. Die gespeicherten Informationen werden nicht an Dritte weitergegeben."
+      },
+      "externalServices": {
+        "title": "Externe Dienste",
+        "content": "Diese Website enthält Links zu externen Websites oder Social-Media-Profilen. Beim Aufruf dieser externen Seiten können personenbezogene Daten durch deren jeweilige Betreiber verarbeitet werden. Ich habe keinen Einfluss auf die Datenverarbeitung durch diese Drittanbieter. Weitere Informationen findest du in den Datenschutzerklärungen der jeweiligen Websites."
+      },
+      "rights": {
+        "title": "Deine Rechte",
+        "content": "Du hast das Recht, Auskunft über die zu deiner Person gespeicherten Daten zu verlangen sowie deren Berichtigung oder Löschung zu beantragen. Bei Fragen zum Datenschutz kannst du mich jederzeit kontaktieren unter:"
+      },
+      "encryption": {
+        "title": "SSL- bzw. TLS-Verschlüsselung",
+        "content": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung, z.B. bei Anfragen über das Kontaktformular. Eine verschlüsselte Verbindung erkennst du daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt sowie an dem Schloss-Symbol in der Browserzeile."
+      },
+      "final": {
+        "title": "Schlussbestimmung",
+        "content": "Diese Datenschutzerklärung kann jederzeit angepasst oder aktualisiert werden, um rechtliche oder technische Änderungen zu berücksichtigen."
+      }
     }
   }
 }

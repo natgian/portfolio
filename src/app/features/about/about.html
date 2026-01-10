@@ -8,7 +8,7 @@
 
       <div class="paper-text text-one">
         <img src="/img/ui-elements/location.svg" alt="location icon" />
-        Based in Zurich
+        {{ 'home.about.location' | translate }}
       </div>
     </div>
 
@@ -20,7 +20,7 @@
 
       <div class="paper-text">
         <img src="/img/ui-elements/commute.svg" alt="commute icon" />
-        Open to commute
+        {{ 'home.about.commute' | translate }}
       </div>
     </div>
 
@@ -32,7 +32,7 @@
 
       <div class="paper-text">
         <img src="/img/ui-elements/remote.svg" alt="remote icon" />
-        Open to work remote
+        {{ 'home.about.remote' | translate }}
       </div>
     </div>
   </div>
@@ -46,7 +46,7 @@
     ></app-section-intro>
 
     <app-button
-      buttonText="Let's talk"
+      [buttonText]="'home.about.cta' | translate"
       [variant]="isDarkBackground ? 'light' : 'dark'"
       [routerLink]="'/'"
       fragment="contact"

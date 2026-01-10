@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-section-intro',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './section-intro.html',
   styleUrl: './section-intro.css',
 })

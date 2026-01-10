@@ -2,8 +2,8 @@
   <div class="main-content">
     <div class="skill-text-container" #skillTextContainer>
       <div class="title-wrapper">
-        <span>MY STACK</span>
-        <h2 class="main-title">Skill set</h2>
+        <span>{{ 'home.skills.intro' | translate }}</span>
+        <h2 class="main-title">{{ 'home.skills.title' | translate }}</h2>
         <img
           src="/img/ui-elements/circle_2.png"
           alt=""
@@ -17,11 +17,7 @@
           <source media="(min-width: 670px)" srcset="/img/backgrounds/skills_desc_bg.png" />
           <img src="/img/backgrounds/skills_desc_bg_mobile.png" alt="" />
         </picture>
-        <p>
-          I’ve worked on front-end and fullstack projects, applying modern technologies to create
-          functional, maintainable solutions. I enjoy learning new tools and approaches,
-          continuously expanding my skills to tackle new challenges.
-        </p>
+        <p>{{ 'home.skills.description' | translate }}</p>
       </div>
     </div>
 
@@ -36,21 +32,18 @@
         <img
           src="/img/stickers/peel_of_{{ currentPeelFrame }}.png"
           srcset="/img/stickers/peel_of_{{ currentPeelFrame }}.webp"
-          alt="Peel of sticker"
+          alt="sticker"
           class="peel-sticker"
           [class.peeling]="isPeeling"
         />
         @if(currentPeelFrame === 1) {
         <div class="peel-sticker-content peel-sticker-top">
-          <img src="/img/ui-elements/arrow.svg" alt="arrow" />
-          <span>Pull to <br />peel</span>
+          <img src="/img/ui-elements/arrow.svg" alt="" />
+          <span>{{ 'home.skills.topSticker' | translate }}</span>
         </div>
         } @if(currentPeelFrame === 3) {
         <div class="peel-sticker-content peel-sticker-bottom">
-          <span
-            >I also want to <br />
-            dive into:</span
-          >
+          <span>{{ 'home.skills.bottomSticker' | translate }}</span>
           <div class="sticker-icon-wrapper">
             <img src="img/icons/python_no_border.svg" alt="Python icon" />
             <span>Python</span>

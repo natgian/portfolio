@@ -13,5 +13,10 @@ export class ProjectCard {
   @Input() cardImg!: string;
   @Input() cardDescription!: string;
   @Input() isFeatured!: boolean;
-  isDarkBackground = true;
+  @Input() isDesktopLayout!: boolean;
+  isDarkBackground = false;
+
+  ngOnInit() {
+    this.isDarkBackground = this.isDesktopLayout ? true : false;
+  }
 }

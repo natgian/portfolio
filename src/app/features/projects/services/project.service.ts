@@ -23,8 +23,7 @@ export class ProjectService {
       id: 'join',
       name: 'Join',
       cardImg: '/img/projects/join/join_mockup.png',
-      cardDescription:
-        'Task manager inspired by the Kanban System. Features tasks, subtasks, user assignment and due dates. Developed with Vanilla JavaScript and Firebase in a Scrum-based group project to practice agile teamwork and project management.',
+      cardDescription: 'projects.join.cardDescription',
       isFeatured: true,
       detailDescription:
         'JOIN is a web application developed as part of a Scrum-based group project to gain practical experience in agile teamwork and project management. It is a task manager inspired by the Kanban System that features tasks, subtasks, user assignment and due dates.',
@@ -46,8 +45,7 @@ export class ProjectService {
       id: 'nara',
       name: 'Nara - Guardian of the Greenwood',
       cardImg: '/img/projects/nara/nara_mockup.jpg',
-      cardDescription:
-        'Browser-based game built with Vanilla JavaScript to practice object-oriented programming (OOP). Protect the Greenwood with your bow and courage from the creeping darkness rising.',
+      cardDescription: 'projects.nara.cardDescription',
       isFeatured: false,
       detailDescription:
         'This game was created to practice OOP (object oriented programming). The goal was to provide a fun and interactive experience directly in the browser, without any external frameworks.',
@@ -68,8 +66,7 @@ export class ProjectService {
       id: 'leseoase',
       name: 'LeseOase',
       cardImg: '/img/projects/leseoase/leseoase_mockup.jpg',
-      cardDescription:
-        'A full-stack web app for book enthusiasts to manage and organize their reading journey. Built with React, Node.js, Express.js and MongoDB.',
+      cardDescription: 'projects.leseoase.cardDescription',
       isFeatured: false,
       detailDescription:
         'A user-friendly Book Tracking App designed for book enthusiasts to manage and organize their reading journey.',

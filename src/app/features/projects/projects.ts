@@ -1,11 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, NgZone } from '@angular/core';
 import { SectionIntro } from '../../shared/components/section-intro/section-intro';
 import { ProjectCard } from './components/project-card/project-card';
 import { ProjectService } from './services/project.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
-  imports: [SectionIntro, ProjectCard],
+  imports: [SectionIntro, ProjectCard, TranslatePipe],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
@@ -14,13 +15,17 @@ export class Projects {
   projects = this.projectService.getProjects();
   singleProject = this.projectService.getProjectById('join');
   isDarkBackground = false;
+  isDesktopLayout = true;
 
-  aboutIntro = {
-    intro: 'MY CRAFT',
-    title: 'Projects',
-    text: [
-      `Explore my projects to see how I turn ideas into responsive, user-friendly web applications, built with clean architecture and efficient code, designed to solve real-world problems.`,
-    ],
+  projectsIntro = {
+    intro: 'home.projects.intro',
+    title: 'home.projects.title',
+    text: ['home.projects.description'],
     imgSrc: '/img/ui-elements/underline_4.png',
   };
+
+  ngOnInit() {
+    this.isDesktopLayout = window.matchMedia('(hover: hover)').matches;
+    this.isDarkBackground = this.isDesktopLayout;
+  }
 }

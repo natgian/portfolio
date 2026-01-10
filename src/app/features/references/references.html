@@ -2,17 +2,17 @@
   <div class="main-title-wrapper">
     <div class="section-intro-wrapper">
       <img src="/img/ui-elements/secondary_arrow.png" class="reveal reveal-from-right" />
-      <span class="section-intro">IN THEIR WORDS:</span>
+      <span class="section-intro">{{ 'home.references.intro' | translate }}</span>
     </div>
-    <h2 class="main-title">Colleagues' Thoughts</h2>
+    <h2 class="main-title">{{ 'home.references.title' | translate }}</h2>
   </div>
 
   <div class="references-container">
     @for(reference of references; track reference.name; let i = $index) {
     <app-reference-card
       [name]="reference.name"
-      [role]="reference.role"
-      [text]="reference.text"
+      [role]="reference.role | translate"
+      [text]="reference.text | translate"
       [link]="reference.link"
       [backgroundImg]="reference.backgroundImg"
       [style.transform]="

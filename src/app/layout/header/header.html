@@ -8,19 +8,19 @@
   <nav>
     <ul>
       <li id="about-link" [class.header-split]="isProjectPage">
-        <a [routerLink]="'/'" fragment="about">About me</a>
+        <a [routerLink]="'/'" fragment="about">{{ 'navigation.about' | translate }}</a>
         <img src="/img/ui-elements/circle.png" alt="" class="reveal-small-circle" />
       </li>
       <li id="skills-link" [class.header-split]="isProjectPage">
-        <a [routerLink]="'/'" fragment="skills">Skills</a>
+        <a [routerLink]="'/'" fragment="skills">{{ 'navigation.skills' | translate }}</a>
         <img src="/img/ui-elements/underline_1.png" alt="" class="reveal-line" />
       </li>
       <li id="projects-link">
-        <a [routerLink]="'/'" fragment="projects">Projects</a>
+        <a [routerLink]="'/'" fragment="projects">{{ 'navigation.projects' | translate }}</a>
         <img src="/img/ui-elements/underline_3.png" alt="" class="reveal-line" />
       </li>
       <li id="contact-link">
-        <a [routerLink]="'/'" fragment="contact">Contact</a>
+        <a [routerLink]="'/'" fragment="contact">{{ 'navigation.contact' | translate }}</a>
         <img src="/img/ui-elements/underline_2.png" alt="" class="reveal-line" />
       </li>
     </ul>
@@ -29,8 +29,9 @@
   <div class="language-toggle" role="group" aria-label="language selection">
     <button
       class="language-btn"
-      [class.active]="activeLanguage === 'DE'"
-      (click)="setLanguage('DE')"
+      [class.active]="currentLang === 'de'"
+      (click)="setLanguage('de')"
+      [attr.aria-pressed]="currentLang === 'de'"
     >
       DE
     </button>
@@ -44,7 +45,7 @@
       />
       <!-- dynamic circle -->
       <circle
-        [attr.cx]="activeLanguage === 'DE' ? 8 : 24"
+        [attr.cx]="currentLang === 'de' ? 8 : 24"
         cy="8"
         r="7.5"
         fill="#7e4ae7"
@@ -54,8 +55,9 @@
     </svg>
     <button
       class="language-btn"
-      [class.active]="activeLanguage === 'EN'"
-      (click)="setLanguage('EN')"
+      [class.active]="currentLang === 'en'"
+      (click)="setLanguage('en')"
+      [attr.aria-pressed]="currentLang === 'en'"
     >
       EN
     </button>

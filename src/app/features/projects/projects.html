@@ -1,9 +1,9 @@
-<section id="projects">
+<section id="projects" class="main-content">
   <app-section-intro
-    [intro]="aboutIntro.intro"
-    [title]="aboutIntro.title"
-    [text]="aboutIntro.text"
-    [imgSrc]="aboutIntro.imgSrc"
+    [intro]="projectsIntro.intro"
+    [title]="projectsIntro.title"
+    [text]="projectsIntro.text"
+    [imgSrc]="projectsIntro.imgSrc"
   ></app-section-intro>
 
   @for(project of projects; track project.id){
@@ -11,8 +11,9 @@
     [id]="project.id"
     [name]="project.name"
     [cardImg]="project.cardImg"
-    [cardDescription]="project.cardDescription"
+    [cardDescription]="project.cardDescription | translate"
     [isFeatured]="project.isFeatured"
+    [isDesktopLayout]="isDesktopLayout"
   ></app-project-card>
   }
 </section>
