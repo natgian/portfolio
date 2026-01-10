@@ -33,16 +33,6 @@ p {
   opacity: 1;
 }
 
-app-button {
-  position: absolute;
-  bottom: 36px;
-  right: 36px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 200ms ease-in-out;
-  z-index: 3;
-}
-
 img {
   width: 100%;
   transform: scale(1);
@@ -89,5 +79,46 @@ img {
   }
   100% {
     transform: translateY(-12px);
+  }
+}
+
+@media (hover: hover) {
+  app-button {
+    position: absolute;
+    bottom: 36px;
+    right: 36px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+    z-index: 3;
+  }
+}
+
+@media (hover: none) {
+  app-button {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-block: 24px;
+  }
+}
+
+@media (max-width: 740px) {
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .featured-sticker {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    width: 120px;
+    height: 120px;
   }
 }
