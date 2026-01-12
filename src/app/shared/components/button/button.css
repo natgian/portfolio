@@ -40,3 +40,11 @@ button:disabled {
 a {
   display: inline-block;
 }
+
+@media (max-width: 400px) {
+  .btn {
+    min-width: 100px;
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+}
