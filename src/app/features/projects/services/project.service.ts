@@ -25,12 +25,8 @@ export class ProjectService {
       cardImg: '/img/projects/join/join_mockup.png',
       cardDescription: 'projects.join.cardDescription',
       isFeatured: true,
-      detailDescription:
-        'JOIN is a web application developed as part of a Scrum-based group project to gain practical experience in agile teamwork and project management. It is a task manager inspired by the Kanban System that features tasks, subtasks, user assignment and due dates.',
-      implementationText: [
-        'My main responsibilities included implementing the Kanban board feature, building the core UI structure with page navigation, and developing the login and sign-up client-side validation and user feedback.',
-        'We organized our workflow through clear task distribution and regular coordination. This allowed me to work independently on assigned features while ensuring seamless integration into the overall application concept.',
-      ],
+      detailDescription: 'projects.join.detailDescription',
+      implementationText: ['projects.join.implementation.0', 'projects.join.implementation.1'],
       stack: [
         { label: 'HTML', icon: '/img/icons/html.svg' },
         { label: 'CSS', icon: '/img/icons/css.svg ' },
@@ -47,11 +43,11 @@ export class ProjectService {
       cardImg: '/img/projects/nara/nara_mockup.jpg',
       cardDescription: 'projects.nara.cardDescription',
       isFeatured: false,
-      detailDescription:
-        'This game was created to practice OOP (object oriented programming). The goal was to provide a fun and interactive experience directly in the browser, without any external frameworks.',
+      detailDescription: 'projects.nara.detailDescription',
       implementationText: [
-        'For this project, I structured and implemented the game’s core mechanics, including character movement, jumping, collision detection with enemies and collectibles, and a crafting system for creating new arrows. I added dynamic multi-layered backgrounds, integrated sound effects and background music with mute functionality, and added restart and menu navigation features.',
-        'The project allowed me to strengthen my skills in object-oriented programming, interactive UI design and game logic implementation.',
+        'projects.nara.implementation.0',
+        'projects.nara.implementation.1',
+        'projects.nara.implementation.2',
       ],
       stack: [
         { label: 'HTML', icon: '/img/icons/html.svg' },
@@ -68,11 +64,11 @@ export class ProjectService {
       cardImg: '/img/projects/leseoase/leseoase_mockup.jpg',
       cardDescription: 'projects.leseoase.cardDescription',
       isFeatured: false,
-      detailDescription:
-        'A user-friendly Book Tracking App designed for book enthusiasts to manage and organize their reading journey.',
+      detailDescription: 'projects.leseoase.detailDescription',
       implementationText: [
-        'During this project, I independently planned and developed a full-stack web application for searching books, managing reading lists, and tracking reading progress. I designed the user flow and UI structure, implemented core features using React, Node.js, Express, and MongoDB, and integrated the Google Books API. I also built secure account features such as password reset and form validation, and ensured responsive behavior across devices.',
-        'The project strengthened my skills in full-stack development, API integration, and creating user-focused applications from concept to deployment.',
+        'projects.leseoase.implementation.0',
+        'projects.leseoase.implementation.1',
+        'projects.leseoase.implementation.2',
       ],
       stack: [
         { label: 'HTML', icon: '/img/icons/html.svg' },

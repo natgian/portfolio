@@ -13,16 +13,16 @@
       </div>
 
       <section class="info-section">
-        <h2>Description</h2>
+        <h2>{{ 'projects.descriptionTitle' | translate }}</h2>
         <p>
-          {{ currentProject.detailDescription }}
+          {{ currentProject.detailDescription | translate }}
         </p>
       </section>
 
       <section class="info-section">
-        <h2>Implementation Details</h2>
+        <h2>{{ 'projects.implementetationTitle' | translate }}</h2>
         @for(paragraph of currentProject.implementationText; track $index) {
-        <p>{{ paragraph }}</p>
+        <p>{{ paragraph | translate }}</p>
         }
       </section>
 
@@ -61,11 +61,11 @@
       class="nav-link back-link"
     >
       <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
-      Go Back
+      {{ 'navigation.back' | translate }}
     </a>
     @if(nextProject) {
     <a [routerLink]="['/projects', nextProject.id]" class="nav-link next-link">
-      Next Project
+      {{ 'navigation.next' | translate }}
       <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true"
     /></a>
     }

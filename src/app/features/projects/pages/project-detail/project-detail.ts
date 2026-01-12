@@ -6,10 +6,11 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService, Project } from '../../services/project.service';
 import { Subscription } from 'rxjs';
 import { Title } from '@angular/platform-browser';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [Header, StackIcon, Button, RouterLink],
+  imports: [Header, StackIcon, Button, RouterLink, TranslatePipe],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
 })
