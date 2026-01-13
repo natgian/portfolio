@@ -16,11 +16,16 @@ export class Hero {
   helloHoveredText = 'home.hero.intro';
   polaroidSmile = ':)';
   isDarkBackground = true;
+  supportsHover = true;
 
   titleFirstWord = Array.from('Fullstack');
   titleSecondWord = Array.from('DEVELOPER');
   titleFirstWordCurrent = [...this.titleFirstWord];
   titleSecondWordCurrent = [...this.titleSecondWord];
+
+  ngOnInit() {
+    this.supportsHover = window.matchMedia('(hover: hover)').matches;
+  }
 
   toggleLetterCase(currentArray: string[], index: number) {
     const letter = currentArray[index];

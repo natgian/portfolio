@@ -113,5 +113,11 @@ section {
 @media (max-width: 340px) {
   .paper-text {
     font-size: 16px;
+    gap: 4px;
+  }
+
+  .paper-text img {
+    width: 24px;
+    height: 24px;
   }
 }

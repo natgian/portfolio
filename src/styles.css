@@ -72,6 +72,8 @@ body {
   font-size: 64px;
   font-weight: 700;
   margin-top: 16px;
+  display: block;
+  text-wrap: nowrap;
 }
 
 .section-text {
