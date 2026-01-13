@@ -10,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "greeting": "Hallo...",
+      "greeting": "Hallo Welt",
       "intro": "ICH BIN NATHALIE GIANCASPRO",
       "cta": "Kontaktiere mich"
     },
@@ -25,12 +25,12 @@
       "cta": "Lass uns sprechen",
       "location": "Standort Zürich",
       "commute": "Bereit zu pendeln",
-      "remote": "Bereit für Remote-Arbeit"
+      "remote": "Offen für Remote-Arbeit"
     },
     "skills": {
       "intro": "MEIN STACK",
       "title": "Skill-Set",
-      "description": "Ich habe an Frontend- und Fullstack-Projekten gearbeitet und dabei moderne Technologien eingesetzt, um funktionale und wartbare Lösungen zu entwickeln. Es macht mir Spass, neue Technologien und Ansätze zu lernen und erweitere kontinuerlich meine Fähigkeiten, um neue Herausforderungen zu meistern.",
+      "description": "Ich habe Frontend- und Fullstack-Projekte mit modernen Technologien umgesetzt und erweitere kontinuierlich meine Fähigkeiten, um neue Herausforderungen zu meistern.“",
       "topSticker": "Hier abziehen",
       "bottomSticker": "Ich will mich auch einarbeiten in:"
     },
@@ -95,7 +95,7 @@
     "implementetationTitle": "Umsetzung",
     "join": {
       "cardDescription": "Vom Kanban-System inspirierter Task-Manager mit Funktionen für Aufgaben, Unteraufgaben, Benutzerzuweisung und Fälligkeitstermine. Entwickelt mit Vanilla JavaScript und Firebase in einem Scrum-basierten Gruppenprojekt, um agiles Arbeiten und Projektmanagement zu üben.",
-      "detailDescription": "JOIN ist eine Webanwendung, die im Rahmen eines Scrum-basierten Gruppenprojekts entwickelt wurde, um praktische Erfahrungen in agilem Teamwork und Projektmanagement zu sammeln. Sie ist ein Task-Manager, inspiriert vom Kanban-System, und bietet Features wie Aufgaben, Unteraufgaben, Benutzerzuweisungen sowie Fälligkeitsdaten.",
+      "detailDescription": "Eine Webanwendung, die im Rahmen eines Scrum-basierten Gruppenprojekts entwickelt wurde, um praktische Erfahrungen in agilem Teamwork und Projektmanagement zu sammeln. Der Task-Manager, inspiriert vom Kanban-System, bietet Features wie Aufgaben, Unteraufgaben, Benutzerzuweisungen sowie Fälligkeitsdaten.",
       "implementation": [
         "Meine Hauptaufgaben umfassten die Implementierung des Kanban-Board-Features, den Aufbau der zentralen UI-Struktur mit Seitennavigation sowie die Entwicklung der clientseitigen Validierung und des Nutzer-Feedbacks für Login und Registrierung.",
         "Wir organisierten unseren Workflow durch klare Aufgabenverteilung und regelmässige Abstimmungen. Dadurch konnte ich selbstständig an zugewiesenen Features arbeiten und gleichzeitig eine nahtlose Integration in das Gesamtkonzept der Anwendung sicherstellen."
@@ -106,16 +106,16 @@
       "detailDescription": "Dieses Spiel wurde entwickelt, um OOP (objektorientierte Programmierung) zu üben. Ziel war es, ein unterhaltsames und interaktives Erlebnis direkt im Browser zu bieten, ganz ohne externe Frameworks.",
       "implementation": [
         "Für dieses Projekt habe ich die Kernmechaniken des Spiels strukturiert und implementiert, darunter die Charakterbewegung, das Springen, die Kollisionsabfrage mit Gegnern und Sammelobjekten sowie ein Crafting-System zum Herstellen neuer Pfeile.",
-        "Zudem habe ich dynamische, mehrschichtige Hintergründe hinzugefügt, Soundeffekte und Hintergrundmusik mit Stummschaltfunktion integriert sowie Funktionen zum Neustarten und zur Menü-Navigation implementiert.",
+        "Zudem habe ich dynamische, mehrschichtige Hintergründe hinzugefügt sowie Soundeffekte und Hintergrundmusik mit Stummschaltfunktion intergriert.",
         "Das Projekt ermöglichte es mir, meine Fähigkeiten in objektorientierter Programmierung, interaktivem UI-Design und der Umsetzung von Spielelogik weiter zu vertiefen."
       ]
     },
     "leseoase": {
       "cardDescription": "Eine Full-Stack-Webanwendung für Buchliebhaber, um ihre Leseaktivitäten zu verwalten und zu organisieren. Entwickelt mit React, Node.js, Express.js und MongoDB.",
-      "detailDescription": "Eine Book-Tracking-App, die Buchliebhabern hilft, ihre Leseaktivitäten zu verwalten und zu organisieren. Die aktuell implementierten Funktionen umfassen die Suche nach Büchern nach Titel, Autor oder ISBN, das Kategorisieren von Büchern in die Listen „zum Lesen“, „am Lesen“ und „gelesen“, das Verfolgen des Lesefortschritts durch Eingabe der aktuellen Seite sowie die Verwaltung des Benutzerprofils.",
+      "detailDescription": "Eine Book-Tracking-App um Leseaktivitäten zu verwalten und zu organisieren. Die aktuell implementierten Funktionen umfassen die Suche nach Büchern nach Titel, Autor oder ISBN, das Kategorisieren von Büchern in Listen, das Verfolgen des Lesefortschritts durch Eingabe der aktuellen Seite sowie die Verwaltung des Benutzerprofils.",
       "implementation": [
         "In diesem Projekt habe ich die Full-Stack-Webanwendung eigenständig geplant und entwickelt, mit Fokus auf den gesamten Nutzerfluss und die UI-Struktur.",
-        "Ich habe die Kernfunktionen mit React, Node.js, Express und MongoDB implementiert, die Google Books API integriert und sichere Account-Funktionen wie Passwort-Reset und Formularvalidierung entwickelt. Die Anwendung ist zudem auf allen Geräten vollständig responsiv.",
+        "Ich habe die Kernfunktionen mit React, Node.js, Express und MongoDB implementiert, die Google Books API integriert und sichere Account-Funktionen wie Passwort-Reset und Formularvalidierung entwickelt.",
         "Das Projekt hat meine Fähigkeiten in Full-Stack-Entwicklung, API-Integration und der Erstellung nutzerorientierter Anwendungen von der Konzeption bis zur Bereitstellung weiter gestärkt."
       ]
     }

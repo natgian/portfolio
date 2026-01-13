@@ -10,7 +10,7 @@
   },
   "home": {
     "hero": {
-      "greeting": "Hi there...",
+      "greeting": "Hello World",
       "intro": "I AM NATHALIE GIANCASPRO",
       "cta": "Contact me"
     },
@@ -30,7 +30,7 @@
     "skills": {
       "intro": "MY STACK",
       "title": "Skill set",
-      "description": "I’ve worked on front-end and fullstack projects, applying modern technologies to create functional, maintainable solutions. I enjoy learning new tools and approaches, continuously expanding my skills to tackle new challenges.",
+      "description": "I have worked on frontend and fullstack projects using modern technologies and continuously expand my skills to tackle new challenges.",
       "topSticker": "Pull to peel",
       "bottomSticker": "I also want to dive into:"
     },
@@ -105,8 +105,9 @@
       "cardDescription": "Browser-based game built with Vanilla JavaScript to practice object-oriented programming (OOP), in which you use your bow and courage to protect the Greenwood from the rising darkness.",
       "detailDescription": "This game was created to practice OOP (object oriented programming). The goal was to provide a fun and interactive experience directly in the browser, without any external frameworks.",
       "implementation": [
-        "My main responsibilities included implementing the Kanban board feature, building the core UI structure with page navigation, and developing the login and sign-up client-side validation and user feedback.",
-        "We organized our workflow through clear task distribution and regular coordination. This allowed me to work independently on assigned features while ensuring seamless integration into the overall application concept."
+        "For this project, I structured and implemented the core mechanics of the game, including character movement, jumping, collision detection with enemies and collectibles, and a crafting system for making new arrows.",
+        "I also added dynamic, multi-layered backgrounds and integrated sound effects and background music with a mute function.",
+        "The project allowed me to further deepen my skills in object-oriented programming, interactive UI design, and the implementation of game logic."
       ]
     },
     "leseoase": {
@@ -114,7 +115,7 @@
       "detailDescription": "A user-friendly Book Tracking App designed for book enthusiasts to manage and organize their reading journey. The currently implemented features include searching for books by title, author, or ISBN, categorizing books into Reading, Read, and TBR lists, tracking reading progress by logging the current page, and managing the user profile.",
       "implementation": [
         "During this project, I independently planned and developed a full-stack web application, focusing on the overall user flow and UI structure.",
-        "I implemented core features using React, Node.js, Express, and MongoDB, integrated the Google Books API, and built secure account management features such as password reset and form validation. I also ensured the application is fully responsive across devices.",
+        "I implemented core features using React, Node.js, Express, and MongoDB, integrated the Google Books API, and built secure account management features such as password reset and form validation.",
         "The project strengthened my skills in full-stack development, API integration, and creating user-focused applications from concept to deployment."
       ]
     }
