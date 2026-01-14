@@ -39,7 +39,7 @@ export class ProjectService {
     },
     {
       id: 'nara',
-      name: 'Nara - Guardian of the Greenwood',
+      name: 'Nara',
       cardImg: '/img/projects/nara/nara_mockup.jpg',
       cardDescription: 'projects.nara.cardDescription',
       isFeatured: false,
