@@ -1,15 +1,20 @@
 header {
   width: 100%;
-  background-color: transparent;
+  max-width: var(--layout-max-width);
+  padding: 32px 72px;
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 72px;
+  background-color: transparent;
   color: var(--base-light-color);
+}
+
+.logo {
+  width: 64px;
 }
 
 nav {

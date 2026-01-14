@@ -47,6 +47,7 @@ a {
 
   /* layout */
   --content-max-width: 1200px;
+  --layout-max-width: 1800px;
 }
 
 body {
@@ -82,32 +83,35 @@ body {
 }
 
 .icon-wrapper {
-  --start-x: -24px;
-  --end-x: 0;
+  display: none;
 }
 
-.icon-wrapper svg {
-  opacity: 0;
-  transform: translateX(var(--start-x)) rotate(0deg);
-  will-change: transform, opacity;
-}
+@media (hover: hover) {
+  .icon-wrapper {
+    display: block;
+    --start-x: -24px;
+    --end-x: 0;
+  }
 
-.icon-wrapper.enter svg {
-  animation-name: rollIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
+  .icon-wrapper svg {
+    opacity: 0;
+    transform: translateX(var(--start-x)) rotate(0deg);
+    will-change: transform, opacity;
+  }
 
-.icon-wrapper.exit svg {
-  animation-name: rollOut;
-  animation-duration: 200ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
+  .icon-wrapper.enter svg {
+    animation-name: rollIn;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
 
-.logo {
-  width: 64px;
+  .icon-wrapper.exit svg {
+    animation-name: rollOut;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
 }
 
 @media (max-width: 1038px) {
