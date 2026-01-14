@@ -73,7 +73,7 @@
       </label>
       <span
         >{{ 'home.contact.policy.prefix' | translate }}
-        <a href="/legal-notice" target="_blank" rel="noopener">{{
+        <a [href]="legalNoticeUrl" target="_blank" rel="noopener">{{
           'home.contact.policy.link' | translate
         }}</a>
         {{ 'home.contact.policy.suffix' | translate }}

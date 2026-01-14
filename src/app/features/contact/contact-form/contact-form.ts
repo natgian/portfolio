@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { Location } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Button } from '../../../shared/components/button/button';
@@ -16,7 +17,7 @@ export class ContactForm {
   focusStates = [false, false, false];
   isSubmitting = false;
   showSuccessMessage = false;
-
+  private location = inject(Location);
   http = inject(HttpClient);
 
   post = {
@@ -48,6 +49,10 @@ export class ContactForm {
     ]),
     checkbox: new FormControl(false, [Validators.requiredTrue]),
   });
+
+  get legalNoticeUrl(): string {
+    return this.location.prepareExternalUrl('/legal-notice');
+  }
 
   get name() {
     return this.contactForm.get('name');
