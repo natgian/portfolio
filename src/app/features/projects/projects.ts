@@ -22,6 +22,7 @@ export class Projects {
     title: 'home.projects.title',
     text: ['home.projects.description'],
     imgSrc: '/img/ui-elements/underline_4.png',
+    cta: 'home.projects.cta',
   };
 
   ngOnInit() {

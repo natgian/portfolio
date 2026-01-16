@@ -1,23 +1,25 @@
 <article>
-  @if(isFeatured) {
-  <img src="/img/stickers/featured_sticker.png" alt="" class="featured-sticker" />
-  }
   <div class="img-container">
     <img [src]="cardImg" alt="{{ name }} project mockup" [class.floating-animation]="isFeatured" />
     <div class="overlay"></div>
     @if(isDesktopLayout) {
     <app-button
-      buttonText="Project details"
+      [buttonText]="cta"
       [variant]="isDarkBackground ? 'light' : 'dark'"
       [routerLink]="['/projects', id]"
     ></app-button>
+    } @if(isFeatured) {
+    <img src="/img/stickers/featured_sticker.png" alt="" class="featured-sticker" />
     }
   </div>
-  <h3>{{ name }}</h3>
-  <p>{{ cardDescription }}</p>
+  <div class="content">
+    <h3>{{ name }}</h3>
+    <p>{{ cardDescription }}</p>
+  </div>
+
   @if(!isDesktopLayout) {
   <app-button
-    buttonText="Project details"
+    [buttonText]="cta"
     [variant]="isDarkBackground ? 'light' : 'dark'"
     [routerLink]="['/projects', id]"
   ></app-button>

@@ -12,6 +12,7 @@ export class ProjectCard {
   @Input() name!: string;
   @Input() cardImg!: string;
   @Input() cardDescription!: string;
+  @Input() cta!: string;
   @Input() isFeatured!: boolean;
   @Input() isDesktopLayout!: boolean;
   isDarkBackground = false;

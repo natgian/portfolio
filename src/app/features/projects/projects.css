@@ -2,11 +2,24 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: clamp(40px, 8vw, 120px);
+
+  grid-auto-rows: 1fr;
 }
 
 app-section-intro {
-  display: flex;
   align-self: center;
+}
+
+@media (max-width: 814px) {
+  app-section-intro {
+    max-height: 300px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  section {
+    grid-auto-rows: auto;
+  }
 }
 
 @media (max-width: 400px) {

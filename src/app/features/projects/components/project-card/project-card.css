@@ -1,5 +1,12 @@
 article {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
 }
 
 h3 {
@@ -54,8 +61,8 @@ img {
 
 .featured-sticker {
   position: absolute;
-  top: 32%;
-  left: -10%;
+  bottom: 0;
+  left: 0;
   width: 140px;
   height: 140px;
   z-index: 999;
@@ -99,7 +106,13 @@ img {
     position: relative;
     display: flex;
     justify-content: end;
-    padding-block: 24px;
+    padding-block: 16px;
+  }
+}
+
+@media (max-width: 812px) {
+  article {
+    display: block;
   }
 }
 
@@ -113,12 +126,24 @@ img {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 1024px) {
   .featured-sticker {
-    position: absolute;
-    top: 32%;
-    left: 0;
     width: 120px;
     height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-sticker {
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 358px) {
+  .featured-sticker {
+    width: 80px;
+    height: 80px;
   }
 }

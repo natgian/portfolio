@@ -37,7 +37,8 @@
     "projects": {
       "intro": "MEIN HANDWERK",
       "title": "Projekte",
-      "description": "Entdecke meine Projekte, um zu sehen, wie ich Ideen in responsive, benutzerfreundliche Webanwendungen umsetze, die reale Probleme lösen."
+      "description": "Entdecke meine Projekte, um zu sehen, wie ich Ideen in responsive, benutzerfreundliche Webanwendungen umsetze, die reale Probleme lösen.",
+      "cta": "Projekt ansehen"
     },
     "references": {
       "intro": "IN IHREN WORTEN:",
@@ -94,7 +95,7 @@
     "descriptionTitle": "Beschreibung",
     "implementetationTitle": "Umsetzung",
     "join": {
-      "cardDescription": "Vom Kanban-System inspirierter Task-Manager mit Funktionen für Aufgaben, Unteraufgaben, Benutzerzuweisung und Fälligkeitstermine. Entwickelt mit Vanilla JavaScript und Firebase in einem Scrum-basierten Gruppenprojekt, um agiles Arbeiten und Projektmanagement zu üben.",
+      "cardDescription": "Vom Kanban-System inspirierter Task-Manager. Entwickelt mit Vanilla JavaScript und Firebase in einem Scrum-basierten Gruppenprojekt, um agiles Arbeiten und Projektmanagement zu üben.",
       "detailDescription": "Eine Webanwendung, die im Rahmen eines Scrum-basierten Gruppenprojekts entwickelt wurde, um praktische Erfahrungen in agilem Teamwork und Projektmanagement zu sammeln. Der Task-Manager, inspiriert vom Kanban-System, bietet Features wie Aufgaben, Unteraufgaben, Benutzerzuweisungen sowie Fälligkeitsdaten.",
       "implementation": [
         "Meine Hauptaufgaben umfassten die Implementierung des Kanban-Board-Features, den Aufbau der zentralen UI-Struktur mit Seitennavigation sowie die Entwicklung der clientseitigen Validierung und des Nutzer-Feedbacks für Login und Registrierung.",
