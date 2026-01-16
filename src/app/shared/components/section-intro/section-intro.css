@@ -1,7 +1,4 @@
 .title-wrapper {
   width: min-content;
-}
-
-.reveal-line {
-  width: 100%;
+  white-space: nowrap;
 }
