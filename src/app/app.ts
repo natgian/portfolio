@@ -22,5 +22,10 @@ export class App {
       savedLang || (browserLang && this.supportedLangs.includes(browserLang) ? browserLang : 'en');
 
     this.translate.use(lang);
+    document.documentElement.lang = lang;
+
+    this.translate.onLangChange.subscribe((event) => {
+      document.documentElement.lang = event.lang;
+    });
   }
 }
