@@ -6,7 +6,6 @@ section {
     url('/img/backgrounds/skills_bg.png')
   );
   background-position: bottom bottom;
-  padding-bottom: 72px;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
@@ -35,7 +34,6 @@ section {
   align-items: center;
   justify-content: center;
   padding: 32px;
-  text-wrap: pretty;
 }
 
 .title-wrapper {
@@ -149,6 +147,7 @@ section {
 @media (min-width: 1024px) {
   section {
     background-position: bottom center;
+    padding-bottom: 72px;
   }
 
   .skill-text-container {
@@ -167,10 +166,6 @@ section {
 @media (max-width: 670px) {
   .description-wrapper p {
     padding: 16px;
-  }
-
-  .skill-text-container {
-    justify-items: center;
   }
 }
 

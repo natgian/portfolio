@@ -1,6 +1,6 @@
 .form-container {
   position: relative;
-  max-width: 480px;
+  max-width: 400px;
   padding-top: 120px;
 }
 
@@ -16,7 +16,8 @@ label {
 }
 
 textarea {
-  resize: none;
+  margin-top: 8px;
+  resize: vertical;
 }
 
 input::placeholder,
@@ -32,6 +33,26 @@ textarea {
   outline: none;
   padding: 16px 16px 0 16px;
   color: var(--base-light-color);
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: var(--base-light-color);
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-highlight-color);
+  border-radius: 4px;
+  border: 1px solid var(--base-light-color);
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: var(--primary-highlight-color);
 }
 
 .field {
@@ -150,8 +171,24 @@ a:hover {
   color: var(--primary-highlight-color);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1115px) {
   .form-container {
     padding-top: 40px;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 740px) {
+  label {
+    font-size: 20px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .invalid-message {
+    font-size: 12px;
   }
 }

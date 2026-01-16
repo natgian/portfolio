@@ -1,6 +1,6 @@
 header {
   display: flex;
-  height: 50%;
+  height: 50vh;
   background-image: image-set(
     url('/img/backgrounds/skills_bg.webp'),
     url('/img/backgrounds/skills_bg.png')
@@ -11,18 +11,20 @@ header {
   color: var(--base-light-color);
 }
 
-h1 {
-  margin: 200px auto;
-  width: 100%;
-  max-width: var(--content-max-width);
+.header-title {
+  width: var(--content-max-width);
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 72px;
 }
 
 .content {
-  width: 100%;
   max-width: var(--content-max-width);
-  margin: 40px auto 80px auto;
+  margin: 0 auto;
   font-size: 16px;
   font-weight: 400;
+  padding: 72px;
 }
 
 section {
@@ -44,6 +46,45 @@ a {
   font-weight: 600;
 }
 
+nav {
+  padding-bottom: 32px;
+}
+
 a:hover {
   color: var(--primary-highlight-color);
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    color: var(--primary-highlight-color);
+  }
+}
+
+.back-link {
+  color: var(--base-dark-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-link img {
+  transform: scaleX(-1);
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 740px) {
+  header {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    padding: 0 32px;
+  }
+
+  .content {
+    padding: 32px;
+  }
 }

@@ -32,7 +32,7 @@ p {
   visibility: visible;
 }
 
-.img-container:hover img {
+.img-container:hover img:not(.featured-sticker) {
   transform: scale(1.1);
 }
 
@@ -61,8 +61,8 @@ img {
 
 .featured-sticker {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 8px;
+  left: 8px;
   width: 140px;
   height: 140px;
   z-index: 999;

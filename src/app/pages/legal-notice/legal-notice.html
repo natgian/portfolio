@@ -1,9 +1,18 @@
 <header>
   <app-header></app-header>
-  <h1 class="main-title">{{ 'legal.title' | translate }}</h1>
+  <div class="header-title">
+    <h1 class="main-title">{{ 'legal.title' | translate }}</h1>
+  </div>
 </header>
 <main>
   <div class="content">
+    <nav aria-label="Project navigation">
+      <a routerLink="/" aria-label="Go back main page" class="nav-link back-link">
+        <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
+        {{ 'navigation.back' | translate }}
+      </a>
+    </nav>
+
     <section>
       <h2>{{ 'legal.sections.imprint.title' | translate }}</h2>
       <p>
@@ -41,7 +50,10 @@
     </section>
     <section>
       <h2>{{ 'legal.sections.rights.title' | translate }}</h2>
-      <p>{{ 'legal.sections.rights.content' | translate }}</p>
+      <p>
+        {{ 'legal.sections.rights.content' | translate }}
+        <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
+      </p>
     </section>
     <section>
       <h2>{{ 'legal.sections.encryption.title' | translate }}</h2>
@@ -52,7 +64,7 @@
       <p>{{ 'legal.sections.final.content' | translate }}</p>
     </section>
 
-    {{ 'legal.date' | translate }}: 19.12.2025
+    {{ 'legal.date' | translate }}: 16.1.2026
   </div>
 </main>
 
