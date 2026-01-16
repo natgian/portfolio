@@ -12,6 +12,7 @@ export class ReferenceCard {
   @Input() text!: string;
   @Input() link!: string;
   @Input() backgroundImg!: string;
+  @Input() backgroundImgMobile!: string;
 
   @Output() mouseEnter = new EventEmitter<void>();
   @Output() mouseLeave = new EventEmitter<void>();

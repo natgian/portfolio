@@ -14,16 +14,7 @@
       [role]="reference.role | translate"
       [text]="reference.text | translate"
       [link]="reference.link"
-      [backgroundImg]="reference.backgroundImg"
-      [style.transform]="
-        'translateX(' +
-        (i - (references.length - 1) / 2) * 300 +
-        'px) translateY(' +
-        reference.offsetY +
-        'px) rotate(' +
-        reference.cardRotation +
-        ')'
-      "
+      [backgroundImg]="getBackgroundImage(reference)"
       (mouseEnter)="hoveredIndex = i"
       (mouseLeave)="hoveredIndex = null"
       [style.zIndex]="hoveredIndex === i ? 999 : references.length - i"

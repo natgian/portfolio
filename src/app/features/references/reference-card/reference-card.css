@@ -52,29 +52,31 @@
   transition: filter 200ms ease;
 }
 
-.profile-link:hover {
-  color: var(--base-light-color);
-}
+@media (hover: hover) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/stickers/reference_hover.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 512px;
+    height: 320px;
+    opacity: 0;
+    transition: opacity 200ms;
+    pointer-events: none;
+  }
 
-.profile-link:hover img {
-  filter: invert(0);
-}
+  .profile-link:hover {
+    color: var(--base-light-color);
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/img/stickers/reference_hover.png');
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 512px;
-  height: 320px;
-  opacity: 0;
-  transition: opacity 200ms;
-  pointer-events: none;
+  .profile-link:hover img {
+    filter: invert(0);
+  }
 }
 
 .card-content:hover .overlay {
@@ -83,4 +85,39 @@
 
 .card-content:hover .profile-info {
   color: var(--base-light-color);
+}
+
+@media (max-width: 600px) {
+  .card-content {
+    width: 360px;
+    height: 366px;
+    font-size: 16px;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .role {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-content {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .profile-wrapper {
+    margin-top: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
 }

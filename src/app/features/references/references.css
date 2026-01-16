@@ -16,14 +16,55 @@
 }
 
 .references-container {
-  display: grid;
-  place-items: center;
-  padding-block: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 48px;
 }
 
-app-reference-card {
-  position: relative;
-  grid-row: 1;
-  grid-column: 1;
-  cursor: pointer;
+.references-container app-reference-card:nth-child(1) {
+  transform: rotate(-6deg);
+}
+
+.references-container app-reference-card:nth-child(2) {
+  margin-left: -160px;
+  transform: translateY(20px);
+}
+
+.references-container app-reference-card:nth-child(3) {
+  margin-left: -160px;
+  transform: rotate(6deg);
+}
+
+@media (max-width: 1250px) {
+  .references-container app-reference-card:nth-child(2),
+  .references-container app-reference-card:nth-child(3) {
+    margin-left: -280px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .references-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+  }
+
+  .references-container app-reference-card:nth-child(2),
+  .references-container app-reference-card:nth-child(3) {
+    margin-left: 0;
+    margin-top: -20px;
+  }
+
+  .references-container app-reference-card:nth-child(2) {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .references-container app-reference-card:nth-child(0) {
+    transform: translateY(20px);
+  }
 }
