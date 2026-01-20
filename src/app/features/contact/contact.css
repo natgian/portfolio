@@ -25,6 +25,7 @@ section {
   display: flex;
   flex-direction: column;
   align-self: start;
+  gap: 16px;
 }
 
 .reveal-wavy-arrow {
