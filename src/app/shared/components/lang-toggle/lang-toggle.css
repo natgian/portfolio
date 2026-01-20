@@ -1,0 +1,63 @@
+.language-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.language-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.reveal-box {
+  position: absolute;
+  top: -8px;
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  mask-size: 0% 0%;
+  mask-repeat: no-repeat;
+  transition: mask-size 200ms ease;
+}
+
+.reveal-box-left {
+  left: -8px;
+  mask-image: radial-gradient(circle at top left, black 0%, black 30%, transparent 31%);
+  mask-position: 0% 0%;
+}
+
+.reveal-box-right {
+  right: -8px;
+  mask-image: radial-gradient(circle at top right, black 0%, black 30%, transparent 31%);
+  mask-position: 100% 0%;
+}
+
+.language-btn.active {
+  color: var(--secondary-highlight-color);
+  cursor: default;
+}
+
+.language-btn.active + .reveal-box-left,
+.language-btn.active + .reveal-box-right {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .language-btn:hover + .reveal-box-left,
+  .language-btn:hover + .reveal-box-right {
+    mask-size: 300% 300%;
+  }
+}
+
+@media (max-width: 900px) {
+  .reveal-box-left,
+  .reveal-box-right {
+    display: none;
+  }
+}

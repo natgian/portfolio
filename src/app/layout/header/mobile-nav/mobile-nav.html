@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li [class.header-split]="isProjectPage">
+      <a [routerLink]="'/'" fragment="about">{{ 'navigation.about' | translate }}</a>
+    </li>
+    <li [class.header-split]="isProjectPage">
+      <a [routerLink]="'/'" fragment="skills">{{ 'navigation.skills' | translate }}</a>
+    </li>
+    <li>
+      <a [routerLink]="'/'" fragment="projects">{{ 'navigation.projects' | translate }}</a>
+    </li>
+    <li>
+      <a [routerLink]="'/'" fragment="contact">{{ 'navigation.contact' | translate }}</a>
+    </li>
+  </ul>
+
+  <app-lang-toggle
+    id="mobile-toggle"
+    [currentLang]="currentLang"
+    (langChange)="onLangChange($event)"
+  ></app-lang-toggle>
+
+  <app-social-links></app-social-links>
+</nav>

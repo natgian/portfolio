@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Button } from '../../shared/components/button/button';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { SocialLinks } from '../../shared/components/social-links/social-links';
 
 @Component({
   selector: 'app-hero',
-  imports: [Button, RouterLink, TranslatePipe],
+  imports: [Button, SocialLinks, RouterLink, TranslatePipe],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })

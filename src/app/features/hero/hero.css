@@ -127,27 +127,6 @@ app-button {
   justify-self: end;
 }
 
-.links {
-  list-style: none;
-  padding: 72px;
-  position: absolute;
-  bottom: 40px;
-}
-
-.links li {
-  width: fit-content;
-  padding: 4px;
-  margin-bottom: 8px;
-  border: 1px solid var(--base-light-color);
-  border-radius: 100px;
-  background-color: transparent;
-  transition: background-color 200ms ease-in;
-}
-
-.links li:hover {
-  background-color: var(--secondary-highlight-color);
-}
-
 @media (hover: hover) {
   .letter:hover {
     color: var(--primary-highlight-color);
