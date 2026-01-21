@@ -10,7 +10,7 @@
   <app-mobile-nav
     [isProjectPage]="isProjectPage"
     [currentLang]="currentLang"
-    (langChange)="setLang($event)"
+    (langChange)="language.setLang($event)"
     [class.open]="isMenuOpen"
   >
   </app-mobile-nav>
@@ -18,7 +18,7 @@
   <app-lang-toggle
     id="desktop-toggle"
     [currentLang]="currentLang"
-    (langChange)="setLang($event)"
+    (langChange)="language.setLang($event)"
   ></app-lang-toggle>
 
   <div class="menu-toggle" (click)="toggleMenu()" [class.open]="isMenuOpen">
