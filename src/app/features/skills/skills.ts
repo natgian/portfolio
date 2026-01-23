@@ -1,7 +1,14 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SkillIcon } from '../../shared/components/skill-icon/skill-icon';
-import { timeout } from 'rxjs';
 import { TranslatePipe } from '@ngx-translate/core';
+
+/**
+ *  * Represents a skill in the "skills" section.
+ */
+interface Skill {
+  icon: string;
+  label: string;
+}
 
 @Component({
   selector: 'app-skills',
@@ -9,14 +16,37 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
+
+/**
+ * Component responsible for rendering the "skills" section on the main page.
+ * It implements AfterViewInit to use the intersection observer.
+ */
 export class Skills implements AfterViewInit {
+  /**
+   * Reference to the skill title element in the template.
+   */
   @ViewChild('skillTextContainer')
-  skillTitle!: ElementRef;
+  skillTitle!: ElementRef<HTMLElement>;
+
+  /**
+   * Indicates if the circular UI element is currently visible.
+   */
   isCircleVisible = false;
+
+  /**
+   * Current frame index of the peeling animation.
+   */
   currentPeelFrame = 1;
+
+  /**
+   * Indicates if the peeling animation is currently running.
+   */
   isPeeling = false;
 
-  skills = [
+  /**
+   * List of skills displayed in the "skills" section.
+   */
+  skills: Skill[] = [
     { icon: 'img/icons/html.svg', label: 'HTML' },
     { icon: 'img/icons/css.svg', label: 'CSS' },
     { icon: 'img/icons/javascript.svg', label: 'JavaScript' },
@@ -34,6 +64,10 @@ export class Skills implements AfterViewInit {
     { icon: 'img/icons/photoshop.svg', label: 'Photoshop' },
   ];
 
+  /**
+   * Observes if the viewport is intersecting with the skill title element.
+   * If it is, the circle around the skill title is displayed.
+   */
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -42,12 +76,17 @@ export class Skills implements AfterViewInit {
           observer.disconnect();
         }
       },
-      { threshold: 1 }
+      { threshold: 1 },
     );
 
     observer.observe(this.skillTitle.nativeElement);
   }
 
+  /**
+   * Triggers the peeling animation by adding frames.
+   * Prevents repeating it while the animation is still running.
+   *
+   */
   onPeel() {
     if (this.currentPeelFrame >= 3 || this.isPeeling) return;
 
@@ -57,6 +96,6 @@ export class Skills implements AfterViewInit {
     setTimeout(() => {
       this.currentPeelFrame++;
       this.isPeeling = false;
-    }, 50);
+    }, 100);
   }
 }
