@@ -16,8 +16,8 @@
         formControlName="name"
       />
       <div class="input-feedback">
-        @if(name?.invalid && name?.touched) {
-        <span class="invalid-message">{{ 'home.contact.fields.name.error' | translate }}</span>
+        @if (name?.invalid && name?.touched) {
+          <span class="invalid-message">{{ 'home.contact.fields.name.error' | translate }}</span>
         }
       </div>
     </div>
@@ -38,8 +38,8 @@
         formControlName="email"
       />
       <div class="input-feedback">
-        @if(email?.invalid && email?.touched) {
-        <span class="invalid-message">{{ 'home.contact.fields.email.error' | translate }}</span>
+        @if (email?.invalid && email?.touched) {
+          <span class="invalid-message">{{ 'home.contact.fields.email.error' | translate }}</span>
         }
       </div>
     </div>
@@ -61,8 +61,8 @@
         [placeholder]="'home.contact.fields.message.placeholder' | translate"
       ></textarea>
       <div class="input-feedback">
-        @if(message?.invalid && message?.touched) {
-        <span class="invalid-message">{{ 'home.contact.fields.message.error' | translate }}</span>
+        @if (message?.invalid && message?.touched) {
+          <span class="invalid-message">{{ 'home.contact.fields.message.error' | translate }}</span>
         }
       </div>
     </div>
@@ -74,7 +74,7 @@
       </label>
       <span
         >{{ 'home.contact.policy.prefix' | translate }}
-        <a [href]="legalNoticeUrl" target="_blank" rel="noopener">{{
+        <a href="https:/www.natgian.dev/legal-notice" target="_blank" rel="noopener">{{
           'home.contact.policy.link' | translate
         }}</a>
         {{ 'home.contact.policy.suffix' | translate }}
@@ -82,8 +82,8 @@
     </div>
 
     <div class="input-feedback">
-      @if(checkbox?.invalid && checkbox?.touched) {
-      <span class="invalid-message">{{ 'home.contact.policy.error' | translate }}</span>
+      @if (checkbox?.invalid && checkbox?.touched) {
+        <span class="invalid-message">{{ 'home.contact.policy.error' | translate }}</span>
       }
     </div>
 
