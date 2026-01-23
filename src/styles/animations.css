@@ -24,13 +24,12 @@
   width: 300px;
   height: auto;
   pointer-events: none;
-  transform: scaleX(-1);
 
   mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
   mask-size: 200% 200%;
   mask-position: 0% 200%;
   mask-repeat: no-repeat;
-  transition: mask-position 200ms ease;
+  transition: mask-position 300ms ease-in;
 }
 
 .reveal-circle-active {
