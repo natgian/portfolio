@@ -23,8 +23,8 @@
 
     <div class="skillset-container">
       <div class="skill-icons-wrapper">
-        @for(skill of skills; track skill.label){
-        <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
+        @for (skill of skills; track skill.label) {
+          <app-skill-icon [icon]="skill.icon" [label]="skill.label"></app-skill-icon>
         }
       </div>
 
@@ -36,19 +36,20 @@
           class="peel-sticker"
           [class.peeling]="isPeeling"
         />
-        @if(currentPeelFrame === 1) {
-        <div class="peel-sticker-content peel-sticker-top">
-          <img src="/img/ui-elements/arrow.svg" alt="" />
-          <span>{{ 'home.skills.topSticker' | translate }}</span>
-        </div>
-        } @if(currentPeelFrame === 3) {
-        <div class="peel-sticker-content peel-sticker-bottom">
-          <span>{{ 'home.skills.bottomSticker' | translate }}</span>
-          <div class="sticker-icon-wrapper">
-            <img src="img/icons/python_no_border.svg" alt="Python icon" />
-            <span>Python</span>
+        @if (currentPeelFrame === 1) {
+          <div class="peel-sticker-content peel-sticker-top">
+            <img src="/img/ui-elements/arrow.svg" alt="" />
+            <span>{{ 'home.skills.topSticker' | translate }}</span>
           </div>
-        </div>
+        }
+        @if (currentPeelFrame === 3) {
+          <div class="peel-sticker-content peel-sticker-bottom">
+            <span>{{ 'home.skills.bottomSticker' | translate }}</span>
+            <div class="sticker-icon-wrapper">
+              <img src="img/icons/python_no_border.svg" alt="Python icon" />
+              <span>Python</span>
+            </div>
+          </div>
         }
       </div>
     </div>

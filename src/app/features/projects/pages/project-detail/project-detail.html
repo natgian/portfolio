@@ -1,74 +1,74 @@
 <app-header></app-header>
 <main>
-  @if(currentProject) {
-  <div class="content">
-    <section class="project-content">
-      <div class="project-title-wrapper">
-        <h1 class="project-title">{{ currentProject.name }}</h1>
-        <img
-          src="/img/ui-elements/underline_4.png"
-          alt=""
-          class="reveal reveal-from-left reveal-line"
-        />
-      </div>
+  @if (currentProject) {
+    <div class="content">
+      <section class="project-content">
+        <div class="project-title-wrapper">
+          <h1 class="project-title">{{ currentProject.name }}</h1>
+          <img
+            src="/img/ui-elements/underline_4.png"
+            alt=""
+            class="reveal reveal-from-left reveal-line"
+          />
+        </div>
 
-      <section class="info-section">
-        <h2>{{ 'projects.descriptionTitle' | translate }}</h2>
-        <p>
-          {{ currentProject.detailDescription | translate }}
-        </p>
-      </section>
+        <section class="info-section">
+          <h2>{{ 'projects.descriptionTitle' | translate }}</h2>
+          <p>
+            {{ currentProject.detailDescription | translate }}
+          </p>
+        </section>
 
-      <section class="info-section">
-        <h2>{{ 'projects.implementetationTitle' | translate }}</h2>
-        @for(paragraph of currentProject.implementationText; track $index) {
-        <p>{{ paragraph | translate }}</p>
-        }
-      </section>
-
-      <section class="info-section">
-        <h2>Stack</h2>
-        <div class="stack-container">
-          @for(item of currentProject.stack; track item.label) {
-          <app-stack-icon [icon]="item.icon" [label]="item.label"></app-stack-icon>
+        <section class="info-section">
+          <h2>{{ 'projects.implementetationTitle' | translate }}</h2>
+          @for (paragraph of currentProject.implementationText; track $index) {
+            <p>{{ paragraph | translate }}</p>
           }
+        </section>
+
+        <section class="info-section">
+          <h2>Stack</h2>
+          <div class="stack-container">
+            @for (item of currentProject.stack; track item.label) {
+              <app-stack-icon [icon]="item.icon" [label]="item.label"></app-stack-icon>
+            }
+          </div>
+        </section>
+      </section>
+
+      <section class="visual-section">
+        <img [src]="currentProject.detailImg" [alt]="currentProject.name" />
+        <div class="links-container">
+          <app-button
+            buttonText="GitHub"
+            [variant]="isDarkBackground ? 'light' : 'dark'"
+            [href]="currentProject.githubLink"
+          ></app-button>
+          <app-button
+            buttonText="Live Demo"
+            [variant]="isDarkBackground ? 'light' : 'dark'"
+            [href]="currentProject.liveLink"
+          ></app-button>
         </div>
       </section>
-    </section>
+    </div>
 
-    <section class="visual-section">
-      <img [src]="currentProject.detailImg" [alt]="currentProject.name" />
-      <div class="links-container">
-        <app-button
-          buttonText="GitHub"
-          [variant]="isDarkBackground ? 'light' : 'dark'"
-          [href]="currentProject.githubLink"
-        ></app-button>
-        <app-button
-          buttonText="Live Demo"
-          [variant]="isDarkBackground ? 'light' : 'dark'"
-          [href]="currentProject.liveLink"
-        ></app-button>
-      </div>
-    </section>
-  </div>
-
-  <nav aria-label="Project navigation">
-    <a
-      routerLink="/"
-      fragment="projects"
-      aria-label="Go back to projects section"
-      class="nav-link back-link"
-    >
-      <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
-      {{ 'navigation.back' | translate }}
-    </a>
-    @if(nextProject) {
-    <a [routerLink]="['/projects', nextProject.id]" class="nav-link next-link">
-      {{ 'navigation.next' | translate }}
-      <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true"
-    /></a>
-    }
-  </nav>
+    <nav aria-label="Project navigation">
+      <a
+        routerLink="/"
+        fragment="projects"
+        aria-label="Go back to projects section"
+        class="nav-link back-link"
+      >
+        <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
+        {{ 'navigation.back' | translate }}
+      </a>
+      @if (nextProject) {
+        <a [routerLink]="['/projects', nextProject.id]" class="nav-link next-link">
+          {{ 'navigation.next' | translate }}
+          <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true"
+        /></a>
+      }
+    </nav>
   }
 </main>
