@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 
+/**
+ * Represents a project with all its data.
+ */
 export interface Project {
   id: string;
   name: string;
@@ -17,7 +20,14 @@ export interface Project {
 @Injectable({
   providedIn: 'root',
 })
+
+/**
+ * Service to provide the projects data to other components.
+ */
 export class ProjectService {
+  /**
+   * Array containing all projects data and keys for translations.
+   */
   projects: Project[] = [
     {
       id: 'join',
@@ -84,19 +94,43 @@ export class ProjectService {
     },
   ];
 
+  /**
+   * Retrieves all projects.
+   *
+   * @returns - An array of Project objects
+   */
   getProjects(): Project[] {
     return this.projects;
   }
 
+  /**
+   * Retrieves a single project by its ID.
+   *
+   * @param id - The ID of the project to retrieve
+   * @returns - The Project object matching the ID or 'undefined' if not found
+   */
   getProjectById(id: string): Project | undefined {
     return this.projects.find((project) => project.id === id);
   }
 
+  /**
+   * Retrieves the index of a project.
+   *
+   * @param id - The ID of the project
+   * @returns - The index of the project in the projects array or -1 if not found
+   */
   getProjectIndex(id: string): number {
     const projects = this.getProjects();
     return projects.findIndex((project) => project.id === id);
   }
 
+  /**
+   * Determines the next project.
+   * Loops back to the start if the last project is reached.
+   *
+   * @param id - The ID of the current project
+   * @returns - The next Project object or 'undefined' if the current ID is not found
+   */
   getNextProject(id: string): Project | undefined {
     const currentIndex = this.getProjectIndex(id);
     if (currentIndex === -1) return undefined;

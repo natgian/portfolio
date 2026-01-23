@@ -9,4 +9,8 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
+
+/**
+ * Component responsible for rendering the "contact" section on the main page.
+ */
 export class Contact {}
