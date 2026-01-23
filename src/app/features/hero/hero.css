@@ -43,7 +43,9 @@ section {
   border: 1px solid var(--base-light-color);
   border-radius: 100px;
   opacity: 1;
-  transition: opacity 200ms ease, background-color 200ms ease;
+  transition:
+    opacity 200ms ease,
+    background-color 200ms ease;
 }
 
 .hello-text.enter {
@@ -160,7 +162,7 @@ app-button {
     right: 0;
   }
 
-  .links {
+  app-social-links {
     display: none;
   }
 }
