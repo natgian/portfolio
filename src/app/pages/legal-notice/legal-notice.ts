@@ -10,4 +10,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './legal-notice.html',
   styleUrl: './legal-notice.css',
 })
+
+/**
+ * Page component responsible for rendering the legal page.
+ */
 export class LegalNotice {}

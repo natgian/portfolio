@@ -13,4 +13,8 @@ import { Contact } from '../../features/contact/contact';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
+
+/**
+ * Page component responsible for rendering the main page.
+ */
 export class Home {}

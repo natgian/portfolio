@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Header } from '../../../../layout/header/header';
-import { StackIcon } from '../../../../shared/components/stack-icon/stack-icon';
+import { StackIcon } from './stack-icon/stack-icon';
 import { Button } from '../../../../shared/components/button/button';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService, Project } from '../../services/project.service';

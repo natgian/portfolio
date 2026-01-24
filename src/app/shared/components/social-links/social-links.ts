@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './social-links.html',
   styleUrl: './social-links.css',
 })
-export class SocialLinks {
 
-}
+/**
+ * Renders a set of external links (LinkedIn, GitHub and Email).
+ */
+export class SocialLinks {}

@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { SkillIcon } from '../../shared/components/skill-icon/skill-icon';
+import { SkillIcon } from './skill-icon/skill-icon';
 import { TranslatePipe } from '@ngx-translate/core';
 
 /**

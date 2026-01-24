@@ -8,6 +8,11 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './desktop-nav.html',
   styleUrl: './desktop-nav.css',
 })
+
+/**
+ * Renders the desktop navigation in the header.
+ * Receives a flag via @Input to determine if it's on the project page.
+ */
 export class DesktopNav {
   @Input() isProjectPage: boolean = false;
 }
