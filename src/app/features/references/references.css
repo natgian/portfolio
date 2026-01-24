@@ -36,14 +36,14 @@
   transform: rotate(6deg);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   .references-container app-reference-card:nth-child(2),
   .references-container app-reference-card:nth-child(3) {
     margin-left: -280px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .references-container {
     display: flex;
     flex-direction: column;

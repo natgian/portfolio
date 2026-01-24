@@ -1,8 +1,8 @@
 footer {
-  width: 100%;
+  width: calc(100% - 144px);
   max-width: var(--layout-max-width);
+  padding: 48px 0;
   margin: 0 auto;
-  padding: 48px 72px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: end;
@@ -62,7 +62,7 @@ a:hover ~ .reveal-line {
 @media (max-width: 905px) {
   footer {
     grid-template-columns: 1fr;
-    padding: 32px;
+    width: calc(100% - 62px);
   }
 
   .brand-legal-container {
@@ -94,5 +94,11 @@ a:hover ~ .reveal-line {
 
   .logo {
     width: 48px;
+  }
+}
+
+@media (max-width: 325px) {
+  footer {
+    width: calc(100% - 32px);
   }
 }
