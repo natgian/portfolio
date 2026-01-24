@@ -67,6 +67,10 @@ section {
   justify-items: end;
 }
 
+app-button {
+  margin-top: 16px;
+}
+
 @media (max-width: 1038px) {
   section {
     flex-direction: column-reverse;
