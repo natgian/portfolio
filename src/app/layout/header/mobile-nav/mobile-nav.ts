@@ -15,12 +15,13 @@ import { SocialLinks } from '../../../shared/components/social-links/social-link
  * Renders the mobile navigation in the header.
  * Receives @Input flags to determine if it's displayed on the project page and which
  * language is currently selected.
- * Emits an event when the language is changed.
+ * Emits an event when the language is changed or when a link is clicked.
  */
 export class MobileNav {
   @Input() isProjectPage: boolean = false;
   @Input() currentLang: 'de' | 'en' = 'de';
   @Output() langChange = new EventEmitter<'de' | 'en'>();
+  @Output() linkClick = new EventEmitter<void>();
 
   /**
    * Emits an event when a new language is selected.

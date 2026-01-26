@@ -57,7 +57,7 @@ export class Header {
     this.sub = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.isProjectPage = event.urlAfterRedirects.startsWith('/projects');
-        this.isMenuOpen = false;
+        this.closeMenu();
       }
     });
   }
@@ -74,5 +74,12 @@ export class Header {
    */
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  /**
+   * Closes the mobile menu.
+   */
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 }

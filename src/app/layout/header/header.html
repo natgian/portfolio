@@ -11,12 +11,14 @@
     [isProjectPage]="isProjectPage"
     [currentLang]="currentLang"
     (langChange)="language.setLang($event)"
+    (linkClick)="closeMenu()"
     [class.open]="isMenuOpen"
   >
   </app-mobile-nav>
 
   <app-lang-toggle
     id="desktop-toggle"
+    [isProjectPage]="isProjectPage"
     [currentLang]="currentLang"
     (langChange)="language.setLang($event)"
   ></app-lang-toggle>

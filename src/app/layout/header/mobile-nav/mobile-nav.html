@@ -1,9 +1,9 @@
 <nav>
-  <ul>
-    <li [class.header-split]="isProjectPage">
+  <ul (click)="linkClick.emit()">
+    <li>
       <a [routerLink]="'/'" fragment="about">{{ 'navigation.about' | translate }}</a>
     </li>
-    <li [class.header-split]="isProjectPage">
+    <li>
       <a [routerLink]="'/'" fragment="skills">{{ 'navigation.skills' | translate }}</a>
     </li>
     <li>
