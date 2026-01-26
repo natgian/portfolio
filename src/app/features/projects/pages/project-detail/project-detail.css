@@ -117,7 +117,7 @@ nav img {
   height: 24px;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1200px) {
   main {
     background-image: image-set(
       url('/img/backgrounds/project_bg_tablet.webp'),
@@ -140,11 +140,15 @@ nav img {
   .back-link {
     color: var(--base-light-color);
   }
+
+  .visual-section {
+    justify-items: center;
+  }
 }
 
 @media (max-width: 900px) {
   main {
-    padding: 56px 32px 0 32px;
+    padding: 96px 64px 0 64px;
   }
 
   .content {
@@ -152,11 +156,7 @@ nav img {
   }
 
   .links-container {
-    gap: 16px;
-  }
-
-  .visual-section {
-    justify-items: center;
+    gap: 32px;
   }
 
   .project-content {
@@ -179,11 +179,23 @@ nav img {
   }
 }
 
+@media (max-width: 560px) {
+  main {
+    padding: 96px 32px 0 32px;
+  }
+}
+
 @media (max-width: 400px) {
   main {
     background-image: image-set(
       url('/img/backgrounds/project_bg_mobile.webp'),
       url('/img/backgrounds/project_bg_mobile.png')
     );
+  }
+}
+
+@media (max-width: 325px) {
+  main {
+    padding: 96px 16px 0 16px;
   }
 }
