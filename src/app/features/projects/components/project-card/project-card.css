@@ -27,17 +27,23 @@ p {
   overflow: hidden;
 }
 
-.img-container:hover app-button {
-  opacity: 1;
-  visibility: visible;
-}
+@media (hover: hover) {
+  .img-container:hover app-button {
+    opacity: 1;
+    visibility: visible;
+  }
 
-.img-container:hover img:not(.featured-sticker) {
-  transform: scale(1.1);
-}
+  .img-container:hover img:not(.featured-sticker) {
+    transform: scale(1.1);
+  }
 
-.img-container:hover .overlay {
-  opacity: 1;
+  .img-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .img-container:hover .floating-animation {
+    animation-play-state: paused;
+  }
 }
 
 img {
@@ -71,10 +77,6 @@ img {
 .floating-animation {
   animation: floating 4s cubic-bezier(0.33, 0, 0.2, 1) infinite;
   animation-play-state: running;
-}
-
-.img-container:hover .floating-animation {
-  animation-play-state: paused;
 }
 
 @keyframes floating {

@@ -8,7 +8,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--base-light-color);
-  padding-top: 32px;
+  padding-top: 64px;
 }
 
 .content {
@@ -39,16 +39,12 @@ section {
   position: absolute;
   width: 168px;
   height: 168px;
-  right: 16px;
+  right: 32px;
   top: 0;
   transform: rotate(10deg);
 }
 
 @media (max-width: 1115px) {
-  section {
-    padding-top: 64px;
-  }
-
   .content {
     flex-direction: column;
     align-items: center;
@@ -70,14 +66,21 @@ section {
   }
 }
 
+@media (max-width: 780px) {
+  .logo-sticker {
+    position: absolute;
+
+    top: -60px;
+  }
+}
+
 @media (max-width: 640px) {
   section {
     padding-top: 200px;
   }
+
   .logo-sticker {
-    position: absolute;
     right: 16px;
     top: -140px;
-    transform: rotate(10deg);
   }
 }

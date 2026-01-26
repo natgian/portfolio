@@ -7,7 +7,10 @@
   border-radius: 100px;
   background-color: transparent;
   transform: translate(0, 0);
-  transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
+  transition:
+    transform 200ms ease,
+    background-color 200ms ease,
+    box-shadow 200ms ease;
   cursor: pointer;
 }
 
@@ -22,11 +25,13 @@
   box-shadow: 2px 4px var(--base-dark-color);
 }
 
-.btn:hover {
-  background-color: var(--secondary-highlight-color);
-  color: var(--base-light-color);
-  transform: translate(2px, 4px);
-  box-shadow: none;
+@media (hover: hover) {
+  .btn:hover {
+    background-color: var(--secondary-highlight-color);
+    color: var(--base-light-color);
+    transform: translate(2px, 4px);
+    box-shadow: none;
+  }
 }
 
 button:disabled {

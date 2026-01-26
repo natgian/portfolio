@@ -116,12 +116,6 @@ body {
   }
 }
 
-@media (max-width: 560px) {
-  .main-content {
-    padding: 0 32px;
-  }
-}
-
 @media (max-width: 740px) {
   .main-title {
     font-size: 48px;
@@ -129,6 +123,12 @@ body {
 
   .section-text {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .main-content {
+    padding: 0 32px;
   }
 }
 

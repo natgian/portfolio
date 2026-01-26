@@ -18,6 +18,10 @@ nav ul li {
   color: var(--base-dark-color);
 }
 
+.header-split-right {
+  color: var(--base-light-color);
+}
+
 .reveal-line {
   position: absolute;
   top: 20px;
@@ -49,5 +53,11 @@ nav ul li {
 
   li a:hover ~ .reveal-small-circle {
     mask-position: 0% 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-split-right {
+    color: var(--base-dark-color);
   }
 }
