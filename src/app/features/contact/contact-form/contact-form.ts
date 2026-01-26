@@ -66,7 +66,7 @@ export class ContactForm {
     ]),
     email: new FormControl('', [
       Validators.required,
-      Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}'),
+      Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'),
       Validators.maxLength(254),
     ]),
     message: new FormControl('', [
