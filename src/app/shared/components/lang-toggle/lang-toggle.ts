@@ -15,6 +15,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class LangToggle {
   @Input() currentLang: 'de' | 'en' = 'de';
   @Output() langChange = new EventEmitter<'de' | 'en'>();
+  @Input() isProjectPage: boolean = false;
 
   /**
    * Emits the newly selected language.

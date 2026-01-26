@@ -14,6 +14,10 @@
   border: none;
 }
 
+.language-btn-color {
+  color: var(--base-light-color);
+}
+
 .reveal-box {
   position: absolute;
   top: -8px;
@@ -52,6 +56,12 @@
   .language-btn:hover + .reveal-box-left,
   .language-btn:hover + .reveal-box-right {
     mask-size: 300% 300%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .language-btn-color {
+    color: var(--base-dark-color);
   }
 }
 

@@ -4,6 +4,7 @@
     [class.active]="currentLang === 'de'"
     (click)="changeLang('de')"
     [attr.aria-pressed]="currentLang === 'de'"
+    [class.language-btn-color]="isProjectPage"
   >
     DE
   </button>
@@ -30,6 +31,7 @@
     [class.active]="currentLang === 'en'"
     (click)="changeLang('en')"
     [attr.aria-pressed]="currentLang === 'en'"
+    [class.language-btn-color]="isProjectPage"
   >
     EN
   </button>
