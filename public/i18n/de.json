@@ -58,7 +58,7 @@
     },
     "contact": {
       "intro": "KONTAKTIERE MICH",
-      "title": "Bereit zur Zusammenarbeit?",
+      "title": "Bereit, gemeinsam zu arbeiten?",
       "description": [
         "Als Fullstack-Entwicklerin kann ich Projekte unterstützen, indem ich an Features mitarbeite, Funktionalitäten optimiere und mich flexibel an bestehende Workflows und Technologien anpasse.",
         "Mit einer soliden Grundlage in moderner Webentwicklung und einer lösungsorientierten Denkweise bringe ich klare Kommunikation und Eigenverantwortung in meine Aufgaben ein.",
@@ -68,7 +68,7 @@
         "name": {
           "label": "Wie heisst du?",
           "placeholder": "Dein Name hier...",
-          "error": "Bitte gib deinen Namen ein"
+          "error": "Bitte gib deinen Namen ein (mind. 2 Zeichen)"
         },
         "email": {
           "label": "Wie lautet deine E-Mail?",
@@ -78,7 +78,7 @@
         "message": {
           "label": "Wie kann ich helfen?",
           "placeholder": "Deine Nachricht hier...",
-          "error": "Bitte gib eine Nachricht ein"
+          "error": "Bitte gib eine Nachricht ein (mind. 10 Zeichen)"
         }
       },
       "policy": {

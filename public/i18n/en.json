@@ -68,7 +68,7 @@
         "name": {
           "label": "What is your name?",
           "placeholder": "Your name goes here...",
-          "error": "Please enter your name"
+          "error": "Please enter your name (min. 2 characters)"
         },
         "email": {
           "label": "What is your email?",
@@ -78,7 +78,7 @@
         "message": {
           "label": "How can I help you?",
           "placeholder": "Your message goes here...",
-          "error": "Please enter a message"
+          "error": "Please enter a message (min. 10 characters)"
         }
       },
       "policy": {
