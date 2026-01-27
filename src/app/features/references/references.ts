@@ -93,7 +93,7 @@ export class References {
   private updateViewport() {
     const width = window.innerWidth;
 
-    if (width <= 400) {
+    if (width <= 415) {
       this.currentViewport = 'small';
     } else if (width <= 600) {
       this.currentViewport = 'medium';
