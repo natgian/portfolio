@@ -31,17 +31,17 @@ nav ul li {
   padding-block: 10px;
 }
 
-/* @media (max-width: 780px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) {
   nav {
-    gap: 0px;
+    gap: 4px;
   }
   nav ul {
     gap: 0;
     font-size: 16px;
   }
-} */
+}
 
-@media (max-height: 600px) {
+@media (max-height: 600px) and (orientation: portrait) {
   nav ul {
     gap: 16px;
   }

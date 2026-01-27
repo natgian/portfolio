@@ -1,6 +1,6 @@
 header {
   display: flex;
-  height: 50vh;
+  min-height: clamp(360px, 40vh, 520px);
   background-image: image-set(
     url('/img/backgrounds/skills_bg.webp'),
     url('/img/backgrounds/skills_bg.png')
@@ -73,12 +73,6 @@ a:hover {
   height: 24px;
 }
 
-@media (max-width: 740px) {
-  header {
-    height: 40vh;
-  }
-}
-
 @media (max-width: 560px) {
   .header-title {
     padding: 0 32px;
@@ -88,3 +82,15 @@ a:hover {
     padding: 32px;
   }
 }
+
+@media (max-width: 325px) {
+  .content {
+    padding: 32px 16px;
+  }
+}
+
+/* @media (max-height: 700px) and (orientation: landscape) {
+  header {
+    height: 100vh;
+  }
+} */

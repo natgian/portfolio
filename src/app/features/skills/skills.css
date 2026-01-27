@@ -158,7 +158,7 @@ section {
   }
 }
 
-@media (max-width: 724px) {
+@media (max-width: 900px) {
   .description-wrapper {
     font-size: 16px;
   }

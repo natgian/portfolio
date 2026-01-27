@@ -29,8 +29,8 @@ header {
 
 .menu-toggle img {
   transition:
-    opacity 180ms ease,
-    transform 180ms ease;
+    opacity 250ms ease,
+    transform 250ms ease;
 }
 
 .hamburger {
@@ -74,7 +74,7 @@ button {
   background: transparent;
 }
 
-@media (max-width: 900px) and (orientation: portrait) {
+@media (max-width: 900px) {
   header {
     width: 100%;
     padding-inline: 64px;
