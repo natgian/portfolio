@@ -1,0 +1,10 @@
+<button
+  [class.visible]="isVisible"
+  [attr.aria-hidden]="!isVisible"
+  aria-label="Scroll to top"
+  (click)="scrollToTop()"
+  [style.bottom.px]="bottomOffset"
+  #scrollButton
+>
+  <img src="/img/ui-elements/nav_arrow.png" alt="" />
+</button>
