@@ -63,7 +63,7 @@ export class ScrollTopButton {
    */
   private calculateBottomOffset(): number {
     const defaultBottomOffset = 32;
-    const footerBottomOffset = window.innerHeight * 0.25;
+    const footerBottomOffset = 230;
     const distanceFromBottom =
       document.documentElement.scrollHeight - (window.scrollY + window.innerHeight);
 
