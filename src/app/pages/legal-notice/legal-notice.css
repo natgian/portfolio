@@ -88,9 +88,3 @@ a:hover {
     padding: 32px 16px;
   }
 }
-
-/* @media (max-height: 700px) and (orientation: landscape) {
-  header {
-    height: 100vh;
-  }
-} */
