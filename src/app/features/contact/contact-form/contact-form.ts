@@ -45,7 +45,7 @@ export class ContactForm {
    * Defines endpoint, body and options for the HTTP POST request.
    */
   post = {
-    endPoint: 'https://natgian.dev/backend/sendMail.php',
+    endPoint: 'https://natgian.dev/app/backend/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
