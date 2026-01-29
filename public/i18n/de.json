@@ -6,7 +6,12 @@
     "contact": "Kontakt",
     "legal": "Impressum",
     "back": "zurück",
-    "next": "nächstes Projekt"
+    "next": "nächstes Projekt",
+    "backToHome": "zurück zur Startseite"
+  },
+  "404": {
+    "title": "Ups - Seite nicht gefunden!",
+    "text": "Aber hey, dafür gibt’s jede Menge andere Projekte zu entdecken!"
   },
   "home": {
     "hero": {

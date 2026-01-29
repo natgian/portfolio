@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  min-height: clamp(360px, 40vh, 520px);
+  background-image: image-set(
+    url('/img/backgrounds/skills_bg.webp'),
+    url('/img/backgrounds/skills_bg.png')
+  );
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--base-light-color);
+}
+
+.header-title {
+  width: var(--content-max-width);
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.content {
+  max-width: var(--content-max-width);
+  margin: 0 auto 32px auto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (hover: hover) {
+  .nav-link:hover {
+    color: var(--primary-highlight-color);
+  }
+}
+
+.back-link {
+  color: var(--base-dark-color);
+}
+
+.back-link img {
+  transform: scaleX(-1);
+  width: 24px;
+  height: 24px;
+}
+
+.next-link {
+  color: var(--base-light-color);
+}
+
+@media (max-width: 560px) {
+  .header-title {
+    padding: 0 32px;
+  }
+
+  .content {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 325px) {
+  .content {
+    padding: 32px 16px;
+  }
+
+  .header-title {
+    padding: 0 16px;
+  }
+}

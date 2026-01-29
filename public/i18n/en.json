@@ -6,7 +6,12 @@
     "contact": "Contact",
     "legal": "Legal Notice",
     "back": "Go Back",
-    "next": "Next Project"
+    "next": "Next Project",
+    "backToHome": "Back to the homepage"
+  },
+  "404": {
+    "title": "Oops - Page not found!",
+    "text": "But hey, there are plenty of other projects to explore!"
   },
   "home": {
     "hero": {
