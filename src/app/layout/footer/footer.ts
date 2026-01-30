@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AnimatedIconLink } from '../../shared/components/animated-icon-link/animated-icon-link';
+import { AnimatedIconLink } from './components/animated-icon-link/animated-icon-link';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 

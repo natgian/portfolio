@@ -63,19 +63,16 @@ body {
   max-width: var(--content-max-width);
 }
 
-.section-intro {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .main-title {
   font-size: 56px;
   font-weight: 700;
   margin-top: 16px;
   display: block;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+}
+
+.section-intro {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .section-text {
@@ -84,31 +81,35 @@ body {
   margin-block: 16px;
 }
 
-.icon-wrapper {
+/*------- */
+/* FOOTER */
+/*--------*/
+
+.footer-icon-wrapper {
   display: none;
 }
 
 @media (hover: hover) {
-  .icon-wrapper {
+  .footer-icon-wrapper {
     display: block;
     --start-x: -24px;
     --end-x: 0;
   }
 
-  .icon-wrapper svg {
+  .footer-icon-wrapper svg {
     opacity: 0;
     transform: translateX(var(--start-x)) rotate(0deg);
     will-change: transform, opacity;
   }
 
-  .icon-wrapper.enter svg {
+  .footer-icon-wrapper.enter svg {
     animation-name: rollIn;
     animation-duration: 700ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
 
-  .icon-wrapper.exit svg {
+  .footer-icon-wrapper.exit svg {
     animation-name: rollOut;
     animation-duration: 200ms;
     animation-timing-function: ease-out;
