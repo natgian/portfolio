@@ -2,7 +2,7 @@
 
 A personal portfolio website built with Angular, showcasing my projects, skills, and practical experience with modern web development tools.
 
-![Portfolio Desktop Tablet Mobile Mockup](./img/projects/portfolio/portfolio_mockup_devices.png)
+![Portfolio Desktop Tablet Mobile Mockup](./public/img/projects/portfolio/portfolio_mockup_devices.png)
 
 # Highlights
 
