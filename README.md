@@ -1,17 +1,17 @@
 # PORTFOLIO
 
+![Portfolio Desktop Tablet Mobile Mockup](./public/img/projects/portfolio/portfolio_mockup_devices.png)
+
 A personal portfolio website built with Angular, showcasing my projects, skills, and practical experience with modern web development tools.
 
-![Portfolio Desktop Tablet Mobile Mockup](./img/projects/portfolio/portfolio_mockup_devices.png)
+## Highlights
 
-# Highlights
-
-- Dynamic project data using \*Angular Services
+- Dynamic project data using Angular Services
 - Multilingual support implemented with ngx-translate
 - Responsive design for desktop and mobile
 - Modular, reusable component structure
 
-# Technologies Used
+## Technologies Used
 
 - Angular 20
 - TypeScript
