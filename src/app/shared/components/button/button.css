@@ -8,9 +8,9 @@
   background-color: transparent;
   transform: translate(0, 0);
   transition:
-    transform 200ms ease,
-    background-color 200ms ease,
-    box-shadow 200ms ease;
+    transform 125ms ease,
+    background-color 125ms ease,
+    box-shadow 125ms ease;
   cursor: pointer;
 }
 

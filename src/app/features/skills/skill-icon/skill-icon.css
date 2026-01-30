@@ -15,7 +15,9 @@
 @media (hover: hover) {
   .skill-icon img {
     filter: grayscale(100%);
-    transition: filter 200ms ease, transform 200ms ease;
+    transition:
+      filter 125ms ease,
+      transform 125ms ease;
   }
 
   .skill-icon img:hover {

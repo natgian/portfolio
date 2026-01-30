@@ -45,8 +45,8 @@ section {
   border-radius: 100px;
   opacity: 1;
   transition:
-    opacity 200ms ease,
-    background-color 200ms ease;
+    opacity 125ms ease,
+    background-color 125ms ease;
 }
 
 .hello-text.enter {
