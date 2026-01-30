@@ -10,6 +10,7 @@ section {
   background-repeat: no-repeat;
   padding-top: 240px;
   color: var(--base-light-color);
+  place-content: center;
 }
 
 .hero {
