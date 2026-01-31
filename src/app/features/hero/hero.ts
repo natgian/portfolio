@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Button } from '../../shared/components/button/button';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
@@ -16,6 +16,13 @@ import { SocialLinks } from '../../shared/components/social-links/social-links';
  * including greeting text, animated title letters, and a polaroid smile effect.
  */
 export class Hero {
+  @ViewChild('tracker') tracker!: ElementRef;
+  isDarkBackground = true;
+  mouseX = 0;
+  mouseY = 0;
+  mouseTrackerVisible = false;
+  isUpdatingFrame = false;
+  supportsHover = true;
   polaroidSmile = ':)';
   helloHovered = false;
   helloLeaving = false;
@@ -29,16 +36,6 @@ export class Hero {
    * The translation key for the greeting text when hovered.
    */
   helloHoveredText = 'home.hero.intro';
-
-  /**
-   * Indicates if the section is displayed on a dark background.
-   */
-  isDarkBackground = true;
-
-  /**
-   * Indicates if the device supports hover effects (set in ngOnInit).
-   */
-  supportsHover = true;
 
   /**
    * Stores the individual letters of the first word for animation purposes.
@@ -123,5 +120,96 @@ export class Hero {
     setTimeout(() => {
       this.helloLeaving = false;
     }, 900);
+  }
+
+  /**
+   * Sets the mouseTrackVisible flag when the mouse enters the element.
+   */
+  onMouseEnter() {
+    this.mouseTrackerVisible = true;
+  }
+
+  /**
+   * Sets the mouseTrackVisible flag when the mouse leaves the element.
+   */
+  onMouseLeave() {
+    this.mouseTrackerVisible = false;
+  }
+
+  /**
+   * Update the tracker position when the mouse is moved.
+   * Uses requestAnimationFrame to prevent lag by ensuring the tracker only updates once per
+   * animation frame.
+   *
+   * @param event - The mouse event
+   */
+  onMouseMove(event: MouseEvent) {
+    this.mouseX = event.clientX;
+    this.mouseY = event.clientY;
+
+    if (!this.isUpdatingFrame) {
+      this.isUpdatingFrame = true;
+      requestAnimationFrame(() => {
+        this.updateTracker();
+        this.isUpdatingFrame = false;
+      });
+    }
+  }
+
+  /**
+   * Updates the tracker’s position and hover state.
+   */
+  updateTracker() {
+    if (!this.tracker) return;
+
+    const trackerElement = this.tracker.nativeElement;
+    const trackerWidth = trackerElement.offsetWidth;
+    const trackerHeight = trackerElement.offsetHeight;
+
+    this.setTrackerPosition(trackerElement, trackerWidth, trackerHeight);
+    this.applyTrackerHoverState(trackerElement);
+  }
+
+  /**
+   * Sets the tracker element position based on the current mouse coordinates.
+   *
+   * @param trackerElement - The tracker HTML element
+   * @param trackerWidth - The width of the tracker element
+   * @param trackerHeight - The height of the tracker element
+   */
+  private setTrackerPosition(
+    trackerElement: HTMLElement,
+    trackerWidth: number,
+    trackerHeight: number,
+  ) {
+    trackerElement.style.transform = `translate(${this.mouseX - trackerWidth / 2}px, ${this.mouseY - trackerHeight / 2}px)`;
+  }
+
+  /**
+   * Checks if the cursor is currently hovering over a specific interactive element
+   * (.hello-text, .letter, .polaroid, .btn, or li).
+   *
+   * @returns - "True" if the cursor is over one of these elements, otherwise "false"
+   */
+  private isCursorOverInteractiveElement(): boolean {
+    const elementUnderCursor = document.elementFromPoint(this.mouseX, this.mouseY) as HTMLElement;
+    if (elementUnderCursor?.closest('.hello-text, .letter, .polaroid, .btn, li')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  /**
+   * Updates the tracker’s hover style depending on if it is over an interactive element.
+   *
+   * @param trackerElement - The tracker HTML element
+   */
+  private applyTrackerHoverState(trackerElement: HTMLElement) {
+    if (this.isCursorOverInteractiveElement()) {
+      trackerElement.classList.add('tracker-hovered');
+    } else {
+      trackerElement.classList.remove('tracker-hovered');
+    }
   }
 }
