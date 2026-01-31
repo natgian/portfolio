@@ -12,7 +12,6 @@ export const routes: Routes = [
   },
   {
     path: 'legal-notice',
-    title: 'Legal Notice',
     component: LegalNotice,
   },
   {
