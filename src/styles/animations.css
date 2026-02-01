@@ -75,7 +75,7 @@
   }
 }
 
-@keyframes rollIn {
+@keyframes roll-in {
   0% {
     opacity: 0;
     transform: translateX(var(--start-x)) rotate(180deg);
@@ -102,7 +102,7 @@
   }
 }
 
-@keyframes rollOut {
+@keyframes roll-out {
   0% {
     opacity: 1;
     transform: translateX(var(--end-x)) rotate(360deg);
@@ -110,5 +110,38 @@
   100% {
     opacity: 0;
     transform: translateX(var(--start-x)) rotate(180deg);
+  }
+}
+
+@keyframes fade-in-from-left {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-1000px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

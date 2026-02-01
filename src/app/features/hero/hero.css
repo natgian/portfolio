@@ -47,6 +47,8 @@ section {
   transition:
     opacity 125ms ease,
     background-color 125ms ease;
+
+  animation: fade-in-from-left 1s forwards;
 }
 
 .hello-text.enter {
@@ -62,14 +64,14 @@ section {
 }
 
 .hand.enter {
-  animation-name: rollIn;
+  animation-name: roll-in;
   animation-duration: 700ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 .hand.exit {
-  animation-name: rollOut;
+  animation-name: roll-out;
   animation-duration: 200ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -82,6 +84,8 @@ section {
   font-size: clamp(48px, 12vw + 8px, 128px);
   font-weight: 700;
   margin-bottom: 16px;
+
+  animation: fade-in-from-left 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 .title-first-word {
@@ -99,6 +103,11 @@ section {
   height: auto;
   rotate: 8deg;
   cursor: default;
+  z-index: 2;
+
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  animation-delay: 400ms;
 }
 
 .portrait {
@@ -128,6 +137,8 @@ section {
 app-button {
   grid-area: button;
   justify-self: end;
+
+  animation: fade-in-from-right 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @media (hover: hover) {

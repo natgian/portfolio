@@ -68,6 +68,8 @@ body {
   font-weight: 700;
   margin-top: 16px;
   display: block;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .section-intro {
@@ -103,14 +105,14 @@ body {
   }
 
   .footer-icon-wrapper.enter svg {
-    animation-name: rollIn;
+    animation-name: roll-in;
     animation-duration: 700ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
   }
 
   .footer-icon-wrapper.exit svg {
-    animation-name: rollOut;
+    animation-name: roll-out;
     animation-duration: 200ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
