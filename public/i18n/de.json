@@ -23,11 +23,11 @@
       "intro": "WER BIN ICH",
       "title": "Über mich",
       "description": [
-        "Hallo, ich bin Nathalie - Fullstack-Entwicklerin und Naturliebhaberin. Ich begeistere mich fürs Programmieren, weil es logisches Denken mit Kreativität verbindet.",
-        "Meine grösste Inspirationsquelle ist der kontinuierliche Lernprozess, der mit realen Herausforderungen einhergeht. Jeder Bug, jedes Feature und jedes Refactoring ist eine Gelegenheit, besser zu verstehen, wie Dinge funktionieren und wie man sie verbessern kann. Ich suche aktiv nach effizienten und wartbaren Lösungen und lerne dabei aus Feedback, Dokumentation und Experimenten.",
-        "Ich lege grossen Wert auf sauberen Code, klare Kommunikation und Zusammenarbeit und gehe Herausforderungen mit Neugier und Ausdauer an."
+        "Hallo, ich bin Nathalie - Fullstack-Entwicklerin und Naturliebhaberin.",
+        "Ich begeistere mich fürs Programmieren, weil es mir die Möglichkeit gibt, mit logischem Denken und Kreativität Neues zu erschaffen. Meine grösste Inspirationsquelle ist der kontinuierliche Lernprozess, der mit realen Herausforderungen einhergeht. Jeder Bug, jedes Feature und jedes Refactoring ist eine Gelegenheit, besser zu verstehen, wie Dinge funktionieren und wie man sie verbessern kann.",
+        "Ich suche aktiv nach effizienten und wartbaren Lösungen und lerne dabei aus Feedback, Dokumentation und dem Experimentieren. Deshalb gehe ich auch neue Herausforderungen immer mit Neugier und Ausdauer an."
       ],
-      "cta": "Lass uns sprechen",
+      "cta": "Lass uns reden",
       "location": "Standort Zürich",
       "commute": "Bereit zu pendeln",
       "remote": "Offen für Remote-Arbeit"
@@ -35,14 +35,14 @@
     "skills": {
       "intro": "MEIN STACK",
       "title": "Skill-Set",
-      "description": "Ich habe Frontend- und Fullstack-Projekte mit modernen Technologien umgesetzt und erweitere kontinuierlich meine Fähigkeiten, um neue Herausforderungen zu meistern.",
+      "description": "Ich habe Frontend- und Fullstack-Projekte mit modernen Technologien umgesetzt und erweitere kontinuierlich meine Fähigkeiten, um komplexe Probleme erfolgreich zu bewältigen.",
       "topSticker": "Hier abziehen",
-      "bottomSticker": "Ich will mich auch einarbeiten in:"
+      "bottomSticker": "Ich interessiere mich auch für:"
     },
     "projects": {
       "intro": "MEIN HANDWERK",
       "title": "Projekte",
-      "description": "Entdecke meine Projekte, um zu sehen, wie ich Ideen in responsive, benutzerfreundliche Webanwendungen umsetze, die reale Probleme lösen.",
+      "description": "Eine Auswahl meiner Projekte – erfahre hier, wie ich Ideen in praxisnahe, responsive Webanwendungen umsetze.",
       "cta": "Projekt ansehen"
     },
     "references": {
@@ -63,7 +63,7 @@
     },
     "contact": {
       "intro": "KONTAKTIERE MICH",
-      "title": "Bereit, gemeinsam zu arbeiten?",
+      "title": "Bereit für eine Zusammenarbeit?",
       "description": [
         "Als Fullstack-Entwicklerin kann ich Projekte unterstützen, indem ich an Features mitarbeite, Funktionalitäten optimiere und mich flexibel an bestehende Workflows und Technologien anpasse.",
         "Mit einer soliden Grundlage in moderner Webentwicklung und einer lösungsorientierten Denkweise bringe ich klare Kommunikation und Eigenverantwortung in meine Aufgaben ein.",
@@ -100,20 +100,20 @@
     "descriptionTitle": "Beschreibung",
     "implementetationTitle": "Umsetzung",
     "join": {
-      "cardDescription": "Vom Kanban-System inspirierter Task-Manager. Entwickelt mit Vanilla JavaScript und Firebase in einem Scrum-basierten Gruppenprojekt, um agiles Arbeiten und Projektmanagement zu üben.",
-      "detailDescription": "Eine Webanwendung, die im Rahmen eines Scrum-basierten Gruppenprojekts entwickelt wurde, um praktische Erfahrungen in agilem Teamwork und Projektmanagement zu sammeln. Der Task-Manager, inspiriert vom Kanban-System, bietet Features wie Aufgaben, Unteraufgaben, Benutzerzuweisungen sowie Fälligkeitsdaten.",
+      "cardDescription": "Vom Kanban-System inspirierter Task-Manager. Entwickelt mit Vanilla JavaScript und Firebase in einem Scrum-basierten Gruppenprojekt mit Fokus auf agiles Arbeiten und Projektmanagement.",
+      "detailDescription": "Eine Webanwendung, entwickelt im Rahmen eines Scrum-basierten Gruppenprojekts mit Fokus auf agiles Teamwork und Projektmanagement. Der vom Kanban-System inspirierte Task-Manager bietet Funktionen wie Drag & Drop, Aufgaben und Unteraufgaben, Benutzerzuweisungen sowie Fälligkeitsdaten.",
       "implementation": [
         "Meine Hauptaufgaben umfassten die Implementierung des Kanban-Board-Features, den Aufbau der zentralen UI-Struktur mit Seitennavigation sowie die Entwicklung der clientseitigen Validierung und des Nutzer-Feedbacks für Login und Registrierung.",
         "Wir organisierten unseren Workflow durch klare Aufgabenverteilung und regelmässige Abstimmungen. Dadurch konnte ich selbstständig an zugewiesenen Features arbeiten und gleichzeitig eine nahtlose Integration in das Gesamtkonzept der Anwendung sicherstellen."
       ]
     },
     "nara": {
-      "cardDescription": "Browserbasiertes Spiel, das mit Vanilla JavaScript entwickelt wurde, um objektorientierte Programmierung (OOP) zu üben. In diesem Spiel musst du mit Bogen und Mut den Greenwood vor dem aufkommenden Bösen schützen.",
-      "detailDescription": "Dieses Spiel wurde entwickelt, um OOP (objektorientierte Programmierung) zu üben. Ziel war es, ein unterhaltsames und interaktives Erlebnis direkt im Browser zu bieten, ganz ohne externe Frameworks.",
+      "cardDescription": "Browserbasiertes Spiel, entwickelt mit Vanilla JavaScript, mit Fokus auf objektorientierte Programmierung (OOP). In diesem Spiel musst du mit Bogen und Mut den Wald vor dem Bösen beschützen.",
+      "detailDescription": "Dieses Spiel wurde entwickelt, um objektorientierte Programmierung (OOP) praktisch anzuwenden. Ziel war es, ein unterhaltsames und interaktives Erlebnis direkt im Browser zu bieten, ganz ohne externe Frameworks.",
       "implementation": [
         "Für dieses Projekt habe ich die Kernmechaniken des Spiels strukturiert und implementiert, darunter die Charakterbewegung, das Springen, die Kollisionsabfrage mit Gegnern und Sammelobjekten sowie ein Crafting-System zum Herstellen neuer Pfeile.",
         "Zudem habe ich dynamische, mehrschichtige Hintergründe hinzugefügt sowie Soundeffekte und Hintergrundmusik mit Stummschaltfunktion intergriert.",
-        "Das Projekt ermöglichte es mir, meine Fähigkeiten in objektorientierter Programmierung, interaktivem UI-Design und der Umsetzung von Spielelogik weiter zu vertiefen."
+        "Das Projekt ermöglichte es mir, meine Fähigkeiten in objektorientierter Programmierung, interaktivem UI-Design und der Umsetzung von Spielelogik zu vertiefen."
       ]
     },
     "leseoase": {

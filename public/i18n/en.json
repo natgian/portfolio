@@ -23,9 +23,9 @@
       "intro": "WHO AM I",
       "title": "About me",
       "description": [
-        "Hey there, I’m Nathalie — a Fullstack Developer and nature lover, passionate about coding because it combines logical thinking with creativity.",
-        "My main source of inspiration is the continuous learning process that comes with real-world challenges. Each bug, feature, or refactor is an opportunity to better understand how things work and how they can be improved. I actively look for efficient and maintainable solutions, learning from feedback, documentation, and experimentation.",
-        "I value clean code, clear communication, and collaboration, and I approach challenges with curiosity and persistence."
+        "Hey there, I’m Nathalie — a Fullstack Developer and nature lover.",
+        "I am passionate about programming because it gives me the opportunity to create something new using logical thinking and creativity. My greatest source of inspiration is the continuous learning process that comes with real-world challenges. Every bug, every feature, and every refactoring is an opportunity to better understand how things work and how to improve them.",
+        "I actively seek efficient and maintainable solutions, learning from feedback, documentation and experimentation. That's why I always approach new challenges with curiosity and perseverance."
       ],
       "cta": "Let's talk",
       "location": "Based in Zurich",
@@ -42,7 +42,7 @@
     "projects": {
       "intro": "MY CRAFT",
       "title": "Projects",
-      "description": "Explore my projects to see how I turn ideas into responsive, user-friendly web applications designed to solve real-world problems.",
+      "description": "A selection of my projects – see how I turn ideas into practical, responsive web applications.",
       "cta": "View project"
     },
     "references": {
@@ -100,25 +100,25 @@
     "descriptionTitle": "Description",
     "implementetationTitle": "Implementation",
     "join": {
-      "cardDescription": "Task manager inspired by the Kanban System. Developed with Vanilla JavaScript and Firebase in a Scrum-based group project to practice agile teamwork and project management.",
-      "detailDescription": "JOIN is a web application developed as part of a Scrum-based group project to gain practical experience in agile teamwork and project management. It is a task manager inspired by the Kanban System that features tasks, subtasks, user assignment and due dates.",
+      "cardDescription": "Task manager inspired by the Kanban System. Developed with Vanilla JavaScript and Firebase in a Scrum-based group project focusing on agile teamwork and project management.",
+      "detailDescription": "JOIN is a Kanban-inspired task manager built as part of a Scrum-based group project, showcasing agile teamwork and project management. Key features include Drag & Drop, tasks, subtasks, user assignment, and due dates.",
       "implementation": [
         "My main responsibilities included implementing the Kanban board feature, building the core UI structure with page navigation, and developing the login and sign-up client-side validation and user feedback.",
         "We organized our workflow through clear task distribution and regular coordination. This allowed me to work independently on assigned features while ensuring seamless integration into the overall application concept."
       ]
     },
     "nara": {
-      "cardDescription": "Browser-based game built with Vanilla JavaScript to practice object-oriented programming (OOP), in which you have to protect the Greenwood from the rising darkness.",
-      "detailDescription": "This game was created to practice OOP (object oriented programming). The goal was to provide a fun and interactive experience directly in the browser, without any external frameworks.",
+      "cardDescription": "Browser-based game built with Vanilla JavaScript to apply object-oriented programming (OOP), in which you have to protect the Greenwood from the rising darkness.",
+      "detailDescription": "This game was created to apply object-oriented programming (OOP), providing a fun and interactive experience directly in the browser without any external frameworks.",
       "implementation": [
         "For this project, I structured and implemented the core mechanics of the game, including character movement, jumping, collision detection with enemies and collectibles, and a crafting system for making new arrows.",
         "I also added dynamic, multi-layered backgrounds and integrated sound effects and background music with a mute function.",
-        "The project allowed me to further deepen my skills in object-oriented programming, interactive UI design, and the implementation of game logic."
+        "The project allowed me to deepen my skills in object-oriented programming, interactive UI design, and the implementation of game logic."
       ]
     },
     "leseoase": {
       "cardDescription": "A full-stack web app for book enthusiasts to manage and organize their reading journey. Built with React, Node.js, Express.js and MongoDB.",
-      "detailDescription": "A user-friendly Book Tracking App designed for book enthusiasts to manage and organize their reading journey. The currently implemented features include searching for books by title, author, or ISBN, categorizing books into Reading, Read, and TBR lists, tracking reading progress by logging the current page, and managing the user profile.",
+      "detailDescription": "A Book Tracking App designed for book enthusiasts to manage and organize their reading journey. The currently implemented features include searching for books by title, author, or ISBN, categorizing books into lists, tracking reading progress by logging the current page, and managing the user profile.",
       "implementation": [
         "During this project, I independently planned and developed a full-stack web application, focusing on the overall user flow and UI structure.",
         "I implemented core features using React, Node.js, Express, and MongoDB, integrated the Google Books API, and built secure account management features such as password reset and form validation.",
@@ -127,7 +127,7 @@
     }
   },
   "legal": {
-    "title": "Legal notice",
+    "title": "Legal Notice",
     "date": "Date",
     "sections": {
       "imprint": {
