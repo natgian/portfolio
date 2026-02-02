@@ -1,71 +1,73 @@
-<header>
-  <app-header></app-header>
-  <div class="header-title">
-    <h1 class="main-title">{{ 'legal.title' | translate }}</h1>
-  </div>
-</header>
-<main>
-  <div class="content">
-    <nav aria-label="Project navigation">
-      <a routerLink="/" aria-label="Go back main page" class="nav-link back-link">
-        <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
-        {{ 'navigation.back' | translate }}
-      </a>
-    </nav>
+<div class="layout">
+  <header>
+    <app-header></app-header>
+    <div class="header-title">
+      <h1 class="main-title">{{ 'legal.title' | translate }}</h1>
+    </div>
+  </header>
+  <main>
+    <div class="content">
+      <nav aria-label="Project navigation">
+        <a routerLink="/" aria-label="Go back main page" class="nav-link back-link">
+          <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
+          {{ 'navigation.back' | translate }}
+        </a>
+      </nav>
 
-    <section>
-      <h2>{{ 'legal.sections.imprint.title' | translate }}</h2>
-      <p>
-        Nathalie Giancaspro
-        <br />
-        Heinrichstrasse 10
-        <br />
-        8304 Wallisellen
-        <br />
-        {{ 'legal.sections.imprint.country' | translate }}
-        <br />
-        {{ 'legal.sections.imprint.email' | translate }}:
-        <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
-      </p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.privacy.title' | translate }}</h2>
-      <p>{{ 'legal.sections.privacy.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.dataCollection.title' | translate }}</h2>
-      <p>{{ 'legal.sections.dataCollection.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.tracking.title' | translate }}</h2>
-      <p>{{ 'legal.sections.tracking.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.localStorage.title' | translate }}</h2>
-      <p>{{ 'legal.sections.localStorage.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.externalServices.title' | translate }}</h2>
-      <p>{{ 'legal.sections.externalServices.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.rights.title' | translate }}</h2>
-      <p>
-        {{ 'legal.sections.rights.content' | translate }}
-        <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
-      </p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.encryption.title' | translate }}</h2>
-      <p>{{ 'legal.sections.encryption.content' | translate }}</p>
-    </section>
-    <section>
-      <h2>{{ 'legal.sections.final.title' | translate }}</h2>
-      <p>{{ 'legal.sections.final.content' | translate }}</p>
-    </section>
+      <section>
+        <h2>{{ 'legal.sections.imprint.title' | translate }}</h2>
+        <p>
+          Nathalie Giancaspro
+          <br />
+          Heinrichstrasse 10
+          <br />
+          8304 Wallisellen
+          <br />
+          {{ 'legal.sections.imprint.country' | translate }}
+          <br />
+          {{ 'legal.sections.imprint.email' | translate }}:
+          <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
+        </p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.privacy.title' | translate }}</h2>
+        <p>{{ 'legal.sections.privacy.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.dataCollection.title' | translate }}</h2>
+        <p>{{ 'legal.sections.dataCollection.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.tracking.title' | translate }}</h2>
+        <p>{{ 'legal.sections.tracking.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.localStorage.title' | translate }}</h2>
+        <p>{{ 'legal.sections.localStorage.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.externalServices.title' | translate }}</h2>
+        <p>{{ 'legal.sections.externalServices.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.rights.title' | translate }}</h2>
+        <p>
+          {{ 'legal.sections.rights.content' | translate }}
+          <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
+        </p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.encryption.title' | translate }}</h2>
+        <p>{{ 'legal.sections.encryption.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'legal.sections.final.title' | translate }}</h2>
+        <p>{{ 'legal.sections.final.content' | translate }}</p>
+      </section>
 
-    {{ 'legal.date' | translate }}: 16.1.2026
-  </div>
-</main>
+      {{ 'legal.date' | translate }}: 16.1.2026
+    </div>
+  </main>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</div>

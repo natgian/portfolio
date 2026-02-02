@@ -19,6 +19,12 @@ header {
   padding: 0 72px;
 }
 
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .content {
   max-width: var(--content-max-width);
   margin: 0 auto 32px auto;
@@ -71,6 +77,12 @@ a:hover {
   transform: scaleX(-1);
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    display: block;
+  }
 }
 
 @media (max-width: 560px) {
