@@ -1,7 +1,7 @@
 button {
   position: fixed;
   z-index: 999;
-  right: 64px;
+  right: calc((100vw - 1200px) / 2 + 32px);
   width: 48px;
   height: 48px;
   background-color: var(--secondary-highlight-color);
