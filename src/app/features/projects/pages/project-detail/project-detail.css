@@ -81,11 +81,14 @@ h2 {
 }
 
 nav {
+  width: 100%;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   font-size: 18px;
   font-weight: 700;
-  margin-block: 16px 48px;
+  margin: 16px auto;
 }
 
 .nav-link {
@@ -143,6 +146,10 @@ nav img {
 
   .visual-section {
     justify-items: center;
+  }
+
+  nav {
+    margin: 64px auto;
   }
 }
 
