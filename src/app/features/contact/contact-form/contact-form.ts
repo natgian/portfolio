@@ -3,10 +3,11 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { HttpClient } from '@angular/common/http';
 import { Button } from '../../../shared/components/button/button';
 import { TranslatePipe } from '@ngx-translate/core';
+import { TrimInput } from '../directives/trim-input';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [Button, ReactiveFormsModule, TranslatePipe],
+  imports: [Button, ReactiveFormsModule, TranslatePipe, TrimInput],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.css',
 })
@@ -66,7 +67,7 @@ export class ContactForm {
     ]),
     email: new FormControl('', [
       Validators.required,
-      Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'),
+      Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'),
       Validators.maxLength(254),
     ]),
     message: new FormControl('', [
