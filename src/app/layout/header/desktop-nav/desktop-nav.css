@@ -22,6 +22,10 @@ nav ul li {
   color: var(--base-light-color);
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 6px var(--base-light-color);
+}
+
 .reveal-line {
   position: absolute;
   top: 20px;
@@ -56,7 +60,7 @@ nav ul li {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .header-split-right {
     color: var(--base-dark-color);
   }

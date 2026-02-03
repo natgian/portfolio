@@ -4,7 +4,7 @@ main {
     url('/img/backgrounds/project_bg.webp'),
     url('/img/backgrounds/project_bg.png')
   );
-  background-position: left;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 56px 80px 0 80px;
@@ -78,6 +78,7 @@ h2 {
   display: flex;
   justify-content: right;
   gap: 32px;
+  mix-blend-mode: difference;
 }
 
 nav {
@@ -120,7 +121,7 @@ nav img {
   height: 24px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   main {
     background-image: image-set(
       url('/img/backgrounds/project_bg_tablet.webp'),
@@ -196,7 +197,7 @@ nav img {
   }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 340px) {
   main {
     padding: 96px 16px 0 16px;
   }
