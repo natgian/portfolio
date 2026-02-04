@@ -123,11 +123,11 @@
     }
   },
   "legal": {
-    "title": "Impressum & Datenschutz",
+    "title": "Datenschutzerklärung",
     "date": "Datum",
     "sections": {
       "imprint": {
-        "title": "Impressum",
+        "title": "Verantwortliche Stelle",
         "country": "Schweiz",
         "email": "E-Mail"
       },
@@ -162,6 +162,28 @@
       "final": {
         "title": "Schlussbestimmung",
         "content": "Diese Datenschutzerklärung kann jederzeit angepasst oder aktualisiert werden, um rechtliche oder technische Änderungen zu berücksichtigen."
+      }
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "contact": "Kontakt",
+    "sections": {
+      "disclaimer": {
+        "title": "Haftungsausschluss",
+        "content": "Ich übernehme keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Informationen auf dieser Website. Für Schäden, die aus dem Zugriff auf oder der Nutzung dieser Website entstehen, einschliesslich technischer Probleme, hafte ich nicht. Alle Inhalte sind unverbindlich und können ohne Ankündigung geändert oder entfernt werden."
+      },
+      "liability": {
+        "title": "Haftung für Links",
+        "content": "Diese Website kann Links zu Websites Dritter enthalten. Für deren Inhalte übernehme ich keine Verantwortung. Der Zugriff und die Nutzung erfolgt auf eigene Gefahr."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "content": "Alle Inhalte, Bilder und Dateien auf dieser Website sind © Nathalie Giancaspro sofern nicht anders angegeben. Die Reproduktion bedarf meiner vorherigen schriftlichen Zustimmung."
+      },
+      "dataProtection": {
+        "title": "Hinweis zum Datenschutz",
+        "content": "Informationen zum Umgang mit Personendaten sind in der"
       }
     }
   }

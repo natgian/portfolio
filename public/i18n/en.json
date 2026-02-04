@@ -4,7 +4,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "legal": "Legal Notice",
+    "legal": "Imprint",
     "back": "Go Back",
     "next": "Next Project",
     "backToHome": "Back to the homepage"
@@ -123,11 +123,11 @@
     }
   },
   "legal": {
-    "title": "Legal Notice",
+    "title": "Privacy Policy",
     "date": "Date",
     "sections": {
       "imprint": {
-        "title": "Imprint",
+        "title": "Data Controller",
         "country": "Switzerland",
         "email": "Email"
       },
@@ -162,6 +162,28 @@
       "final": {
         "title": "Final Clause",
         "content": "This privacy policy may be updated or amended at any time to reflect legal or technical changes."
+      }
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "contact": "Contact",
+    "sections": {
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "I do not guarantee the accuracy, completeness, or timeliness of the information on this website. I am not liable for any damages resulting from access to or use of this website, including technical issues. All content is non-binding and may be changed or removed without notice."
+      },
+      "liability": {
+        "title": "Liability for Links",
+        "content": "This website may contain links to third-party sites. I am not responsible for their content. Access and use are at your own risk."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "content": "All content, images, and files on this website are © Nathalie Giancaspro unless stated otherwise. Reproduction requires my prior written consent."
+      },
+      "dataProtection": {
+        "title": "Data Protection Notice",
+        "content": "Information on the handling of personal data is provided in the"
       }
     }
   }

@@ -7,16 +7,16 @@ import { Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-legal-notice',
+  selector: 'app-imprint',
   imports: [Header, Footer, TranslatePipe, RouterLink],
-  templateUrl: './legal-notice.html',
-  styleUrl: './legal-notice.css',
+  templateUrl: './imprint.html',
+  styleUrls: ['./imprint.css', '../../../styles/legal.css'],
 })
 
 /**
- * Page component responsible for rendering the legal page.
+ * Page component responsible for rendering the imprint page.
  */
-export class LegalNotice {
+export class Imprint {
   private sub: Subscription;
 
   /**
@@ -40,7 +40,7 @@ export class LegalNotice {
    * Sets the translated title in the document title tag based on the current language.
    */
   private setTitle() {
-    this.translate.get('legal.title').subscribe((translatedTitle) => {
+    this.translate.get('navigation.legal').subscribe((translatedTitle) => {
       this.titleService.setTitle(translatedTitle);
     });
   }

@@ -1,0 +1,56 @@
+<div class="layout">
+  <header>
+    <app-header></app-header>
+    <div class="header-title">
+      <h1 class="main-title">{{ 'imprint.title' | translate }}</h1>
+    </div>
+  </header>
+  <main>
+    <div class="content">
+      <nav aria-label="Project navigation">
+        <a routerLink="/" aria-label="Go back main page" class="nav-link back-link">
+          <img src="/img/ui-elements/nav_arrow.png" alt="" aria-hidden="true" />
+          {{ 'navigation.back' | translate }}
+        </a>
+      </nav>
+
+      <section>
+        <h2>{{ 'imprint.contact' | translate }}</h2>
+        <p>
+          Nathalie Giancaspro
+          <br />
+          Heinrichstrasse 10
+          <br />
+          8304 Wallisellen
+          <br />
+          {{ 'legal.sections.imprint.country' | translate }}
+          <br />
+          {{ 'legal.sections.imprint.email' | translate }}:
+          <a href="mailto:contact@natgian.dev">contact@natgian.dev</a>
+        </p>
+      </section>
+      <section>
+        <h2>{{ 'imprint.sections.disclaimer.title' | translate }}</h2>
+        <p>{{ 'imprint.sections.disclaimer.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'imprint.sections.liability.title' | translate }}</h2>
+        <p>{{ 'imprint.sections.liability.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'imprint.sections.copyright.title' | translate }}</h2>
+        <p>{{ 'imprint.sections.copyright.content' | translate }}</p>
+      </section>
+      <section>
+        <h2>{{ 'imprint.sections.dataProtection.title' | translate }}</h2>
+        <p>
+          {{ 'imprint.sections.dataProtection.content' | translate }}
+          <a href="/privacy-policy">{{ 'legal.title' | translate }}</a
+          >.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+</div>
