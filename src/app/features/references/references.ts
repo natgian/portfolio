@@ -60,15 +60,6 @@ export class References {
       backgroundImgMedium: '/img/stickers/reference_bg_2_medium.png',
       backgroundImgSmall: '/img/stickers/reference_bg_2_small.png',
     },
-    {
-      name: 'Christian Buchs',
-      role: 'home.references.chris.role',
-      text: 'home.references.chris.text',
-      link: 'https://linkedin.com/in/christian-buchs-a219b0121',
-      backgroundImgLarge: '/img/stickers/reference_bg_1_large.png',
-      backgroundImgMedium: '/img/stickers/reference_bg_1_medium.png',
-      backgroundImgSmall: '/img/stickers/reference_bg_1_small.png',
-    },
   ];
 
   /**
