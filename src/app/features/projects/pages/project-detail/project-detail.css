@@ -17,11 +17,11 @@ main {
 }
 
 .content {
-  max-width: 1500px;
+  max-width: 1800px;
   margin: 96px auto 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 64px;
   justify-content: space-between;
 }
 
@@ -200,5 +200,11 @@ nav img {
 @media (max-width: 340px) {
   main {
     padding: 96px 16px 0 16px;
+  }
+}
+
+@media (min-height: 1800px) and (max-width: 1280px) {
+  main {
+    justify-content: space-around;
   }
 }
