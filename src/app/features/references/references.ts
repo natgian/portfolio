@@ -10,6 +10,7 @@ interface Reference {
   role: string;
   text: string;
   link: string;
+  linkIcon: string;
   backgroundImgLarge: string;
   backgroundImgMedium: string;
   backgroundImgSmall: string;
@@ -47,6 +48,7 @@ export class References {
       role: 'home.references.nico.role',
       text: 'home.references.nico.text',
       link: 'https://www.linkedin.com/in/nico-zinngrebe-25977a33a',
+      linkIcon: '/img/icons/linkedin.svg',
       backgroundImgLarge: '/img/stickers/reference_bg_1_large.png',
       backgroundImgMedium: '/img/stickers/reference_bg_1_medium.png',
       backgroundImgSmall: '/img/stickers/reference_bg_1_small.png',
@@ -56,6 +58,7 @@ export class References {
       role: 'home.references.wladi.role',
       text: 'home.references.wladi.text',
       link: 'https://www.xing.com/profile/Wladislav_Bender',
+      linkIcon: '/img/icons/xing.svg',
       backgroundImgLarge: '/img/stickers/reference_bg_2_large.png',
       backgroundImgMedium: '/img/stickers/reference_bg_2_medium.png',
       backgroundImgSmall: '/img/stickers/reference_bg_2_small.png',

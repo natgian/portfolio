@@ -8,17 +8,18 @@
   </div>
 
   <div class="references-container">
-    @for(reference of references; track reference.name; let i = $index) {
-    <app-reference-card
-      [name]="reference.name"
-      [role]="reference.role | translate"
-      [text]="reference.text | translate"
-      [link]="reference.link"
-      [backgroundImg]="getBackgroundImage(reference)"
-      (mouseEnter)="hoveredIndex = i"
-      (mouseLeave)="hoveredIndex = null"
-      [style.zIndex]="hoveredIndex === i ? 999 : references.length - i"
-    ></app-reference-card>
+    @for (reference of references; track reference.name; let i = $index) {
+      <app-reference-card
+        [name]="reference.name"
+        [role]="reference.role | translate"
+        [text]="reference.text | translate"
+        [link]="reference.link"
+        [linkIcon]="reference.linkIcon"
+        [backgroundImg]="getBackgroundImage(reference)"
+        (mouseEnter)="hoveredIndex = i"
+        (mouseLeave)="hoveredIndex = null"
+        [style.zIndex]="hoveredIndex === i ? 999 : references.length - i"
+      ></app-reference-card>
     }
   </div>
 </section>

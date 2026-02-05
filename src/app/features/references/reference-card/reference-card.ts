@@ -16,6 +16,7 @@ export class ReferenceCard {
   @Input() role!: string;
   @Input() text!: string;
   @Input() link!: string;
+  @Input() linkIcon!: string;
   @Input() backgroundImg!: string;
 
   @Output() mouseEnter = new EventEmitter<void>();
