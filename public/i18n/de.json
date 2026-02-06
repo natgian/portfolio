@@ -1,4 +1,8 @@
 {
+  "metaData": {
+    "description": "Fullstack Web Developer mit Erfahrung in SaaS-Projekten (JavaScript, TypeScript, Angular, React, Node.js, MongoDB). Fokus auf effiziente, wartbare Lösungen und kontinuierliches Weiterentwickeln.",
+    "ogImage": "https://natgian.dev/img/og/og_image_de.png"
+  },
   "navigation": {
     "about": "Über mich",
     "skills": "Skills",
