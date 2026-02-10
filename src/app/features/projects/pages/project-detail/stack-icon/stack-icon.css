@@ -10,3 +10,8 @@
   width: 24px;
   height: 24px;
 }
+
+.icon-container span {
+  color: var(--base-light-color);
+  mix-blend-mode: difference;
+}
