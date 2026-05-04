@@ -1,7 +1,8 @@
 button {
   position: fixed;
   z-index: 999;
-  right: calc((100vw - 1200px) / 2 + 32px);
+  bottom: 32px;
+  right: max(32px, calc((100vw - 1800px) / 2));
   width: 48px;
   height: 48px;
   background-color: var(--secondary-highlight-color);
@@ -24,12 +25,5 @@ button {
 @media (hover: hover) {
   button:hover {
     transform: rotate(-90deg) scale(1.1);
-  }
-}
-
-@media (max-width: 560px) {
-  button {
-    bottom: 32px;
-    right: 32px;
   }
 }
