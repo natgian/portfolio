@@ -68,8 +68,6 @@ body {
   font-weight: 700;
   margin-top: 16px;
   display: block;
-  overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 .section-intro {
@@ -120,6 +118,10 @@ body {
 }
 
 @media (max-width: 740px) {
+  #main-title-contact {
+    overflow-wrap: normal !important;
+    hyphens: auto !important;
+  }
   .main-title {
     font-size: 48px;
   }
