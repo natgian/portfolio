@@ -27,9 +27,10 @@
       "intro": "WER BIN ICH",
       "title": "Über mich",
       "description": [
-        "Hallo, ich bin Nathalie - Fullstack-Entwicklerin und Naturliebhaberin.",
-        "Ich begeistere mich fürs Programmieren, weil es mir die Möglichkeit gibt, mit logischem Denken und Kreativität Neues zu erschaffen. Meine grösste Inspirationsquelle ist der kontinuierliche Lernprozess, der mit realen Herausforderungen einhergeht. Jeder Bug, jedes Feature und jedes Refactoring ist eine Gelegenheit, besser zu verstehen, wie Dinge funktionieren und wie man sie verbessern kann.",
-        "Ich suche aktiv nach effizienten und wartbaren Lösungen und lerne dabei aus Feedback, Dokumentation und dem Experimentieren. Deshalb gehe ich auch neue Herausforderungen immer mit Neugier und Ausdauer an."
+        "Daten verstehen, Prozesse durchdenken und Dinge zum Laufen bringen - das war schon früh ein Teil meines Alltags, lange bevor ich eine Zeile Code geschrieben habe.",
+        "Ich bin Nathalie, Fullstack Developerin mit einem vielseitigen Hintergrund aus E-Commerce, Teamleitung sowie kreativen Projekten in Digital Film und Fotografie.",
+        "Auf den ersten Blick wirkt das vielleicht wie ein Mix aus vielen verschiedenen Welten, für mich gehört es aber zusammen und prägt, wie ich heute an Entwicklung herangehe: analytisch und strukturiert im Denken, mit einem Auge für visuelle Gestaltung und einem Verständnis dafür, wie Menschen mit Systemen interagieren.",
+        "Ich suche aktiv nach Lösungen, die sauber aufgebaut sind, langfristig stabil bleiben und sich auch gut im Team weiterentwickeln lassen."
       ],
       "cta": "Lass uns reden",
       "location": "Standort Zürich",
@@ -39,14 +40,14 @@
     "skills": {
       "intro": "MEIN STACK",
       "title": "Skill-Set",
-      "description": "Ich habe Frontend- und Fullstack-Projekte mit modernen Technologien umgesetzt und erweitere kontinuierlich meine Fähigkeiten, um komplexe Probleme erfolgreich zu bewältigen.",
+      "description": "Ich habe bereits Frontend- und Fullstack-Projekte umgesetzt und entwickle mich dabei stetig weiter, indem ich neue Technologien und komplexe Aufgaben mit Neugier und Ausdauer angehe.",
       "topSticker": "Hier abziehen",
       "bottomSticker": "Ich interessiere mich auch für:"
     },
     "projects": {
-      "intro": "MEIN HANDWERK",
+      "intro": "MEIN ARBEITEN",
       "title": "Projekte",
-      "description": "Eine Auswahl meiner Projekte – erfahre hier, wie ich Ideen in praxisnahe, responsive Webanwendungen umsetze.",
+      "description": "Eine Auswahl meiner Projekte, in denen ich Ideen in funktionierende, responsive Webanwendungen umgesetzt habe.",
       "cta": "Projekt ansehen"
     },
     "references": {
@@ -63,11 +64,11 @@
     },
     "contact": {
       "intro": "KONTAKTIERE MICH",
-      "title": "Bereit für eine Zusammenarbeit?",
+      "title": "Offen für eine Zusammenarbeit",
       "description": [
-        "Als Fullstack-Entwicklerin kann ich Projekte unterstützen, indem ich an Features mitarbeite, Funktionalitäten optimiere und mich flexibel an bestehende Workflows und Technologien anpasse.",
-        "Mit einer soliden Grundlage in moderner Webentwicklung und einer lösungsorientierten Denkweise bringe ich klare Kommunikation und Eigenverantwortung in meine Aufgaben ein.",
-        "Wenn du eine motivierte Entwicklerin suchst, die einen Mehrwert für dein Projekt schafft, freue ich mich auf deine Nachricht."
+        "Als Fullstack-Entwicklerin unterstütze ich gerne bei der Umsetzung und Weiterentwicklung von Webprojekten, von neuen Features bis zur Optimierung bestehender Funktionen.",
+        "Ich arbeite mit modernen Webtechnologien und setze Aufgaben eigenverantwortlich um, mit einem klaren und offenen Austausch im Team.",
+        "Wenn du Unterstützung für ein Projekt suchst oder einfach über eine mögliche Zusammenarbeit sprechen möchtest, freu ich mich auf deine Nachricht."
       ],
       "fields": {
         "name": {

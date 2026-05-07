@@ -28,7 +28,12 @@ export class About {
   aboutIntro = {
     intro: 'home.about.intro',
     title: 'home.about.title',
-    text: ['home.about.description.0', 'home.about.description.1', 'home.about.description.2'],
+    text: [
+      'home.about.description.0',
+      'home.about.description.1',
+      'home.about.description.2',
+      'home.about.description.3',
+    ],
     imgSrc: '/img/ui-elements/secondary_underline.png',
   };
 }

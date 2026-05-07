@@ -27,9 +27,10 @@
       "intro": "WHO AM I",
       "title": "About me",
       "description": [
-        "Hey there, I’m Nathalie — a Fullstack Developer and nature lover.",
-        "I am passionate about programming because it gives me the opportunity to create something new using logical thinking and creativity. My greatest source of inspiration is the continuous learning process that comes with real-world challenges. Every bug, every feature, and every refactoring is an opportunity to better understand how things work and how to improve them.",
-        "I actively seek efficient and maintainable solutions, learning from feedback, documentation and experimentation. That's why I always approach new challenges with curiosity and perseverance."
+        "Understanding data, thinking through processes, and making things work - that was part of my daily routine from an early age, long before I ever wrote a single line of code.",
+        "I’m Nathalie, a fullstack developer with a diverse background in e-commerce, team leadership, and creative projects in digital film and photography.",
+        "At first glance, this might seem like a mix of many different worlds, but for me, it all fits together and shapes how I approach development today: with analytical and structured thinking, an eye for visual design, and an understanding of how people interact with systems.",
+        "I actively seek solutions that are cleanly built, remain stable over the long term, and can be easily scaled and developed further within a team."
       ],
       "cta": "Let's talk",
       "location": "Based in Zurich",
@@ -39,14 +40,14 @@
     "skills": {
       "intro": "MY STACK",
       "title": "Skill set",
-      "description": "I have worked on frontend and fullstack projects using modern technologies and continuously expand my skills to tackle new challenges.",
+      "description": "I have worked on frontend and fullstack projects and continuously improve my skills by tackling new technologies and complex tasks with curiosity and perserverance.",
       "topSticker": "Pull to peel",
       "bottomSticker": "I also want to dive into:"
     },
     "projects": {
-      "intro": "MY CRAFT",
+      "intro": "MY WORK",
       "title": "Projects",
-      "description": "A selection of my projects – see how I turn ideas into practical, responsive web applications.",
+      "description": "A selection of my projects where I turned ideas into functional, responsive web applications.",
       "cta": "View project"
     },
     "references": {
@@ -63,11 +64,11 @@
     },
     "contact": {
       "intro": "CONTACT ME",
-      "title": "Ready to work together?",
+      "title": "Open to collaboration",
       "description": [
-        "As a Fullstack Developer, I can support projects by collaborating on features, improving functionality and adapting to existing workflows and technologies.",
-        "With a strong foundation in modern web development and a problem-solving mindset, I contribute through clear communication and ownership of my tasks.",
-        "If you’re looking for a motivated developer ready to contribute and add value to your project, I’d be happy to connect."
+        "As a fullstack developer, I support the development and improvement of web projects - from new features to optimizing existing functionality.",
+        "I work with modern technologies and take ownership of my tasks, while maintaining clear and open communication within the team.",
+        "If you’re looking for support on a project or want to explore a potential collaboration, feel free to reach out."
       ],
       "fields": {
         "name": {
@@ -117,12 +118,12 @@
       ]
     },
     "leseoase": {
-      "cardDescription": "A full-stack web app for book enthusiasts to manage and organize their reading journey. Built with React, Node.js, Express.js and MongoDB.",
+      "cardDescription": "A fullstack web app for book enthusiasts to manage and organize their reading journey. Built with React, Node.js, Express.js and MongoDB.",
       "detailDescription": "A Book Tracking App designed for book enthusiasts to manage and organize their reading journey. The currently implemented features include searching for books by title, author, or ISBN, categorizing books into lists, tracking reading progress by logging the current page, and managing the user profile.",
       "implementation": [
-        "During this project, I independently planned and developed a full-stack web application, focusing on the overall user flow and UI structure.",
+        "During this project, I independently planned and developed a fullstack web application, focusing on the overall user flow and UI structure.",
         "I implemented core features using React, Node.js, Express, and MongoDB, integrated the Google Books API, and built secure account management features such as password reset and form validation.",
-        "The project strengthened my skills in full-stack development, API integration, and creating user-focused applications from concept to deployment."
+        "The project strengthened my skills in fullstack development, API integration, and creating user-focused applications from concept to deployment."
       ]
     }
   },
