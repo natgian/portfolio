@@ -4,6 +4,8 @@
 
 A personal portfolio website built with Angular, showcasing my projects, skills, and practical experience with modern web development tools.
 
+👉 Live Demo: https://natgian.dev
+
 ## Highlights
 
 - Dynamic project data using Angular Services
