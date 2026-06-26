@@ -21,10 +21,25 @@ export class LanguageService {
   currentLang!: 'de' | 'en';
 
   /**
+   * URLs to the blogs on Hashnode for each language.
+   */
+  readonly blogURLs = {
+    de: 'https://natgian-de.hashnode.dev/',
+    en: 'https://natgian.hashnode.dev/',
+  };
+
+  /**
    * Constructs the LanguageService and initializes the language settings.
    */
   constructor() {
     this.initLanguage();
+  }
+
+  /**
+   * Returns the blog URL for the currently selected language.
+   */
+  get blogURL(): string {
+    return this.blogURLs[this.currentLang];
   }
 
   /**

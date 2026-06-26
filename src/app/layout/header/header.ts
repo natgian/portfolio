@@ -41,13 +41,6 @@ export class Header {
   private sub?: Subscription;
 
   /**
-   * Gets the currently selected language from the LanguageService.
-   */
-  get currentLang() {
-    return this.language.currentLang;
-  }
-
-  /**
    * Checks on initialization if the current route contains "/projects".
    * Used to set the "isProjectPage" flag.
    */

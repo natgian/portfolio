@@ -13,8 +13,12 @@
       <img src="/img/ui-elements/underline_3.png" alt="" class="reveal-line" />
     </li>
     <li [class.header-split-right]="isProjectPage">
-      <a [routerLink]="'/'" fragment="contact">{{ 'navigation.contact' | translate }}</a>
+      <a [attr.href]="language.blogURL" target="_blank">Blog</a>
       <img src="/img/ui-elements/underline_2.png" alt="" class="reveal-line" />
+    </li>
+    <li [class.header-split-right]="isProjectPage">
+      <a [routerLink]="'/'" fragment="contact">{{ 'navigation.contact' | translate }}</a>
+      <img src="/img/ui-elements/circle.png" alt="" class="reveal-small-circle" />
     </li>
   </ul>
 </nav>

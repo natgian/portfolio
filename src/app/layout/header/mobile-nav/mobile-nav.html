@@ -10,15 +10,14 @@
       <a [routerLink]="'/'" fragment="projects">{{ 'navigation.projects' | translate }}</a>
     </li>
     <li>
+      <a [attr.href]="language.blogURL" target="_blank">Blog</a>
+    </li>
+    <li>
       <a [routerLink]="'/'" fragment="contact">{{ 'navigation.contact' | translate }}</a>
     </li>
   </ul>
 
-  <app-lang-toggle
-    id="mobile-toggle"
-    [currentLang]="currentLang"
-    (langChange)="onLangChange($event)"
-  ></app-lang-toggle>
+  <app-lang-toggle id="mobile-toggle"></app-lang-toggle>
 
   <app-social-links></app-social-links>
 </nav>

@@ -9,19 +9,12 @@
 
   <app-mobile-nav
     [isProjectPage]="isProjectPage"
-    [currentLang]="currentLang"
-    (langChange)="language.setLang($event)"
     (linkClick)="closeMenu()"
     [class.open]="isMenuOpen"
   >
   </app-mobile-nav>
 
-  <app-lang-toggle
-    id="desktop-toggle"
-    [isProjectPage]="isProjectPage"
-    [currentLang]="currentLang"
-    (langChange)="language.setLang($event)"
-  ></app-lang-toggle>
+  <app-lang-toggle id="desktop-toggle" [isProjectPage]="isProjectPage"></app-lang-toggle>
 
   <div class="menu-toggle" (click)="toggleMenu()" [class.open]="isMenuOpen">
     <img src="/img/ui-elements/x.png" alt="" class="close" width="32px" height="32px" />

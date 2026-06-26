@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../../shared/services/language.service';
 
 @Component({
   selector: 'app-desktop-nav',
@@ -11,8 +12,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 /**
  * Renders the desktop navigation in the header.
- * Receives a flag via @Input to determine if it's on the project page.
  */
 export class DesktopNav {
   @Input() isProjectPage: boolean = false;
+  language = inject(LanguageService);
 }

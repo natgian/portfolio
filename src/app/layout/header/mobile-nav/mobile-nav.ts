@@ -1,8 +1,9 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LangToggle } from '../../../shared/components/lang-toggle/lang-toggle';
 import { SocialLinks } from '../../../shared/components/social-links/social-links';
+import { LanguageService } from '../../../shared/services/language.service';
 
 @Component({
   selector: 'app-mobile-nav',
@@ -13,22 +14,11 @@ import { SocialLinks } from '../../../shared/components/social-links/social-link
 
 /**
  * Renders the mobile navigation in the header.
- * Receives @Input flags to determine if it's displayed on the project page and which
- * language is currently selected.
- * Emits an event when the language is changed or when a link is clicked.
+ * Receives @Input flags to determine if it's displayed on the project page.
+ * Emits an event when a link is clicked.
  */
 export class MobileNav {
   @Input() isProjectPage: boolean = false;
-  @Input() currentLang: 'de' | 'en' = 'de';
-  @Output() langChange = new EventEmitter<'de' | 'en'>();
   @Output() linkClick = new EventEmitter<void>();
-
-  /**
-   * Emits an event when a new language is selected.
-   *
-   * @param lang - The newly selected language
-   */
-  onLangChange(lang: 'de' | 'en') {
-    this.langChange.emit(lang);
-  }
+  language = inject(LanguageService);
 }

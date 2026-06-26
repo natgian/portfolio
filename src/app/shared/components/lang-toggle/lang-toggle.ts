@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, inject, Output, EventEmitter } from '@angular/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-lang-toggle',
@@ -9,20 +10,22 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 /**
  * Renders the language toggle component for selecting a language ('de' or 'en').
- * Receives the current language via @Input and emits an event when a new language
- * is selected.
+ * Interacts directly with the languageService to get and set the active language.
  */
 export class LangToggle {
-  @Input() currentLang: 'de' | 'en' = 'de';
-  @Output() langChange = new EventEmitter<'de' | 'en'>();
+  /**
+   * Flag to determine if the component is displayed on a project page.
+   */
   @Input() isProjectPage: boolean = false;
 
+  language = inject(LanguageService);
+
   /**
-   * Emits the newly selected language.
+   * Updates the selected language directly in the LanguageService.
    *
    * @param lang - The selected language ('de' or 'en')
    */
-  changeLang(lang: 'de' | 'en') {
-    this.langChange.emit(lang);
+  changeLang(lang: 'de' | 'en'): void {
+    this.language.setLang(lang);
   }
 }
