@@ -45,7 +45,7 @@ export class ProjectService {
       ],
       detailImg: '/img/projects/join/join_mockup_devices.png',
       githubLink: 'https://github.com/natgian/kanban-vanillajs-group-project',
-      liveLink: 'https://join.natgian.com/',
+      liveLink: 'https://join.natgian.dev',
     },
     {
       id: 'nara',
@@ -66,7 +66,7 @@ export class ProjectService {
       ],
       detailImg: '/img/projects/nara/nara_mockup_devices.png',
       githubLink: 'https://github.com/natgian/2dgame-js',
-      liveLink: 'https://nara-game.natgian.com/',
+      liveLink: 'https://nara-game.natgian.dev',
     },
     {
       id: 'leseoase',
